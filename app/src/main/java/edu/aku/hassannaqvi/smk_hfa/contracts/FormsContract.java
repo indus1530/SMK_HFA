@@ -12,7 +12,7 @@ import org.json.JSONObject;
 
 public class FormsContract {
 
-    public static final String CONTENT_AUTHORITY = "edu.aku.hassannaqvi.uen_hfa_ml";
+    public static final String CONTENT_AUTHORITY = "edu.aku.hassannaqvi.smk_hfa";
     public static final String PATH_FORMS = "Forms";
     public static String one = "1";
     public static String two = "2";
@@ -34,7 +34,7 @@ public class FormsContract {
     public static String nSeven = "97";
     public static String nEight = "98";
     public static String nNine = "99";
-    private final String projectName = "UEN_HFA_ML2020";
+    private final String projectName = "SMK_HFA2020";
     private String _ID = "";
     private String _UID = "";
     private String userName = "";

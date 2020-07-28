@@ -12,9 +12,9 @@ import edu.aku.hassannaqvi.smk_hfa.contracts.VersionAppContract;
 
 public final class CreateTable {
 
-    public static final String DATABASE_NAME = "uen_hfa_ml.db";
-    public static final String DB_NAME = "uen_hfa_ml_copy.db";
-    public static final String PROJECT_NAME = "UEN_HFA_ML2020";
+    public static final String DATABASE_NAME = "smk_hfa.db";
+    public static final String DB_NAME = "smk_hfa_copy.db";
+    public static final String PROJECT_NAME = "SMK_HFA2020";
     public static final int DATABASE_VERSION = 1;
 
     public static final String SQL_CREATE_FORMS = "CREATE TABLE "

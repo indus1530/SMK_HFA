@@ -8,7 +8,7 @@
 
         <!--<variable
             name="formsContract"
-            type="edu.aku.hassannaqvi.uen_hfa_ml.contracts.FormsContract" />-->
+            type="edu.aku.hassannaqvi.smk_hfa.contracts.FormsContract" />-->
 
         <variable
             name="callback"
