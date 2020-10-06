@@ -589,7 +589,7 @@
     <string name="d0801j0fq">Quantity</string>
 
 
-    <!--    <string name="emodtitlee">MODULE -E: AVAILABLE SERVICES</string>-->
+        <string name="modetitle">MODULE -E: AVAILABLE SERVICES</string>
     <!--    <string name="e01"> SECTION 01: \nFAMILY PLANNING SERVICES </string>-->
 
     <!--    <string name="e0101">Does this facility offer family planning services?</string>-->
@@ -7345,32 +7345,22 @@
     <string name='Q_j0201e'>j0201e</string>
     <string name='Q_j0201f'>j0201f</string>
     <string name='Q_j0201g'>j0201g</string>
-    <string name='Q_j03'>j03</string>
-    <string name='Q_j0300'>j0300</string>
-    <string name='Q_j0300c'>j0300c</string>
-    <string name='Q_j0301a'>j0301a</string>
-    <string name='Q_j0301b'>j0301b</string>
-    <string name='Q_j0301c'>j0301c</string>
-    <string name='Q_j0301d'>j0301d</string>
-    <string name='Q_j0301e'>j0301e</string>
-    <string name='Q_j0301f'>j0301f</string>
-    <string name='Q_j0301g'>j0301g</string>
-    <string name='Q_j0301h'>j0301h</string>
-    <string name='Q_j0301i'>j0301i</string>
-    <string name='Q_j0301j'>j0301j</string>
-    <string name='Q_j0301k'>j0301k</string>
-    <string name='Q_j0301l'>j0301l</string>
-    <string name='Q_j0301m'>j0301m</string>
-    <string name='Q_j0301n'>j0301n</string>
-    <string name='Q_j0301o'>j0301o</string>
-    <string name='Q_j0301p'>j0301p</string>
-    <string name='Q_j0301q'>j0301q</string>
-    <string name='Q_j0301r'>j0301r</string>
-    <string name='Q_j0301s'>j0301s</string>
-    <string name='Q_j0301t'>j0301t</string>
-    <string name='Q_j0301u'>j0301u</string>
-    <string name='Q_j0301v'>j0301v</string>
-    <string name='Q_j0301w'>j0301w</string>
+    <string name='Q_j31'>j31</string>
+    <string name='Q_j32'>j32</string>
+    <string name='Q_j33'>j33</string>
+    <string name='Q_j34'>j34</string>
+    <string name='Q_j35'>j35</string>
+    <string name='Q_j36'>j36</string>
+    <string name='Q_j36a'>j36a</string>
+    <string name='Q_j36b'>j36b</string>
+    <string name='Q_j36c'>j36c</string>
+    <string name='Q_j36d'>j36d</string>
+    <string name='Q_j36e'>j36e</string>
+    <string name='Q_j36f'>j36f</string>
+    <string name='Q_j36g'>j36g</string>
+    <string name='Q_j36h'>j36h</string>
+    <string name='Q_j37'>j37</string>
+    <string name='Q_j3title'>j3title</string>
     <string name='Q_j04'>j04</string>
     <string name='Q_j0400'>j0400</string>
     <string name='Q_j0400c'>j0400c</string>
