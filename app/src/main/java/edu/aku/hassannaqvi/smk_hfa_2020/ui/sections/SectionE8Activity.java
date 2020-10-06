@@ -18,7 +18,6 @@ import edu.aku.hassannaqvi.smk_hfa_2020.core.DatabaseHelper;
 import edu.aku.hassannaqvi.smk_hfa_2020.core.MainApp;
 import edu.aku.hassannaqvi.smk_hfa_2020.databinding.ActivitySectionE8Binding;
 import edu.aku.hassannaqvi.smk_hfa_2020.ui.other.SectionMainActivity;
-import edu.aku.hassannaqvi.smk_hfa_2020.utils.JSONUtils;
 
 import static edu.aku.hassannaqvi.smk_hfa_2020.core.MainApp.fc;
 import static edu.aku.hassannaqvi.smk_hfa_2020.utils.UtilKt.openSectionMainActivity;
@@ -48,9 +47,7 @@ public class SectionE8Activity extends AppCompatActivity {
 
 
     private void SaveDraft() throws JSONException {
-
         JSONObject json = new JSONObject();
-
         json.put("e0801", bi.e0801a.isChecked() ? "1"
                 : bi.e0801b.isChecked() ? "2"
                 : "-1");
@@ -107,14 +104,7 @@ public class SectionE8Activity extends AppCompatActivity {
                 : bi.e0814b.isChecked() ? "2"
                 : "-1");
 
-        try {
-            JSONObject json_merge = JSONUtils.mergeJSONObjects(new JSONObject(fc.getsE()), json);
 
-            fc.setsE(String.valueOf(json_merge));
-
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
     }
 
 
