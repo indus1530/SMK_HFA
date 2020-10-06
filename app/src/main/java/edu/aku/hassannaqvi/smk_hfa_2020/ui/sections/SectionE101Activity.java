@@ -26,6 +26,7 @@ import edu.aku.hassannaqvi.smk_hfa_2020.core.MainApp;
 import edu.aku.hassannaqvi.smk_hfa_2020.databinding.ActivitySectionE101Binding;
 
 import static edu.aku.hassannaqvi.smk_hfa_2020.core.MainApp.fc;
+import static edu.aku.hassannaqvi.smk_hfa_2020.utils.UtilKt.openSectionMainActivity;
 
 public class SectionE101Activity extends AppCompatActivity {
 
@@ -238,10 +239,14 @@ public class SectionE101Activity extends AppCompatActivity {
         }
         if (UpdateDB()) {
             finish();
-            startActivity(new Intent(this, SectionE2Activity.class));
+            startActivity(new Intent(this, SectionE102Activity.class));
         } else {
             Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
         }
+    }
+
+    public void BtnEnd() {
+        openSectionMainActivity(this, "E");
     }
 
     private boolean formValidation() {

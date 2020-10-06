@@ -35,7 +35,7 @@
                         android:id="@+id/qtxt_emodtitlee"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_toEndOf="@id/q_emodtitlee"
+                        android:layout_toEndOf="@id/qtxt_emodtitlee"
                         android:text="@string/emodtitlee" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -54,7 +54,7 @@
                         android:id="@+id/qtxt_esec1titlee"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_toEndOf="@id/q_esec1titlee"
+                        android:layout_toEndOf="@id/qtxt_esec1titlee"
                         android:text="@string/esec1titlee" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -125,7 +125,7 @@
                         android:id="@+id/qtxt_e12hint"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_toEndOf="@id/q_e12hint"
+                        android:layout_toEndOf="@id/qtxt_e12hint"
                         android:text="@string/e12hint" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -144,7 +144,7 @@
                         android:id="@+id/qtxt_e12"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_toEndOf="@id/q_e12"
+                        android:layout_toEndOf="@id/qtxt_e12"
                         android:text="@string/e12" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -683,7 +683,7 @@
                         android:id="@+id/qtxt_e13"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_toEndOf="@id/q_e13"
+                        android:layout_toEndOf="@id/qtxt_e13"
                         android:text="@string/e13" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -1093,7 +1093,7 @@
                         android:id="@+id/qtxt_e15"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_toEndOf="@id/q_e15"
+                        android:layout_toEndOf="@id/qtxt_e15"
                         android:text="@string/e15" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -1112,7 +1112,7 @@
                         android:id="@+id/qtxt_e151"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_toEndOf="@id/q_e151"
+                        android:layout_toEndOf="@id/qtxt_e151"
                         android:text="@string/e151" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -1651,7 +1651,7 @@
                         android:id="@+id/qtxt_e152"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_toEndOf="@id/q_e152"
+                        android:layout_toEndOf="@id/qtxt_e152"
                         android:text="@string/e152" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -2397,7 +2397,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
-                    android:background="@color/red_overlay"
                     android:onClick="@{() -> callback.BtnEnd()}"
                     android:text="Cancel"
                     android:textColor="@color/white" />
@@ -2407,7 +2406,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
-                    android:background="@color/green_overlay"
                     android:onClick="@{() -> callback.BtnContinue()}"
                     android:text="Save"
                     android:textColor="@color/white" />
