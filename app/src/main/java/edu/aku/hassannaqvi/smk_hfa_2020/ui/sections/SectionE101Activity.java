@@ -41,6 +41,11 @@ public class SectionE101Activity extends AppCompatActivity {
 
     private void setupSkips() {
 
+        bi.e14a.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i == bi.e14ab.getId()) {
+                Clear.clearAllFields(bi.fldGrpe14a);
+            }
+        }));
     }
 
     private boolean UpdateDB() {
