@@ -102,7 +102,6 @@ public class SectionJ3Activity extends AppCompatActivity {
 
         JSONObject json = new JSONObject();
 
-
         json.put("j31", bi.j31a.isChecked() ? "1"
                 : bi.j31b.isChecked() ? "2"
                 : "-1");
@@ -156,31 +155,27 @@ public class SectionJ3Activity extends AppCompatActivity {
                 : "-1");
 
         json.put("j37a", bi.j37a.isChecked() ? "1" : "-1");
-
         json.put("j37b", bi.j37b.isChecked() ? "2" : "-1");
-
         json.put("j37c", bi.j37c.isChecked() ? "3" : "-1");
-
         json.put("j37d", bi.j37d.isChecked() ? "4" : "-1");
-
         json.put("j37e", bi.j37e.isChecked() ? "5" : "-1");
-
         json.put("j37f", bi.j37f.isChecked() ? "6" : "-1");
-
         json.put("j37x", bi.j37x.isChecked() ? "96" : "-1");
 
-
-        private boolean formValidation () {
-            return Validator.emptyCheckingContainer(this, bi.GrpNameSectionj3);
-        }
+    }
 
 
-        public void BtnEnd () {
-            openSectionMainActivity(this, "J");
-        }
+    private boolean formValidation() {
+        return Validator.emptyCheckingContainer(this, bi.GrpName);
+    }
 
 
-        @Override
+    public void BtnEnd() {
+        openSectionMainActivity(this, "J");
+    }
+
+
+    @Override
     public void onBackPressed() {
         Toast.makeText(this, "Back Press Not Allowed", Toast.LENGTH_SHORT).show();
     }

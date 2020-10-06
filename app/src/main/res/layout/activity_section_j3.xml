@@ -1,4 +1,5 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
+
     <data>
 
         <import type="android.view.View" />
@@ -161,7 +162,7 @@
                             android:id="@+id/qtxt_j33"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-
+                            android:layout_toEndOf="@id/q_j33"
                             android:text="@string/j33" />
 
                         <TextView
@@ -213,6 +214,7 @@
                             android:id="@+id/qtxt_j34"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_j34"
                             android:text="@string/j34" />
 
                         <TextView
@@ -264,6 +266,7 @@
                             android:id="@+id/qtxt_j35"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_j35"
                             android:text="@string/j35" />
 
                         <TextView
@@ -333,6 +336,7 @@
                             android:id="@+id/qtxt_j36a"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_j36a"
                             android:text="@string/j36a" />
 
                         <TextView
@@ -384,6 +388,7 @@
                             android:id="@+id/qtxt_j36b"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_j36b"
                             android:text="@string/j36b" />
 
                         <TextView
@@ -435,6 +440,7 @@
                             android:id="@+id/qtxt_j36c"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_j36c"
                             android:text="@string/j36c" />
 
                         <TextView
@@ -486,6 +492,7 @@
                             android:id="@+id/qtxt_j36d"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_j36d"
                             android:text="@string/j36d" />
 
                         <TextView
@@ -823,8 +830,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
-                    android:onClick="@{() -> callback.BtnEnd()}"
                     android:background="@color/red_overlay"
+                    android:onClick="@{() -> callback.BtnEnd()}"
                     android:text="Cancel"
                     android:textColor="@color/white" />
 
@@ -833,12 +840,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
-                    android:onClick="@{() -> callback.BtnContinue()}"
                     android:background="@color/green_overlay"
-                    android:textColor="@color/white"
-                    android:text="Save" />
+                    android:onClick="@{() -> callback.BtnContinue()}"
+                    android:text="Save"
+                    android:textColor="@color/white" />
             </LinearLayout>
 
         </LinearLayout>
+
     </ScrollView>
+
 </layout>
