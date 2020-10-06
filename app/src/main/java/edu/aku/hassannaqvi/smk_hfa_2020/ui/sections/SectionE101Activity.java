@@ -42,15 +42,15 @@ public class SectionE101Activity extends AppCompatActivity {
 
     private void setupSkips() {
 
-        bi.e14a.setOnCheckedChangeListener(((radioGroup, i) -> {
-            if (i == bi.e14ab.getId()) {
-                Clear.clearAllFields(bi.fldGrpe14a);
-            }
-        }));
-
         bi.e11.setOnCheckedChangeListener(((radioGroup, i) -> {
             if (i == bi.e11b.getId()) {
                 Clear.clearAllFields(bi.fldGrpe11);
+            }
+        }));
+
+        bi.e14a.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i == bi.e14ab.getId()) {
+                Clear.clearAllFields(bi.fldGrpe14a);
             }
         }));
     }
@@ -139,101 +139,6 @@ public class SectionE101Activity extends AppCompatActivity {
                 :  "-1");
 
         json.put("e14exx", bi.e14exx.getText().toString());
-        json.put("e151aav", bi.e151aavy.isChecked() ? "1"
-                : bi.e151aavn.isChecked() ? "2"
-                :  "-1");
-
-        json.put("e151af", bi.e151afy.isChecked() ? "1"
-                : bi.e151afn.isChecked() ? "2"
-                :  "-1");
-
-        json.put("e151bav", bi.e151bavy.isChecked() ? "1"
-                : bi.e151bavn.isChecked() ? "2"
-                :  "-1");
-
-        json.put("e151bf", bi.e151bfy.isChecked() ? "1"
-                : bi.e151bfn.isChecked() ? "2"
-                :  "-1");
-
-        json.put("e151cav", bi.e151cavy.isChecked() ? "1"
-                : bi.e151cavn.isChecked() ? "2"
-                :  "-1");
-
-        json.put("e151cf", bi.e151cfy.isChecked() ? "1"
-                : bi.e151cfn.isChecked() ? "2"
-                :  "-1");
-
-        json.put("e151dav", bi.e151davy.isChecked() ? "1"
-                : bi.e151davn.isChecked() ? "2"
-                :  "-1");
-
-        json.put("e151df", bi.e151dfy.isChecked() ? "1"
-                : bi.e151dfn.isChecked() ? "2"
-                :  "-1");
-
-        json.put("e151eav", bi.e151eavy.isChecked() ? "1"
-                : bi.e151eavn.isChecked() ? "2"
-                :  "-1");
-
-        json.put("e151ef", bi.e151efy.isChecked() ? "1"
-                : bi.e151efn.isChecked() ? "2"
-                :  "-1");
-
-        json.put("e152aav", bi.e152aavy.isChecked() ? "1"
-                : bi.e152aavn.isChecked() ? "2"
-                :  "-1");
-
-        json.put("e152af", bi.e152afy.isChecked() ? "1"
-                : bi.e152afn.isChecked() ? "2"
-                :  "-1");
-
-        json.put("e152bav", bi.e152bavy.isChecked() ? "1"
-                : bi.e152bavn.isChecked() ? "2"
-                :  "-1");
-
-        json.put("e152bf", bi.e152bfy.isChecked() ? "1"
-                : bi.e152bfn.isChecked() ? "2"
-                :  "-1");
-
-        json.put("e152cav", bi.e152cavy.isChecked() ? "1"
-                : bi.e152cavn.isChecked() ? "2"
-                :  "-1");
-
-        json.put("e152cf", bi.e152cfy.isChecked() ? "1"
-                : bi.e152cfn.isChecked() ? "2"
-                :  "-1");
-
-        json.put("e152dav", bi.e152davy.isChecked() ? "1"
-                : bi.e152davn.isChecked() ? "2"
-                :  "-1");
-
-        json.put("e152df", bi.e152dfy.isChecked() ? "1"
-                : bi.e152dfn.isChecked() ? "2"
-                :  "-1");
-
-        json.put("e152eav", bi.e152eavy.isChecked() ? "1"
-                : bi.e152eavn.isChecked() ? "2"
-                :  "-1");
-
-        json.put("e152ef", bi.e152efy.isChecked() ? "1"
-                : bi.e152efn.isChecked() ? "2"
-                :  "-1");
-
-        json.put("e152fav", bi.e152favy.isChecked() ? "1"
-                : bi.e152favn.isChecked() ? "2"
-                :  "-1");
-
-        json.put("e152ff", bi.e152ffy.isChecked() ? "1"
-                : bi.e152ffn.isChecked() ? "2"
-                :  "-1");
-
-        json.put("e152gav", bi.e152gavy.isChecked() ? "1"
-                : bi.e152gavn.isChecked() ? "2"
-                :  "-1");
-
-        json.put("e152gf", bi.e152gfy.isChecked() ? "1"
-                : bi.e152gfn.isChecked() ? "2"
-                :  "-1");
     }
 
     public void BtnContinue() {
