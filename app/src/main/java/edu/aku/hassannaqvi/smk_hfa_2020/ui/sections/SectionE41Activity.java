@@ -41,10 +41,6 @@ public class SectionE41Activity extends AppCompatActivity {
 
     private void setupSkips() {
 
-        bi.e0401.setOnCheckedChangeListener(((radioGroup, i) -> {
-            Clear.clearAllFields(bi.fldGrpSece401);
-        }));
-
     }
 
 
@@ -60,131 +56,82 @@ public class SectionE41Activity extends AppCompatActivity {
     }
 
 
-    private void SaveDraft() throws JSONException {
+    private void SaveDraft() throws JSONException {JSONObject json = new JSONObject();
+        json.put("e41", bi.e41a.isChecked() ? "1"
+                : bi.e41b.isChecked() ? "2"
+                :  "-1");
 
-        JSONObject json = new JSONObject();
+        json.put("e42", bi.e42a.isChecked() ? "1"
+                : bi.e42b.isChecked() ? "2"
+                :  "-1");
 
-        json.put("e0401", bi.e0401a.isChecked() ? "1"
-                : bi.e0401b.isChecked() ? "2"
-                : "-1");
+        json.put("e43a", bi.e43aa.isChecked() ? "1"
+                : bi.e43ab.isChecked() ? "2"
+                : bi.e43ac.isChecked() ? "3"
+                : bi.e43ad.isChecked() ? "4"
+                :  "-1");
 
-        json.put("e0402", bi.e0402a.isChecked() ? "1"
-                : bi.e0402b.isChecked() ? "2"
-                : "-1");
+        json.put("e43b", bi.e43ba.isChecked() ? "1"
+                : bi.e43bb.isChecked() ? "2"
+                : bi.e43bc.isChecked() ? "3"
+                : bi.e43bd.isChecked() ? "4"
+                :  "-1");
 
-        json.put("e0403a", bi.e0403aa.isChecked() ? "1"
-                : bi.e0403ab.isChecked() ? "2"
-                : bi.e0403ac.isChecked() ? "3"
-                : bi.e0403ad.isChecked() ? "4"
-                : "-1");
+        json.put("e43c", bi.e43ca.isChecked() ? "1"
+                : bi.e43cb.isChecked() ? "2"
+                : bi.e43cc.isChecked() ? "3"
+                : bi.e43cd.isChecked() ? "4"
+                :  "-1");
 
-        json.put("e0403b", bi.e0403ba.isChecked() ? "1"
-                : bi.e0403bb.isChecked() ? "2"
-                : bi.e0403bc.isChecked() ? "3"
-                : bi.e0403bd.isChecked() ? "4"
-                : "-1");
+        json.put("e44",  "-1");
 
-        json.put("e0403c", bi.e0403ca.isChecked() ? "1"
-                : bi.e0403cb.isChecked() ? "2"
-                : bi.e0403cc.isChecked() ? "3"
-                : bi.e0403cd.isChecked() ? "4"
-                : "-1");
+        json.put("e44a", bi.e44aa.isChecked() ? "1"
+                : bi.e44ab.isChecked() ? "2"
+                : bi.e44ac.isChecked() ? "3"
+                : bi.e44ad.isChecked() ? "4"
+                :  "-1");
 
-        json.put("e04041", bi.e04041a.isChecked() ? "1"
-                : bi.e04041b.isChecked() ? "2"
-                : bi.e04041c.isChecked() ? "3"
-                : bi.e04041d.isChecked() ? "4"
-                : "-1");
+        json.put("e44b", bi.e44ba.isChecked() ? "1"
+                : bi.e44bb.isChecked() ? "2"
+                : bi.e44bc.isChecked() ? "3"
+                : bi.e44bd.isChecked() ? "4"
+                :  "-1");
 
-        json.put("e04042", bi.e04042a.isChecked() ? "1"
-                : bi.e04042b.isChecked() ? "2"
-                : bi.e04042c.isChecked() ? "3"
-                : bi.e04042d.isChecked() ? "4"
-                : "-1");
+        json.put("e44c", bi.e44ca.isChecked() ? "1"
+                : bi.e44cb.isChecked() ? "2"
+                : bi.e44cc.isChecked() ? "3"
+                : bi.e44cd.isChecked() ? "4"
+                :  "-1");
 
-        json.put("e04043", bi.e04043a.isChecked() ? "1"
-                : bi.e04043b.isChecked() ? "2"
-                : bi.e04043c.isChecked() ? "3"
-                : bi.e04043d.isChecked() ? "4"
-                : "-1");
+        json.put("e44d", bi.e44da.isChecked() ? "1"
+                : bi.e44db.isChecked() ? "2"
+                : bi.e44dc.isChecked() ? "3"
+                : bi.e44dd.isChecked() ? "4"
+                :  "-1");
 
-        json.put("e04044", bi.e04044a.isChecked() ? "1"
-                : bi.e04044b.isChecked() ? "2"
-                : bi.e04044c.isChecked() ? "3"
-                : bi.e04044d.isChecked() ? "4"
-                : "-1");
+        json.put("e44e", bi.e44ea.isChecked() ? "1"
+                : bi.e44eb.isChecked() ? "2"
+                : bi.e44ec.isChecked() ? "3"
+                : bi.e44ed.isChecked() ? "4"
+                :  "-1");
 
-        json.put("e04045", bi.e04045a.isChecked() ? "1"
-                : bi.e04045b.isChecked() ? "2"
-                : bi.e04045c.isChecked() ? "3"
-                : bi.e04045d.isChecked() ? "4"
-                : "-1");
+        json.put("e44f", bi.e44fa.isChecked() ? "1"
+                : bi.e44fb.isChecked() ? "2"
+                : bi.e44fc.isChecked() ? "3"
+                : bi.e44fd.isChecked() ? "4"
+                :  "-1");
 
-        json.put("e04046", bi.e04046a.isChecked() ? "1"
-                : bi.e04046b.isChecked() ? "2"
-                : bi.e04046c.isChecked() ? "3"
-                : bi.e04046d.isChecked() ? "4"
-                : "-1");
+        json.put("e44g", bi.e44ga.isChecked() ? "1"
+                : bi.e44gb.isChecked() ? "2"
+                : bi.e44gc.isChecked() ? "3"
+                : bi.e44gd.isChecked() ? "4"
+                :  "-1");
 
-        json.put("e04047", bi.e04047a.isChecked() ? "1"
-                : bi.e04047b.isChecked() ? "2"
-                : bi.e04047c.isChecked() ? "3"
-                : bi.e04047d.isChecked() ? "4"
-                : "-1");
-
-        json.put("e04048", bi.e04048a.isChecked() ? "1"
-                : bi.e04048b.isChecked() ? "2"
-                : bi.e04048c.isChecked() ? "3"
-                : bi.e04048d.isChecked() ? "4"
-                : "-1");
-
-        json.put("e04051", bi.e04051a.isChecked() ? "1"
-                : bi.e04051b.isChecked() ? "2"
-                : bi.e04051c.isChecked() ? "3"
-                : bi.e04051d.isChecked() ? "4"
-                : "-1");
-
-        json.put("e04052", bi.e04052a.isChecked() ? "1"
-                : bi.e04052b.isChecked() ? "2"
-                : bi.e04052c.isChecked() ? "3"
-                : bi.e04052d.isChecked() ? "4"
-                : "-1");
-
-        json.put("e04053", bi.e04053a.isChecked() ? "1"
-                : bi.e04053b.isChecked() ? "2"
-                : bi.e04053c.isChecked() ? "3"
-                : bi.e04053d.isChecked() ? "4"
-                : "-1");
-
-        json.put("e04054", bi.e04054a.isChecked() ? "1"
-                : bi.e04054b.isChecked() ? "2"
-                : bi.e04054c.isChecked() ? "3"
-                : bi.e04054d.isChecked() ? "4"
-                : "-1");
-
-        json.put("e04055", bi.e04055a.isChecked() ? "1"
-                : bi.e04055b.isChecked() ? "2"
-                : bi.e04055c.isChecked() ? "3"
-                : bi.e04055d.isChecked() ? "4"
-                : "-1");
-
-        json.put("e04056", bi.e04056a.isChecked() ? "1"
-                : bi.e04056b.isChecked() ? "2"
-                : bi.e04056c.isChecked() ? "3"
-                : bi.e04056d.isChecked() ? "4"
-                : "-1");
-
-        json.put("e04057", bi.e04057a.isChecked() ? "1"
-                : bi.e04057b.isChecked() ? "2"
-                : bi.e04057c.isChecked() ? "3"
-                : bi.e04057d.isChecked() ? "4"
-                : "-1");
-
-        json.put("e04058", bi.e04058a.isChecked() ? "1"
-                : bi.e04058b.isChecked() ? "2"
-                : bi.e04058c.isChecked() ? "3"
-                : bi.e04058d.isChecked() ? "4"
-                : "-1");
+        json.put("e44h", bi.e44ha.isChecked() ? "1"
+                : bi.e44hb.isChecked() ? "2"
+                : bi.e44hc.isChecked() ? "3"
+                : bi.e44hd.isChecked() ? "4"
+                :  "-1");
 
         try {
             JSONObject json_merge = JSONUtils.mergeJSONObjects(new JSONObject(fc.getsE()), json);
@@ -212,7 +159,7 @@ public class SectionE41Activity extends AppCompatActivity {
         }
         if (UpdateDB()) {
             finish();
-            startActivity(new Intent(this, bi.e0401b.isChecked() ? SectionE5Activity.class : SectionE42Activity.class));
+            startActivity(new Intent(this, SectionE42Activity.class));
         } else {
             Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
         }
