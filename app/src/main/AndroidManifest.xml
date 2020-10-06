@@ -122,10 +122,6 @@
             android:label="@string/modetitle"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.sections.SectionE7Activity"
-            android:label="@string/modetitle"
-            android:screenOrientation="portrait" />
-        <activity
             android:name=".ui.sections.SectionE8Activity"
             android:label="@string/modetitle"
             android:screenOrientation="portrait" />
@@ -163,10 +159,6 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".ui.sections.SectionG2Activity"
-            android:label="@string/modgtitle"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".ui.sections.SectionG3Activity"
             android:label="@string/modgtitle"
             android:screenOrientation="portrait" />
         <activity
@@ -319,22 +311,6 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".ui.sections.SectionJ3Activity"
-            android:label="@string/modjtitle"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".ui.sections.SectionJ4Activity"
-            android:label="@string/modjtitle"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".ui.sections.SectionJ5Activity"
-            android:label="@string/modjtitle"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".ui.sections.SectionJ6Activity"
-            android:label="@string/modjtitle"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".ui.sections.SectionJ7Activity"
             android:label="@string/modjtitle"
             android:screenOrientation="portrait" />
         <activity
