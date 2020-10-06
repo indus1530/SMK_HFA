@@ -47,6 +47,12 @@ public class SectionE101Activity extends AppCompatActivity {
                 Clear.clearAllFields(bi.fldGrpe14a);
             }
         }));
+
+        bi.e11.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i == bi.e11b.getId()) {
+                Clear.clearAllFields(bi.fldGrpe11);
+            }
+        }));
     }
 
     private boolean UpdateDB() {
@@ -239,7 +245,7 @@ public class SectionE101Activity extends AppCompatActivity {
         }
         if (UpdateDB()) {
             finish();
-            startActivity(new Intent(this, SectionE102Activity.class));
+            startActivity(new Intent(this, bi.e11b.isChecked() ? SectionE2Activity.class : SectionE102Activity.class));
         } else {
             Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
         }
