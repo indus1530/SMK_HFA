@@ -47,7 +47,9 @@ public class SectionE8Activity extends AppCompatActivity {
 
 
     private void SaveDraft() throws JSONException {
+
         JSONObject json = new JSONObject();
+
         json.put("e0801", bi.e0801a.isChecked() ? "1"
                 : bi.e0801b.isChecked() ? "2"
                 : "-1");
@@ -103,7 +105,6 @@ public class SectionE8Activity extends AppCompatActivity {
         json.put("e0814", bi.e0814a.isChecked() ? "1"
                 : bi.e0814b.isChecked() ? "2"
                 : "-1");
-
 
     }
 

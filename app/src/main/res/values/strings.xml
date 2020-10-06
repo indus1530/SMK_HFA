@@ -1670,11 +1670,10 @@
     <string name="e0705e0fn">No</string>
     <string name="e0705e0fq">Quantity</string>
 
-    <string name="e08"> SECTION 08: \nCOMMUNICABLE &amp; NON COMMUNICABLE DISEASES </string>
-    <string name="e0801"> Does this facility offer HIV counseling and testing services ? </string>
-    <string name="e0801a"> Yes </string>
-    <string name="e0801b"> No </string>
-
+    <string name="e08">SECTION-8-COMMUNICABLE &amp; NON COMMUNICABLE DISEASES</string>
+    <string name="e0801">Does this facility offer HIV counseling and testing services?</string>
+    <string name="e0801a">Yes</string>
+    <string name="e0801b">No</string>
     <string name="e0802">Does this facility offer HIV &amp; AIDS care and support services, including treatment of opportunistic infections and provisions of Palliative care?</string>
     <string name="e0802a">Yes</string>
     <string name="e0802b">No</string>
@@ -1714,6 +1713,7 @@
     <string name="e0814">Do providers in this facility diagnose and/or manage Anxiety, Depression, Epilepsy and other mental / psychotic health problems in patients?</string>
     <string name="e0814a">Yes</string>
     <string name="e0814b">No</string>
+
 
     <string name="modftitle"> F: DIAGNOSTICS </string>
     <string name="f01"> Section 01: \nClinical Chemistry </string>

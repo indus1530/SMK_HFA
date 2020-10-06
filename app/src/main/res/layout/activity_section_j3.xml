@@ -74,21 +74,27 @@
                     <RadioGroup
                         android:id="@+id/j31"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/j31a"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:text="@string/j31a" />
 
                         <RadioButton
                             android:id="@+id/j31b"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:text="@string/j31b" />
+
                     </RadioGroup>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- j32  Radio   -->
@@ -126,21 +132,27 @@
                     <RadioGroup
                         android:id="@+id/j32"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/j32a"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:text="@string/j32a" />
 
                         <RadioButton
                             android:id="@+id/j32b"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:text="@string/j32b" />
+
                     </RadioGroup>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- j33  Radio   -->
@@ -178,21 +190,27 @@
                     <RadioGroup
                         android:id="@+id/j33"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/j33a"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:text="@string/j33a" />
 
                         <RadioButton
                             android:id="@+id/j33b"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:text="@string/j33b" />
+
                     </RadioGroup>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- j34  Radio   -->
@@ -230,21 +248,27 @@
                     <RadioGroup
                         android:id="@+id/j34"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/j34a"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:text="@string/j34a" />
 
                         <RadioButton
                             android:id="@+id/j34b"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:text="@string/j34b" />
+
                     </RadioGroup>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- j35  Radio   -->
@@ -282,21 +306,27 @@
                     <RadioGroup
                         android:id="@+id/j35"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/j35a"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:text="@string/j35a" />
 
                         <RadioButton
                             android:id="@+id/j35b"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:text="@string/j35b" />
+
                     </RadioGroup>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- j36  Title   -->
@@ -352,21 +382,27 @@
                     <RadioGroup
                         android:id="@+id/j36a"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/j36aa"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:text="@string/j36aa" />
 
                         <RadioButton
                             android:id="@+id/j36ab"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:text="@string/j36ab" />
+
                     </RadioGroup>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- j36b  Radio   -->
@@ -404,21 +440,27 @@
                     <RadioGroup
                         android:id="@+id/j36b"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/j36ba"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:text="@string/j36ba" />
 
                         <RadioButton
                             android:id="@+id/j36bb"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:text="@string/j36bb" />
+
                     </RadioGroup>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- j36c  Radio   -->
@@ -456,21 +498,27 @@
                     <RadioGroup
                         android:id="@+id/j36c"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/j36ca"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:text="@string/j36ca" />
 
                         <RadioButton
                             android:id="@+id/j36cb"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:text="@string/j36cb" />
+
                     </RadioGroup>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- j36d  Radio   -->
@@ -508,21 +556,27 @@
                     <RadioGroup
                         android:id="@+id/j36d"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/j36da"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:text="@string/j36da" />
 
                         <RadioButton
                             android:id="@+id/j36db"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:text="@string/j36db" />
+
                     </RadioGroup>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- j36e  Radio   -->
@@ -560,21 +614,27 @@
                     <RadioGroup
                         android:id="@+id/j36e"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/j36ea"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:text="@string/j36ea" />
 
                         <RadioButton
                             android:id="@+id/j36eb"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:text="@string/j36eb" />
+
                     </RadioGroup>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- j36f  Radio   -->
@@ -612,21 +672,27 @@
                     <RadioGroup
                         android:id="@+id/j36f"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/j36fa"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:text="@string/j36fa" />
 
                         <RadioButton
                             android:id="@+id/j36fb"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:text="@string/j36fb" />
+
                     </RadioGroup>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- j36g  Radio   -->
@@ -664,21 +730,27 @@
                     <RadioGroup
                         android:id="@+id/j36g"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/j36ga"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:text="@string/j36ga" />
 
                         <RadioButton
                             android:id="@+id/j36gb"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:text="@string/j36gb" />
+
                     </RadioGroup>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- j36h  Radio   -->
@@ -716,21 +788,27 @@
                     <RadioGroup
                         android:id="@+id/j36h"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/j36ha"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:text="@string/j36ha" />
 
                         <RadioButton
                             android:id="@+id/j36hb"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:text="@string/j36hb" />
+
                     </RadioGroup>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- j37  CheckBox   -->
@@ -813,8 +891,11 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/j37x" />
+
                     </LinearLayout>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!--EndButton LinearLayout-->
