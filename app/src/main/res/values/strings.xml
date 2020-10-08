@@ -4581,6 +4581,35 @@
     <string name="j407d">Partition curtains are not available</string>
 
     <string name="section5referralandlinkages_mainheading">SECTION-5- Referral and Linkages: </string>
+    <string name="j5title">SECTION-9-Referral and Linkages</string>
+    <string name="j5">Please enter the Name and Designation of HCP to whom you observe for this section.</string>
+    <string name="j5a">Name</string>
+    <string name="j5b">Designation</string>
+    <string name="j500a">Provider Trained by AKU?</string>
+    <string name="j500aa">YES</string>
+    <string name="j500ab">NO</string>
+    <string name="j501hint">Verify by direct observation or by role play or by reviewing medical record</string>
+    <string name="j501">The provider receive patients from community through LHW referral (Referral In)</string>
+    <string name="j501a">Yes</string>
+    <string name="j501b">No</string>
+    <string name="j502">Referral slips are appropriately placed safe in a box for referral In patients</string>
+    <string name="j502a">Yes</string>
+    <string name="j502b">No</string>
+    <string name="j503">The provider appropriately assessed before referral, and Refer is made without delay (Referral Out)</string>
+    <string name="j503a">Yes</string>
+    <string name="j503b">No</string>
+    <string name="j504">The provider referred within or between health facilities with appropriate information exchange (For referral out patients, Referral Note, is given to patient and entry in facility documentation)</string>
+    <string name="j504a">Yes</string>
+    <string name="j504b">No</string>
+    <string name="j505">An up to date list of networking facilities in the same geographical area that provide referral care to clients should pasted on wall</string>
+    <string name="j505a">Yes</string>
+    <string name="j505b">No</string>
+    <string name="j506">If you find “No” for any of the above statement then what is the reason; </string>
+    <string name="j506a">This is LHW Uncovered facility</string>
+    <string name="j506b">Referral slips are not available for “refer out” patients / clients.</string>
+    <string name="j506c">Referral box is not available for “refer in” patients / clients.</string>
+    <string name="j506d">Community visit facility by themselves, LHW not refer them</string>
+    <string name="j506e">No register available to record refer out patient record</string>
 
 
     <string name="j08"> SECTION 08: \nCommunication, Respect and Confidentiality </string>

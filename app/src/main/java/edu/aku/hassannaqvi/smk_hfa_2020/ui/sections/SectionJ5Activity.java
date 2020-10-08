@@ -1,41 +1,35 @@
 package edu.aku.hassannaqvi.smk_hfa_2020.ui.sections;
 
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
+import edu.aku.hassannaqvi.smk_hfa_2020.R;
+import edu.aku.hassannaqvi.smk_hfa_2020.contracts.FormsContract;
+import edu.aku.hassannaqvi.smk_hfa_2020.core.DatabaseHelper;
+import edu.aku.hassannaqvi.smk_hfa_2020.core.MainApp;
+import edu.aku.hassannaqvi.smk_hfa_2020.databinding.ActivitySectionJ5Binding;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.databinding.DataBindingUtil;
-
-import com.validatorcrawler.aliazaz.Clear;
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.jetbrains.annotations.NotNull;
 import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
-import edu.aku.hassannaqvi.smk_hfa_2020.R;
-import edu.aku.hassannaqvi.smk_hfa_2020.contracts.FormsContract;
-import edu.aku.hassannaqvi.smk_hfa_2020.core.DatabaseHelper;
-import edu.aku.hassannaqvi.smk_hfa_2020.core.MainApp;
-import edu.aku.hassannaqvi.smk_hfa_2020.databinding.ActivitySectionJ4BindingImpl;
 
 import static edu.aku.hassannaqvi.smk_hfa_2020.core.MainApp.fc;
 import static edu.aku.hassannaqvi.smk_hfa_2020.utils.UtilKt.openSectionMainActivity;
 
-public class SectionJ4Activity extends AppCompatActivity {
+public class SectionJ5Activity extends AppCompatActivity {
 
-    ActivitySectionJ4BindingImpl bi;
+    ActivitySectionJ5Binding bi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_j4);
+        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_j5);
         bi.setCallback(this);
         setupSkips();
     }
