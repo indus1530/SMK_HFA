@@ -20,6 +20,7 @@ import edu.aku.hassannaqvi.smk_hfa_2020.contracts.FormsContract;
 import edu.aku.hassannaqvi.smk_hfa_2020.core.DatabaseHelper;
 import edu.aku.hassannaqvi.smk_hfa_2020.core.MainApp;
 import edu.aku.hassannaqvi.smk_hfa_2020.databinding.ActivitySectionJ4Binding;
+import edu.aku.hassannaqvi.smk_hfa_2020.utils.JSONUtils;
 
 import static edu.aku.hassannaqvi.smk_hfa_2020.core.MainApp.fc;
 import static edu.aku.hassannaqvi.smk_hfa_2020.utils.UtilKt.openSectionMainActivity;
@@ -42,7 +43,7 @@ public class SectionJ4Activity extends AppCompatActivity {
 
     private boolean UpdateDB() {
         DatabaseHelper db = MainApp.appInfo.getDbHelper();
-        int updcount = db.updatesFormColumn(FormsContract.FormsTable.COLUMN_SE, fc.getsE());
+        int updcount = db.updatesFormColumn(FormsContract.FormsTable.COLUMN_SJ, fc.getsJ());
         if (updcount == 1) {
             return true;
         } else {
@@ -52,7 +53,9 @@ public class SectionJ4Activity extends AppCompatActivity {
     }
 
     private void SaveDraft() throws JSONException {
+
         JSONObject json = new JSONObject();
+
         json.put("j40", bi.j40a.isChecked() ? "1"
                 : bi.j40b.isChecked() ? "2"
                 :  "-1");
@@ -79,19 +82,25 @@ public class SectionJ4Activity extends AppCompatActivity {
 
         json.put("j405", bi.j405a.isChecked() ? "1"
                 : bi.j405b.isChecked() ? "2"
-                :  "-1");
+                : "-1");
 
         json.put("j406", bi.j406a.isChecked() ? "1"
                 : bi.j406b.isChecked() ? "2"
-                :  "-1");
+                : "-1");
 
-        json.put("j407a",bi.j407a.isChecked() ? "1" :"-1");
+        json.put("j407a", bi.j407a.isChecked() ? "1" : "-1");
+        json.put("j407b", bi.j407b.isChecked() ? "2" : "-1");
+        json.put("j407c", bi.j407c.isChecked() ? "3" : "-1");
+        json.put("j407d", bi.j407d.isChecked() ? "4" : "-1");
 
-        json.put("j407b",bi.j407b.isChecked() ? "2" :"-1");
+        try {
+            JSONObject json_merge = JSONUtils.mergeJSONObjects(new JSONObject(fc.getsJ()), json);
 
-        json.put("j407c",bi.j407c.isChecked() ? "3" :"-1");
+            fc.setsJ(String.valueOf(json_merge));
 
-        json.put("j407d",bi.j407d.isChecked() ? "4" :"-1");
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
 
     }
 
