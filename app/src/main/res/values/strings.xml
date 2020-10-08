@@ -3507,7 +3507,7 @@
     <string name="h03024d">Not at all</string>
 
     <string name="h04"> SECTION 04: \nData Completeness </string>
-    <string name="h0401"> What are the possible reasons for the missing data ? </string>
+    <string name="h0401"> If the source registers and/or monthly reports are not completely filled in, what are the possible reasons for the missing data? </string>
     <string name="h0401_info"> If the source registers and / or monthly reports are not completely filled in </string>
     <string name="h0401a">Storage or archiving problems</string>
     <string name="h0401b">Staffing issues</string>
@@ -3516,7 +3516,7 @@
     <string name="h0401x">Other (specify)</string>
 
     <string name="h05"> SECTION 05: \nDiscrepancies </string>
-    <string name="h0501"> What are the reasons for the discrepancy ? </string>
+    <string name="h0501"> If there was a discrepancy observed between the main source document and the monthly reports, what are the reasons for the discrepancy? </string>
     <string name="h0501_info"> If there was a discrepancy observed between the main source document and the monthly reports </string>
     <string name="h0501a">Data entry errors</string>
     <string name="h0501b">Arithmetic errors</string>
