@@ -220,10 +220,6 @@
             android:label="@string/modhtitle"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.sections.SectionH33Activity"
-            android:label="@string/modhtitle"
-            android:screenOrientation="portrait" />
-        <activity
             android:name=".ui.sections.SectionH4Activity"
             android:label="@string/modhtitle"
             android:screenOrientation="portrait" />
@@ -313,14 +309,6 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".ui.sections.SectionJ3Activity"
-            android:label="@string/modjtitle"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".ui.sections.SectionJ8Activity"
-            android:label="@string/modjtitle"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".ui.sections.SectionJ9Activity"
             android:label="@string/modjtitle"
             android:screenOrientation="portrait" />
         <activity

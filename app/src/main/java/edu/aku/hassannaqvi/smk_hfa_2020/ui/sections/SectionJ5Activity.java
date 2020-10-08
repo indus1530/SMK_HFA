@@ -1,23 +1,24 @@
 package edu.aku.hassannaqvi.smk_hfa_2020.ui.sections;
 
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.databinding.DataBindingUtil;
-import edu.aku.hassannaqvi.smk_hfa_2020.R;
-import edu.aku.hassannaqvi.smk_hfa_2020.contracts.FormsContract;
-import edu.aku.hassannaqvi.smk_hfa_2020.core.DatabaseHelper;
-import edu.aku.hassannaqvi.smk_hfa_2020.core.MainApp;
-import edu.aku.hassannaqvi.smk_hfa_2020.databinding.ActivitySectionJ5Binding;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
+
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.jetbrains.annotations.NotNull;
 import org.json.JSONException;
+
+import edu.aku.hassannaqvi.smk_hfa_2020.R;
+import edu.aku.hassannaqvi.smk_hfa_2020.contracts.FormsContract;
+import edu.aku.hassannaqvi.smk_hfa_2020.core.DatabaseHelper;
+import edu.aku.hassannaqvi.smk_hfa_2020.core.MainApp;
+import edu.aku.hassannaqvi.smk_hfa_2020.databinding.ActivitySectionJ5Binding;
 
 import static edu.aku.hassannaqvi.smk_hfa_2020.core.MainApp.fc;
 import static edu.aku.hassannaqvi.smk_hfa_2020.utils.UtilKt.openSectionMainActivity;
@@ -61,14 +62,14 @@ public class SectionJ5Activity extends AppCompatActivity {
         }
         if (UpdateDB()) {
             finish();
-            startActivity(new Intent(this, SectionJ5Activity.class));
+            startActivity(new Intent(this, SectionK1Activity.class));
         } else {
             Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
         }
     }
 
     public void BtnEnd() {
-        openSectionMainActivity(this, "E");
+        openSectionMainActivity(this, "J");
     }
 
     private boolean formValidation() {
