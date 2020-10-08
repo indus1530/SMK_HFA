@@ -8,7 +8,7 @@
             type="edu.aku.hassannaqvi.sk.models.Form" />-->
         <variable
             name="callback"
-            type="edu.aku.hassannaqvi.smk_hfa_2020.ui.sections.Sectionj4Activity" />
+            type="edu.aku.hassannaqvi.smk_hfa_2020.ui.sections.SectionJ4Activity" />
 
     </data>
 

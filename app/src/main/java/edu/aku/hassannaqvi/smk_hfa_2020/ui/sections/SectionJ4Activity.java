@@ -23,14 +23,14 @@ import edu.aku.hassannaqvi.smk_hfa_2020.R;
 import edu.aku.hassannaqvi.smk_hfa_2020.contracts.FormsContract;
 import edu.aku.hassannaqvi.smk_hfa_2020.core.DatabaseHelper;
 import edu.aku.hassannaqvi.smk_hfa_2020.core.MainApp;
-import edu.aku.hassannaqvi.smk_hfa_2020.databinding.ActivitySectionJ4BindingImpl;
+import edu.aku.hassannaqvi.smk_hfa_2020.databinding.ActivitySectionJ4Binding;
 
 import static edu.aku.hassannaqvi.smk_hfa_2020.core.MainApp.fc;
 import static edu.aku.hassannaqvi.smk_hfa_2020.utils.UtilKt.openSectionMainActivity;
 
 public class SectionJ4Activity extends AppCompatActivity {
 
-    ActivitySectionJ4BindingImpl bi;
+    ActivitySectionJ4Binding bi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
