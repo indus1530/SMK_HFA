@@ -4548,6 +4548,41 @@
     <string name="j37f">Staff don’t consider this thing important</string>
     <string name="j37x">Other</string>
 
+    <string name="j4">SECTION-4-Communication, Respect and Confidentiality</string>
+    <string name="j40">Please enter the Name and Designation of HCP to whom you observe for this section.</string>
+    <string name="j40a">Name</string>
+    <string name="j40b">Designation</string>
+    <string name="j41">Provider Trained by AKU?</string>
+    <string name="j41a">YES</string>
+    <string name="j41b">NO</string>
+    <string name="j4010">Verify by direct observation or by role play or by reviewing medical record</string>
+    <string name="j401">The provider maintain privacy around the time, and patients confidentiality is respected</string>
+    <string name="j401a">Yes</string>
+    <string name="j401b">No</string>
+    <string name="j402">The provider not mis treat any client such as verbal abuse / discrimination / neglect or denial of services</string>
+    <string name="j402a">Yes</string>
+    <string name="j402b">No</string>
+    <string name="j403">The provider  gave right to informed choices in the services they receive to the patient</string>
+    <string name="j403a">Yes</string>
+    <string name="j403b">No</string>
+    <string name="j404">The provider  clearly explained reason for intervention / outcome </string>
+    <string name="j404a">Yes</string>
+    <string name="j404b">No</string>
+    <string name="j405">The provider deliver clear and accurate information to the patient and their attendant</string>
+    <string name="j405a">Yes</string>
+    <string name="j405b">No</string>
+    <string name="j406">The provider give IEC Material to visiting patient for strengthening his / her understanding </string>
+    <string name="j406a">Yes</string>
+    <string name="j406b">No</string>
+    <string name="j407">If you find “No” for any of the above statement then what is the reason;</string>
+    <string name="j407a">No IEC material is available</string>
+    <string name="j407b">Increased workload / Shortage of time</string>
+    <string name="j407c">No separate space is available for counseling / maintaining confidentiality</string>
+    <string name="j407d">Partition curtains are not available</string>
+
+    <string name="section5referralandlinkages_mainheading">SECTION-5- Referral and Linkages: </string>
+
+
     <string name="j08"> SECTION 08: \nCommunication, Respect and Confidentiality </string>
     <string name="j0800">Please enter the Name and Designation of HCP to whom you observe for this section.</string>
     <string name="j0800a"> Name </string>
@@ -6825,6 +6860,28 @@
     <string name='Q_j36h'>j36h</string>
     <string name='Q_j37'>j37</string>
     <string name='Q_j3title'>j3title</string>
+
+    <string name='Q_j4'>j4</string>
+    <string name='Q_j40'>j40</string>
+    <string name='Q_j401'>j401</string>
+    <string name='Q_j4010'>j4010</string>
+    <string name='Q_j402'>j402</string>
+    <string name='Q_j403'>j403</string>
+    <string name='Q_j404'>j404</string>
+    <string name='Q_j405'>j405</string>
+    <string name='Q_j406'>j406</string>
+    <string name='Q_j407'>j407</string>
+    <string name='Q_j41'>j41</string>
+
+    <string name='Q_j5'>j5</string>
+    <string name='Q_j500a'>j500a</string>
+    <string name='Q_j501'>j501</string>
+    <string name='Q_j502'>j502</string>
+    <string name='Q_j503'>j503</string>
+    <string name='Q_j504'>j504</string>
+    <string name='Q_j505'>j505</string>
+    <string name='Q_j506'>j506</string>
+
 
     <string name='Q_j08'>j08</string>
     <string name='Q_j0800'>j0800</string>
