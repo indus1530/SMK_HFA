@@ -9,15 +9,10 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
-import com.validatorcrawler.aliazaz.Clear;
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.jetbrains.annotations.NotNull;
 import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 import edu.aku.hassannaqvi.smk_hfa_2020.R;
 import edu.aku.hassannaqvi.smk_hfa_2020.contracts.FormsContract;
@@ -74,7 +69,7 @@ public class SectionJ4Activity extends AppCompatActivity {
     }
 
     public void BtnEnd() {
-        openSectionMainActivity(this, "E");
+        openSectionMainActivity(this, "J");
     }
 
     private boolean formValidation() {

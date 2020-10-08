@@ -48,7 +48,7 @@ public class SectionH32Activity extends AppCompatActivity {
         }
         if (UpdateDB()) {
             finish();
-            startActivity(new Intent(this, SectionH33Activity.class));
+            startActivity(new Intent(this, SectionH4Activity.class));
         } else {
             Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
         }
@@ -70,10 +70,9 @@ public class SectionH32Activity extends AppCompatActivity {
     private void SaveDraft() throws JSONException {
 
         JSONObject json = new JSONObject();
+
         json.put("h3114m1", bi.h3114m1.getText().toString());
-
         json.put("h3114m2", bi.h3114m2.getText().toString());
-
         json.put("h3114m3", bi.h3114m3.getText().toString());
 
         json.put("h3114q1", bi.h3114q1y.isChecked() ? "1"
@@ -81,9 +80,7 @@ public class SectionH32Activity extends AppCompatActivity {
                 : "-1");
 
         json.put("h3115m1", bi.h3115m1.getText().toString());
-
         json.put("h3115m2", bi.h3115m2.getText().toString());
-
         json.put("h3115m3", bi.h3115m3.getText().toString());
 
         json.put("h3115q1", bi.h3115q1y.isChecked() ? "1"
@@ -91,9 +88,7 @@ public class SectionH32Activity extends AppCompatActivity {
                 : "-1");
 
         json.put("h3116m1", bi.h3116m1.getText().toString());
-
         json.put("h3116m2", bi.h3116m2.getText().toString());
-
         json.put("h3116m3", bi.h3116m3.getText().toString());
 
         json.put("h3116q1", bi.h3116q1y.isChecked() ? "1"
@@ -101,9 +96,7 @@ public class SectionH32Activity extends AppCompatActivity {
                 : "-1");
 
         json.put("h3117m1", bi.h3117m1.getText().toString());
-
         json.put("h3117m2", bi.h3117m2.getText().toString());
-
         json.put("h3117m3", bi.h3117m3.getText().toString());
 
         json.put("h3117q1", bi.h3117q1y.isChecked() ? "1"
@@ -111,9 +104,7 @@ public class SectionH32Activity extends AppCompatActivity {
                 : "-1");
 
         json.put("h3118m1", bi.h3118m1.getText().toString());
-
         json.put("h3118m2", bi.h3118m2.getText().toString());
-
         json.put("h3118m3", bi.h3118m3.getText().toString());
 
         json.put("h3118q1", bi.h3118q1y.isChecked() ? "1"
@@ -121,9 +112,7 @@ public class SectionH32Activity extends AppCompatActivity {
                 : "-1");
 
         json.put("h3119m1", bi.h3119m1.getText().toString());
-
         json.put("h3119m2", bi.h3119m2.getText().toString());
-
         json.put("h3119m3", bi.h3119m3.getText().toString());
 
         json.put("h3119q1", bi.h3119q1y.isChecked() ? "1"
@@ -131,9 +120,7 @@ public class SectionH32Activity extends AppCompatActivity {
                 : "-1");
 
         json.put("h3120m1", bi.h3120m1.getText().toString());
-
         json.put("h3120m2", bi.h3120m2.getText().toString());
-
         json.put("h3120m3", bi.h3120m3.getText().toString());
 
         json.put("h3120q1", bi.h3120q1y.isChecked() ? "1"
@@ -141,9 +128,7 @@ public class SectionH32Activity extends AppCompatActivity {
                 : "-1");
 
         json.put("h3121m1", bi.h3121m1.getText().toString());
-
         json.put("h3121m2", bi.h3121m2.getText().toString());
-
         json.put("h3121m3", bi.h3121m3.getText().toString());
 
         json.put("h3121q1", bi.h3121q1y.isChecked() ? "1"
@@ -151,9 +136,7 @@ public class SectionH32Activity extends AppCompatActivity {
                 : "-1");
 
         json.put("h3122m1", bi.h3122m1.getText().toString());
-
         json.put("h3122m2", bi.h3122m2.getText().toString());
-
         json.put("h3122m3", bi.h3122m3.getText().toString());
 
         json.put("h3122q1", bi.h3122q1y.isChecked() ? "1"
@@ -161,9 +144,7 @@ public class SectionH32Activity extends AppCompatActivity {
                 : "-1");
 
         json.put("h3123m1", bi.h3123m1.getText().toString());
-
         json.put("h3123m2", bi.h3123m2.getText().toString());
-
         json.put("h3123m3", bi.h3123m3.getText().toString());
 
         json.put("h3123q1", bi.h3123q1y.isChecked() ? "1"
@@ -171,9 +152,7 @@ public class SectionH32Activity extends AppCompatActivity {
                 : "-1");
 
         json.put("h3124m1", bi.h3124m1.getText().toString());
-
         json.put("h3124m2", bi.h3124m2.getText().toString());
-
         json.put("h3124m3", bi.h3124m3.getText().toString());
 
         json.put("h3124q1", bi.h3124q1y.isChecked() ? "1"
@@ -181,9 +160,7 @@ public class SectionH32Activity extends AppCompatActivity {
                 : "-1");
 
         json.put("h3125m1", bi.h3125m1.getText().toString());
-
         json.put("h3125m2", bi.h3125m2.getText().toString());
-
         json.put("h3125m3", bi.h3125m3.getText().toString());
 
         json.put("h3125q1", bi.h3125q1y.isChecked() ? "1"
@@ -191,9 +168,7 @@ public class SectionH32Activity extends AppCompatActivity {
                 : "-1");
 
         json.put("h3126m1", bi.h3126m1.getText().toString());
-
         json.put("h3126m2", bi.h3126m2.getText().toString());
-
         json.put("h3126m3", bi.h3126m3.getText().toString());
 
         json.put("h3126q1", bi.h3126q1y.isChecked() ? "1"
@@ -201,15 +176,12 @@ public class SectionH32Activity extends AppCompatActivity {
                 : "-1");
 
         json.put("h3127m1", bi.h3127m1.getText().toString());
-
         json.put("h3127m2", bi.h3127m2.getText().toString());
-
         json.put("h3127m3", bi.h3127m3.getText().toString());
 
         json.put("h3127q1", bi.h3127q1y.isChecked() ? "1"
                 : bi.h3127q1n.isChecked() ? "2"
                 : "-1");
-
 
         try {
             JSONObject json_merge = JSONUtils.mergeJSONObjects(new JSONObject(fc.getsH()), json);
