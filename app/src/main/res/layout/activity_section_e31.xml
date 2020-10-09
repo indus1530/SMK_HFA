@@ -11,11 +11,9 @@
             type="edu.aku.hassannaqvi.smk_hfa_2020.ui.sections.SectionE31Activity" />
     </data>
 
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
 
         <LinearLayout
             android:id="@+id/GrpName"
@@ -394,6 +392,63 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:text="@string/e0302eb" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- e0302f  Radio   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVe0302f"
+                    style="@style/cardView">
+
+                    <LinearLayout style="@style/vlinearlayout">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom">
+
+                            <TextView
+                                android:id="@+id/qtxt_e0302f"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@id/q_e0302f"
+                                android:text="@string/e0302f" />
+
+                            <TextView
+                                android:id="@+id/q_e0302f"
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignTop="@id/qtxt_e0302f"
+                                android:layout_alignBottom="@id/qtxt_e0302f"
+                                android:text="@string/Q_e0302f" />
+
+                        </RelativeLayout>
+
+                        <RadioGroup
+                            android:id="@+id/e0302f"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/e0302fa"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/e0302fa" />
+
+                            <RadioButton
+                                android:id="@+id/e0302fb"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/e0302fb" />
 
                         </RadioGroup>
 
@@ -1208,6 +1263,63 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:text="@string/e0303nb" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- e0303o  Radio   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVe0303o"
+                    style="@style/cardView">
+
+                    <LinearLayout style="@style/vlinearlayout">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom">
+
+                            <TextView
+                                android:id="@+id/qtxt_e0303o"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@id/q_e0303o"
+                                android:text="@string/e0303o" />
+
+                            <TextView
+                                android:id="@+id/q_e0303o"
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignTop="@id/qtxt_e0303o"
+                                android:layout_alignBottom="@id/qtxt_e0303o"
+                                android:text="@string/Q_e0303o" />
+
+                        </RelativeLayout>
+
+                        <RadioGroup
+                            android:id="@+id/e0303o"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/e0303oa"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/e0303oa" />
+
+                            <RadioButton
+                                android:id="@+id/e0303ob"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/e0303ob" />
 
                         </RadioGroup>
 

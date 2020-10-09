@@ -216,54 +216,42 @@
     <string name="c01dc">Vacant</string>
     <string name="c01dd"># of Part Time Staff</string>
     <string name="c01de">Availability of Staff on Day of Survey</string>
-    <string name="c01e">Midwifery Professionals</string>
+    <string name="c01e">Lady Health Visitors Professionals</string>
     <string name="c01ea">Sanctioned</string>
     <string name="c01eb">Appointed</string>
     <string name="c01ec">Vacant</string>
     <string name="c01ed"># of Part Time Staff</string>
     <string name="c01ee">Availability of Staff on Day of Survey</string>
-    <string name="c01f">Pharmacists</string>
+    <string name="c01f">Midwifery Professionals</string>
     <string name="c01fa">Sanctioned</string>
     <string name="c01fb">Appointed</string>
     <string name="c01fc">Vacant</string>
     <string name="c01fd"># of Part Time Staff</string>
     <string name="c01fe">Availability of Staff on Day of Survey</string>
-    <string name="c01g">Laboratory and Radiology Technician</string>
+    <string name="c01g">Pharmacists</string>
     <string name="c01ga">Sanctioned</string>
     <string name="c01gb">Appointed</string>
     <string name="c01gc">Vacant</string>
     <string name="c01gd"># of Part Time Staff</string>
     <string name="c01ge">Availability of Staff on Day of Survey</string>
-    <string name="c01h">Community / Lady Health Workers</string>
+    <string name="c01h">Laboratory and Radiology Technician</string>
     <string name="c01ha">Sanctioned</string>
     <string name="c01hb">Appointed</string>
     <string name="c01hc">Vacant</string>
     <string name="c01hd"># of Part Time Staff</string>
     <string name="c01he">Availability of Staff on Day of Survey</string>
-    <string name="c01i">Gynecologist ** These are not greater then B</string>
+    <string name="c01i">Community / Lady Health Workers (Associate with HF)</string>
     <string name="c01ia">Sanctioned</string>
     <string name="c01ib">Appointed</string>
     <string name="c01ic">Vacant</string>
     <string name="c01id"># of Part Time Staff</string>
     <string name="c01ie">Availability of Staff on Day of Survey</string>
-    <string name="c01j">Pediatrician  ** These are not greater then B</string>
+    <string name="c01j">Gynecologist ** These are not greater then B</string>
     <string name="c01ja">Sanctioned</string>
     <string name="c01jb">Appointed</string>
     <string name="c01jc">Vacant</string>
     <string name="c01jd"># of Part Time Staff</string>
     <string name="c01je">Availability of Staff on Day of Survey</string>
-    <string name="c01k">Anesthetist  ** These are not greater then B</string>
-    <string name="c01ka">Sanctioned</string>
-    <string name="c01kb">Appointed</string>
-    <string name="c01kc">Vacant</string>
-    <string name="c01kd"># of Part Time Staff</string>
-    <string name="c01ke">Availability of Staff on Day of Survey</string>
-    <string name="c01l"> Lady Health Visitors Professionals </string>
-    <string name="c01la">Sanctioned</string>
-    <string name="c01lb">Appointed</string>
-    <string name="c01lc">Vacant</string>
-    <string name="c01ld"># of Part Time Staff</string>
-    <string name="c01le">Availability of Staff on Day of Survey</string>
 
     <string name="c2"> SECTION 02: \nTrained Facility Staff \n Only in Last TWO - Years</string>
     <string name="c02"> Trained Facility Staff currently posted </string>
@@ -341,14 +329,18 @@
     <string name="d0302d">Uninterruptible Power Source</string>
     <string name="d0302e">No secondary source available</string>
 
-    <string name="d0303">On the day of visit, is secondary source functional?</string>
+    <string name="d0303">On the day of visit, is secondary source functional ?</string>
     <string name="d0303a">Yes</string>
     <string name="d0303b">No</string>
 
-    <string name="d0304">During the past 7 days, was electricity available at all times from the main or any backup source when the facility was open for services?</string>
-    <string name="d0304a">Always available (no Interruptions)</string>
-    <string name="d0304b">Often available (interruptions of less than 2 hours per day)</string>
-    <string name="d0304c">Sometimes available (frequent or prolonged interruptions of more than 2 hours per day) </string>
+    <string name="d0304">On the day of visit, is primary source functional ?</string>
+    <string name="d0304a">Yes</string>
+    <string name="d0304b">No</string>
+
+    <string name="d0305">During the past 7 days, was electricity available at all times from the main or any backup source when the facility was open for services?</string>
+    <string name="d0305a">Always available (no Interruptions)</string>
+    <string name="d0305b">Often available (interruptions of less than 2 hours per day)</string>
+    <string name="d0305c">Sometimes available (frequent or prolonged interruptions of more than 2 hours per day) </string>
 
     <string name="d04"> SECTION 04 : \nBASIC CLIENT AMENITIES </string>
     <string name="d0401">What is the primary source of water for the facility at this time?</string>
@@ -460,19 +452,19 @@
 
     <string name="d06"> SECTION 06: \nHEALTH CARE WASTE MANAGEMENT </string>
     <string name="d0601">The health facility has leak proof, covered, labeled waste bins available in every treatment areas as per main 04 categories</string>
-    <string name="d0601a">Sharps</string>
+    <string name="d0601a">Sharps (Like used needles, surgical blades, syringes, ampules, vials etc.)</string>
     <string name="d0601aa">Yes</string>
     <string name="d0601ab">No</string>
 
-    <string name="d0601b">Non Sharps Infectious Waste</string>
+    <string name="d0601b">Non Sharps Infectious Waste (Like surgical wraps, blood stain swabs, human body fluids etc.)</string>
     <string name="d0601ba">Yes</string>
     <string name="d0601bb">No</string>
 
-    <string name="d0601c">General non-infectious waste</string>
+    <string name="d0601c">General non-infectious waste (Like paper, plastic wrappers, food scraps and etc.)</string>
     <string name="d0601ca">Yes</string>
     <string name="d0601cb">No</string>
 
-    <string name="d0601d">Anatomical Waste/Infectious</string>
+    <string name="d0601d">Anatomical Waste/Infectious (Like Placenta, body tissues or any organ etc.)</string>
     <string name="d0601da">Yes</string>
     <string name="d0601db">No</string>
 
@@ -587,6 +579,18 @@
     <string name="d0801j0an">Not Available</string>
     <string name="d0801j0f">ARI Timer-Functionality</string>
     <string name="d0801j0fq">Quantity</string>
+
+    <string name="d0801k0a">IEC Material in OPD / IPD (Related to RMNCH)-Availability</string>
+    <string name="d0801k0ay">Yes Observed</string>
+    <string name="d0801k0an">Not Available</string>
+    <string name="d0801k0f">IEC Material in OPD / IPD (Related to RMNCH)-Functionality</string>
+    <string name="d0801k0fq">Quantity</string>
+
+    <string name="d0801l0a">MEC Wheel (Medical Eligibility Criteria Wheel) for family planning clients-Availability</string>
+    <string name="d0801l0ay">Yes Observed</string>
+    <string name="d0801l0an">Not Available</string>
+    <string name="d0801l0f">MEC Wheel (Medical Eligibility Criteria Wheel) for family planning clients-Functionality</string>
+    <string name="d0801l0fq">Quantity</string>
 
 
     <string name="modetitle">MODULE -E: AVAILABLE SERVICES</string>
@@ -1001,6 +1005,9 @@
     <string name="e0302e">Thermal protection (drying baby immediately after birth and wrapping)</string>
     <string name="e0302ea">Yes</string>
     <string name="e0302eb">No</string>
+    <string name="e0302f">Counselling and service provision of Post-partum Family Planning (PPIUCD or IPPI)</string>
+    <string name="e0302fa">Yes</string>
+    <string name="e0302fb">No</string>
     <string name="e0303">Please tell me if any of the following interventions for the management of complications during and after pregnancy and childbirth have been carried out in the last 12 months by providers of delivery services as part of their work in this facility.</string>
     <string name="e0303a">Parenteral administration of antibiotics (IV or IM) for mothers</string>
     <string name="e0303aa">Yes</string>
@@ -1044,6 +1051,9 @@
     <string name="e0303n">Injectable antibiotics for neonatal sepsis</string>
     <string name="e0303na">Yes</string>
     <string name="e0303nb">No</string>
+    <string name="e0303o">Injectable antibiotics for neonatal sepsis</string>
+    <string name="e0303oa">Yes</string>
+    <string name="e0303ob">No</string>
     <string name="e0304">Are the following documents available in the facility today: If available, ask to see the document</string>
     <string name="e0304a">Any national guidelines for essential childbirth care (PCPNC)</string>
     <string name="e0304aa">Yes, Observed</string>
@@ -1523,7 +1533,8 @@
     <string name="e0607a">Yes, log observed</string>
     <string name="e0607b">Yes, log reported not seen</string>
     <string name="e0607c">No</string>
-    <string name="e0608">Has the temperature log been completed for The last 30 days?</string>
+    <string name="e0608">Has the temperature been out of the range 2 To 6 oC inclusive in the last 30 days ?</string>
+    <string name="e0608h">Please check the temperature record and verify the temperature for the last 30 working days in order to answer the question</string>
     <string name="e0608a">Yes</string>
     <string name="e0608b">Yes, partially</string>
     <string name="e0608c">No</string>
@@ -4914,6 +4925,7 @@
     <string name='Q_d0302'>d0302</string>
     <string name='Q_d0303'>d0303</string>
     <string name='Q_d0304'>d0304</string>
+    <string name='Q_d0305'>d0305</string>
     <string name='Q_d04'>d04</string>
     <string name='Q_d0401'>d0401</string>
     <string name='Q_d0402'>d0402</string>
@@ -4995,6 +5007,12 @@
     <string name='Q_d0801j0a'>d0801j0a</string>
     <string name='Q_d0801j0f'>d0801j0f</string>
     <string name='Q_d0801j0fq'>d0801j0fq</string>
+    <string name='Q_d0801k0a'>d0801j0a</string>
+    <string name='Q_d0801k0f'>d0801j0f</string>
+    <string name='Q_d0801k0fq'>d0801j0fq</string>
+    <string name='Q_d0801l0a'>d0801j0a</string>
+    <string name='Q_d0801l0f'>d0801j0f</string>
+    <string name='Q_d0801l0fq'>d0801j0fq</string>
     <string name='Q_d101'>d101</string>
     <string name='Q_d102'>d102</string>
     <string name='Q_d103'>d103</string>
@@ -5135,6 +5153,7 @@
     <string name='Q_e0302c'>e0302c</string>
     <string name='Q_e0302d'>e0302d</string>
     <string name='Q_e0302e'>e0302e</string>
+    <string name='Q_e0302f'>e0302f</string>
     <string name='Q_e0303'>e0303</string>
     <string name='Q_e0303a'>e0303a</string>
     <string name='Q_e0303b'>e0303b</string>
@@ -5150,6 +5169,7 @@
     <string name='Q_e0303l'>e0303l</string>
     <string name='Q_e0303m'>e0303m</string>
     <string name='Q_e0303n'>e0303n</string>
+    <string name='Q_e0303o'>e0303o</string>
     <string name='Q_e0304'>e0304</string>
     <string name='Q_e0304a'>e0304a</string>
     <string name='Q_e0304b'>e0304b</string>
