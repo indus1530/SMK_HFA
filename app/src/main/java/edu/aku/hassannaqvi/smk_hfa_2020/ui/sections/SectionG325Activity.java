@@ -25,14 +25,14 @@ import static edu.aku.hassannaqvi.smk_hfa_2020.core.MainApp.fc;
 import static edu.aku.hassannaqvi.smk_hfa_2020.utils.UtilKt.openSectionMainActivity;
 
 
-public class SectionG425Activity extends AppCompatActivity {
+public class SectionG325Activity extends AppCompatActivity {
 
     ActivitySectionG425Binding bi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_g425);
+        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_g325);
         bi.setCallback(this);
         setupSkips();
     }

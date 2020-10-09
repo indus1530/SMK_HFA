@@ -9,11 +9,9 @@
             type="edu.aku.hassannaqvi.smk_hfa_2020.ui.sections.SectionD3Activity" />
     </data>
 
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
 
         <LinearLayout
             android:id="@+id/GrpName"
@@ -263,25 +261,82 @@
                     <RadioGroup
                         android:id="@+id/d0304"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/d0304a"
-                            android:layout_width="match_parent"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:text="@string/d0304a" />
 
                         <RadioButton
                             android:id="@+id/d0304b"
-                            android:layout_width="match_parent"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:text="@string/d0304b" />
 
-                        <RadioButton
-                            android:id="@+id/d0304c"
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- d0305  Radio   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVd0305"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/vlinearlayout">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_d0305"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/d0304c" />
+                            android:layout_toEndOf="@id/q_d0305"
+                            android:text="@string/d0305" />
+
+                        <TextView
+                            android:id="@+id/q_d0305"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_d0305"
+                            android:layout_alignBottom="@id/qtxt_d0305"
+                            android:text="@string/Q_d0305" />
+
+                    </RelativeLayout>
+
+                    <RadioGroup
+                        android:id="@+id/d0305"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/d0305a"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/d0305a" />
+
+                        <RadioButton
+                            android:id="@+id/d0305b"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/d0305b" />
+
+                        <RadioButton
+                            android:id="@+id/d0305c"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/d0305c" />
 
                     </RadioGroup>
 

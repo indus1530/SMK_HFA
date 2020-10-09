@@ -114,6 +114,19 @@ public class SectionD8Activity extends AppCompatActivity {
                 : "-1");
         json.put("d0801j0fq", bi.d0801j0fq.getText().toString().trim().isEmpty() ? "-1" : bi.d0801j0fq.getText().toString());
 
+
+        json.put("d0801k0a", bi.d0801k0ay.isChecked() ? "1"
+                : bi.d0801k0an.isChecked() ? "2"
+                : "-1");
+        json.put("d0801k0fq", bi.d0801k0fq.getText().toString().trim().isEmpty() ? "-1" : bi.d0801k0fq.getText().toString());
+
+
+        json.put("d0801l0a", bi.d0801l0ay.isChecked() ? "1"
+                : bi.d0801j0an.isChecked() ? "2"
+                : "-1");
+        json.put("d0801l0fq", bi.d0801l0fq.getText().toString().trim().isEmpty() ? "-1" : bi.d0801l0fq.getText().toString());
+
+
         try {
             JSONObject json_merge = JSONUtils.mergeJSONObjects(new JSONObject(fc.getsD()), json);
 

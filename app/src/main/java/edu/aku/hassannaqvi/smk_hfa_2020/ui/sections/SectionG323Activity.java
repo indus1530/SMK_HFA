@@ -24,14 +24,14 @@ import static edu.aku.hassannaqvi.smk_hfa_2020.core.MainApp.fc;
 import static edu.aku.hassannaqvi.smk_hfa_2020.utils.UtilKt.openSectionMainActivity;
 
 
-public class SectionG423Activity extends AppCompatActivity {
+public class SectionG323Activity extends AppCompatActivity {
 
     ActivitySectionG423Binding bi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_g423);
+        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_g323);
         bi.setCallback(this);
         setupSkips();
     }
@@ -265,7 +265,7 @@ public class SectionG423Activity extends AppCompatActivity {
         }
         if (UpdateDB()) {
             finish();
-            startActivity(new Intent(this, SectionG424Activity.class));
+            startActivity(new Intent(this, SectionG324Activity.class));
         } else {
             Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
         }
