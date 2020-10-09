@@ -1533,7 +1533,8 @@
     <string name="e0607a">Yes, log observed</string>
     <string name="e0607b">Yes, log reported not seen</string>
     <string name="e0607c">No</string>
-    <string name="e0608">Has the temperature log been completed for The last 30 days?</string>
+    <string name="e0608">Has the temperature been out of the range 2 To 6 oC inclusive in the last 30 days ?</string>
+    <string name="e0608h">Please check the temperature record and verify the temperature for the last 30 working days in order to answer the question</string>
     <string name="e0608a">Yes</string>
     <string name="e0608b">Yes, partially</string>
     <string name="e0608c">No</string>

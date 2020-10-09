@@ -10,11 +10,9 @@
             type="edu.aku.hassannaqvi.smk_hfa_2020.ui.sections.SectionE6Activity" />
     </data>
 
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
 
         <LinearLayout
             android:id="@+id/GrpName"
@@ -712,6 +710,12 @@
                                     android:text="@string/Q_e0608" />
 
                             </RelativeLayout>
+
+                            <TextView
+                                style="@style/sub"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/e0608h" />
 
                             <RadioGroup
                                 android:id="@+id/e0608"
