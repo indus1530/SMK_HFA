@@ -580,6 +580,18 @@
     <string name="d0801j0f">ARI Timer-Functionality</string>
     <string name="d0801j0fq">Quantity</string>
 
+    <string name="d0801k0a">IEC Material in OPD / IPD (Related to RMNCH)-Availability</string>
+    <string name="d0801k0ay">Yes Observed</string>
+    <string name="d0801k0an">Not Available</string>
+    <string name="d0801k0f">IEC Material in OPD / IPD (Related to RMNCH)-Functionality</string>
+    <string name="d0801k0fq">Quantity</string>
+
+    <string name="d0801l0a">MEC Wheel (Medical Eligibility Criteria Wheel) for family planning clients-Availability</string>
+    <string name="d0801l0ay">Yes Observed</string>
+    <string name="d0801l0an">Not Available</string>
+    <string name="d0801l0f">MEC Wheel (Medical Eligibility Criteria Wheel) for family planning clients-Functionality</string>
+    <string name="d0801l0fq">Quantity</string>
+
 
     <string name="modetitle">MODULE -E: AVAILABLE SERVICES</string>
     <!--    <string name="e01"> SECTION 01: \nFAMILY PLANNING SERVICES </string>-->
@@ -4988,6 +5000,12 @@
     <string name='Q_d0801j0a'>d0801j0a</string>
     <string name='Q_d0801j0f'>d0801j0f</string>
     <string name='Q_d0801j0fq'>d0801j0fq</string>
+    <string name='Q_d0801k0a'>d0801j0a</string>
+    <string name='Q_d0801k0f'>d0801j0f</string>
+    <string name='Q_d0801k0fq'>d0801j0fq</string>
+    <string name='Q_d0801l0a'>d0801j0a</string>
+    <string name='Q_d0801l0f'>d0801j0f</string>
+    <string name='Q_d0801l0fq'>d0801j0fq</string>
     <string name='Q_d101'>d101</string>
     <string name='Q_d102'>d102</string>
     <string name='Q_d103'>d103</string>
