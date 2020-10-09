@@ -329,14 +329,18 @@
     <string name="d0302d">Uninterruptible Power Source</string>
     <string name="d0302e">No secondary source available</string>
 
-    <string name="d0303">On the day of visit, is secondary source functional?</string>
+    <string name="d0303">On the day of visit, is secondary source functional ?</string>
     <string name="d0303a">Yes</string>
     <string name="d0303b">No</string>
 
-    <string name="d0304">During the past 7 days, was electricity available at all times from the main or any backup source when the facility was open for services?</string>
-    <string name="d0304a">Always available (no Interruptions)</string>
-    <string name="d0304b">Often available (interruptions of less than 2 hours per day)</string>
-    <string name="d0304c">Sometimes available (frequent or prolonged interruptions of more than 2 hours per day) </string>
+    <string name="d0304">On the day of visit, is primary source functional ?</string>
+    <string name="d0304a">Yes</string>
+    <string name="d0304b">No</string>
+
+    <string name="d0305">During the past 7 days, was electricity available at all times from the main or any backup source when the facility was open for services?</string>
+    <string name="d0305a">Always available (no Interruptions)</string>
+    <string name="d0305b">Often available (interruptions of less than 2 hours per day)</string>
+    <string name="d0305c">Sometimes available (frequent or prolonged interruptions of more than 2 hours per day) </string>
 
     <string name="d04"> SECTION 04 : \nBASIC CLIENT AMENITIES </string>
     <string name="d0401">What is the primary source of water for the facility at this time?</string>
@@ -4902,6 +4906,7 @@
     <string name='Q_d0302'>d0302</string>
     <string name='Q_d0303'>d0303</string>
     <string name='Q_d0304'>d0304</string>
+    <string name='Q_d0305'>d0305</string>
     <string name='Q_d04'>d04</string>
     <string name='Q_d0401'>d0401</string>
     <string name='Q_d0402'>d0402</string>
