@@ -452,19 +452,19 @@
 
     <string name="d06"> SECTION 06: \nHEALTH CARE WASTE MANAGEMENT </string>
     <string name="d0601">The health facility has leak proof, covered, labeled waste bins available in every treatment areas as per main 04 categories</string>
-    <string name="d0601a">Sharps</string>
+    <string name="d0601a">Sharps (Like used needles, surgical blades, syringes, ampules, vials etc.)</string>
     <string name="d0601aa">Yes</string>
     <string name="d0601ab">No</string>
 
-    <string name="d0601b">Non Sharps Infectious Waste</string>
+    <string name="d0601b">Non Sharps Infectious Waste (Like surgical wraps, blood stain swabs, human body fluids etc.)</string>
     <string name="d0601ba">Yes</string>
     <string name="d0601bb">No</string>
 
-    <string name="d0601c">General non-infectious waste</string>
+    <string name="d0601c">General non-infectious waste (Like paper, plastic wrappers, food scraps and etc.)</string>
     <string name="d0601ca">Yes</string>
     <string name="d0601cb">No</string>
 
-    <string name="d0601d">Anatomical Waste/Infectious</string>
+    <string name="d0601d">Anatomical Waste/Infectious (Like Placenta, body tissues or any organ etc.)</string>
     <string name="d0601da">Yes</string>
     <string name="d0601db">No</string>
 
