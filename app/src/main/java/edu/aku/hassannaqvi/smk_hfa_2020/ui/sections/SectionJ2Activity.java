@@ -81,7 +81,7 @@ public class SectionJ2Activity extends AppCompatActivity {
             Intent intent;
 
             if (MainApp.fc.getA10().equals("2") && MainApp.fc.getDistrictType().equals("1") && MainApp.fc.getDistrictType().equals("2")) {
-                intent = new Intent(this, SectionJ8Activity.class);
+                intent = new Intent(this, SectionJ4Activity.class);
             } else {
                 intent = new Intent(this, SectionJ3Activity.class);
             }

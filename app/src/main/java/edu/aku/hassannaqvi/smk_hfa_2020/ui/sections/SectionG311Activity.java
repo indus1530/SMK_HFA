@@ -24,14 +24,14 @@ import static edu.aku.hassannaqvi.smk_hfa_2020.core.MainApp.fc;
 import static edu.aku.hassannaqvi.smk_hfa_2020.utils.UtilKt.openSectionMainActivity;
 
 
-public class SectionG411Activity extends AppCompatActivity {
+public class SectionG311Activity extends AppCompatActivity {
 
     ActivitySectionG411Binding bi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_g411);
+        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_g311);
         bi.setCallback(this);
         setupSkips();
     }
@@ -121,20 +121,20 @@ public class SectionG411Activity extends AppCompatActivity {
         JSONObject json = new JSONObject();
 
 
-        json.put("g040110a", bi.g040110ay.isChecked() ? "1"
-                : bi.g040110an.isChecked() ? "2"
+        json.put("g3101a", bi.g3101ay.isChecked() ? "1"
+                : bi.g3101an.isChecked() ? "2"
                 : "-1");
 
-        json.put("g040110s", bi.g040110sy.isChecked() ? "1"
-                : bi.g040110sn.isChecked() ? "2"
+        json.put("g3101s", bi.g3101sy.isChecked() ? "1"
+                : bi.g3101sn.isChecked() ? "2"
                 : "-1");
 
-        json.put("g040110sd", bi.g040110sd.getText().toString().trim().length() > 0 ? bi.g040110sd.getText().toString() : "-1");
-        json.put("g040110sm", bi.g040110sm.getText().toString().trim().length() > 0 ? bi.g040110sm.getText().toString() : "-1");
+        json.put("g3101sd", bi.g3101sd.getText().toString().trim().length() > 0 ? bi.g3101sd.getText().toString() : "-1");
+        json.put("g3101sm", bi.g3101sm.getText().toString().trim().length() > 0 ? bi.g3101sm.getText().toString() : "-1");
 
 
-        json.put("g040120a", bi.g040120ay.isChecked() ? "1"
-                : bi.g040120an.isChecked() ? "2"
+        json.put("g3102a", bi.g3102ay.isChecked() ? "1"
+                : bi.g3102ay.isChecked() ? "2"
                 : "-1");
 
         json.put("g040120s", bi.g040120sy.isChecked() ? "1"
@@ -272,7 +272,7 @@ public class SectionG411Activity extends AppCompatActivity {
         }
         if (UpdateDB()) {
             finish();
-            startActivity(new Intent(this, SectionG412Activity.class));
+            startActivity(new Intent(this, SectionG312Activity.class));
         } else {
             Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
         }
