@@ -1005,6 +1005,9 @@
     <string name="e0302e">Thermal protection (drying baby immediately after birth and wrapping)</string>
     <string name="e0302ea">Yes</string>
     <string name="e0302eb">No</string>
+    <string name="e0302f">Counselling and service provision of Post-partum Family Planning (PPIUCD or IPPI)</string>
+    <string name="e0302fa">Yes</string>
+    <string name="e0302fb">No</string>
     <string name="e0303">Please tell me if any of the following interventions for the management of complications during and after pregnancy and childbirth have been carried out in the last 12 months by providers of delivery services as part of their work in this facility.</string>
     <string name="e0303a">Parenteral administration of antibiotics (IV or IM) for mothers</string>
     <string name="e0303aa">Yes</string>
@@ -1048,6 +1051,9 @@
     <string name="e0303n">Injectable antibiotics for neonatal sepsis</string>
     <string name="e0303na">Yes</string>
     <string name="e0303nb">No</string>
+    <string name="e0303o">Injectable antibiotics for neonatal sepsis</string>
+    <string name="e0303oa">Yes</string>
+    <string name="e0303ob">No</string>
     <string name="e0304">Are the following documents available in the facility today: If available, ask to see the document</string>
     <string name="e0304a">Any national guidelines for essential childbirth care (PCPNC)</string>
     <string name="e0304aa">Yes, Observed</string>
@@ -5146,6 +5152,7 @@
     <string name='Q_e0302c'>e0302c</string>
     <string name='Q_e0302d'>e0302d</string>
     <string name='Q_e0302e'>e0302e</string>
+    <string name='Q_e0302f'>e0302f</string>
     <string name='Q_e0303'>e0303</string>
     <string name='Q_e0303a'>e0303a</string>
     <string name='Q_e0303b'>e0303b</string>
@@ -5161,6 +5168,7 @@
     <string name='Q_e0303l'>e0303l</string>
     <string name='Q_e0303m'>e0303m</string>
     <string name='Q_e0303n'>e0303n</string>
+    <string name='Q_e0303o'>e0303o</string>
     <string name='Q_e0304'>e0304</string>
     <string name='Q_e0304a'>e0304a</string>
     <string name='Q_e0304b'>e0304b</string>
