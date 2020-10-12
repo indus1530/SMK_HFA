@@ -39,69 +39,69 @@ public class SectionG313Activity extends AppCompatActivity {
 
     private void setupSkips() {
 
-        bi.g0401200s.setOnCheckedChangeListener(((radioGroup, i) -> {
-            if (i == bi.g0401200sn.getId()) {
-                Clear.clearAllFields(bi.fldGrpCVg0401200so);
+        bi.g3120s.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i == bi.g3120sn.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVg3120so);
             }
         }));
 
-        bi.g0401210s.setOnCheckedChangeListener(((radioGroup, i) -> {
-            if (i == bi.g0401210sn.getId()) {
-                Clear.clearAllFields(bi.fldGrpCVg0401210so);
-            }
-        }));
-
-
-        bi.g0401220s.setOnCheckedChangeListener(((radioGroup, i) -> {
-            if (i == bi.g0401220sn.getId()) {
-                Clear.clearAllFields(bi.fldGrpCVg0401220so);
+        bi.g3121s.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i == bi.g3121sn.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVg3121so);
             }
         }));
 
 
-        bi.g0401230s.setOnCheckedChangeListener(((radioGroup, i) -> {
-            if (i == bi.g0401230sn.getId()) {
-                Clear.clearAllFields(bi.fldGrpCVg0401230so);
+        bi.g3122s.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i == bi.g3122sn.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVg3122so);
             }
         }));
 
 
-        bi.g0401240s.setOnCheckedChangeListener(((radioGroup, i) -> {
-            if (i == bi.g0401240sn.getId()) {
-                Clear.clearAllFields(bi.fldGrpCVg0401240so);
+        bi.g3123s.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i == bi.g3123sn.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVg3123so);
             }
         }));
 
 
-        bi.g0401250s.setOnCheckedChangeListener(((radioGroup, i) -> {
-            if (i == bi.g0401250sn.getId()) {
-                Clear.clearAllFields(bi.fldGrpCVg0401250so);
+        bi.g3124s.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i == bi.g3124sn.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVg3124so);
             }
         }));
 
 
-        bi.g0401260s.setOnCheckedChangeListener(((radioGroup, i) -> {
-            if (i == bi.g0401260sn.getId()) {
-                Clear.clearAllFields(bi.fldGrpCVg0401260so);
+        bi.g3125s.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i == bi.g3125sn.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVg3125so);
             }
         }));
 
 
-        bi.g0401270s.setOnCheckedChangeListener(((radioGroup, i) -> {
-            if (i == bi.g0401270sn.getId()) {
-                Clear.clearAllFields(bi.fldGrpCVg0401270so);
+        bi.g3126s.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i == bi.g3126sn.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVg3126so);
             }
         }));
 
-        bi.g0401280s.setOnCheckedChangeListener(((radioGroup, i) -> {
-            if (i == bi.g0401280sn.getId()) {
-                Clear.clearAllFields(bi.fldGrpCVg0401280so);
+
+        bi.g3127s.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i == bi.g3127sn.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVg3127so);
             }
         }));
 
-        bi.g0401290s.setOnCheckedChangeListener(((radioGroup, i) -> {
-            if (i == bi.g0401290sn.getId()) {
-                Clear.clearAllFields(bi.fldGrpCVg0401290so);
+        bi.g3128s.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i == bi.g3128sn.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVg3128so);
+            }
+        }));
+
+        bi.g3129s.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i == bi.g3129sn.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVg3129so);
             }
         }));
 
@@ -124,7 +124,6 @@ public class SectionG313Activity extends AppCompatActivity {
 
         JSONObject json = new JSONObject();
 
-
         json.put("g3120a", bi.g3120ay.isChecked() ? "1"
                 : bi.g3120an.isChecked() ? "2"
                 : "-1");
@@ -133,12 +132,9 @@ public class SectionG313Activity extends AppCompatActivity {
                 : bi.g3120sn.isChecked() ? "2"
                 : "-1");
 
-        json.put("g3120so", bi.g3120sod.isChecked() ? "1"
-                : bi.g3120som.isChecked() ? "2"
-                : "-1");
+        json.put("g3120sod", bi.g3120sod.getText().toString());
+        json.put("g3120som", bi.g3120som.getText().toString());
 
-        json.put("g3120sodx", bi.g3120sodx.getText().toString());
-        json.put("g3120somx", bi.g3120somx.getText().toString());
         json.put("g3121a", bi.g3121ay.isChecked() ? "1"
                 : bi.g3121an.isChecked() ? "2"
                 : "-1");
@@ -147,12 +143,9 @@ public class SectionG313Activity extends AppCompatActivity {
                 : bi.g3121sn.isChecked() ? "2"
                 : "-1");
 
-        json.put("g3121so", bi.g3121sod.isChecked() ? "1"
-                : bi.g3121som.isChecked() ? "2"
-                : "-1");
+        json.put("g3121sod", bi.g3121sod.getText().toString());
+        json.put("g3121som", bi.g3121som.getText().toString());
 
-        json.put("g3121sodx", bi.g3121sodx.getText().toString());
-        json.put("g3121somx", bi.g3121somx.getText().toString());
         json.put("g3122a", bi.g3122ay.isChecked() ? "1"
                 : bi.g3122an.isChecked() ? "2"
                 : "-1");
@@ -161,12 +154,9 @@ public class SectionG313Activity extends AppCompatActivity {
                 : bi.g3122sn.isChecked() ? "2"
                 : "-1");
 
-        json.put("g3122so", bi.g3122sod.isChecked() ? "1"
-                : bi.g3122som.isChecked() ? "2"
-                : "-1");
+        json.put("g3122sod", bi.g3122sod.getText().toString());
+        json.put("g3122som", bi.g3122som.getText().toString());
 
-        json.put("g3122sodx", bi.g3122sodx.getText().toString());
-        json.put("g3122somx", bi.g3122somx.getText().toString());
         json.put("g3123a", bi.g3123ay.isChecked() ? "1"
                 : bi.g3123an.isChecked() ? "2"
                 : "-1");
@@ -175,12 +165,9 @@ public class SectionG313Activity extends AppCompatActivity {
                 : bi.g3123sn.isChecked() ? "2"
                 : "-1");
 
-        json.put("g3123so", bi.g3123sod.isChecked() ? "1"
-                : bi.g3123som.isChecked() ? "2"
-                : "-1");
+        json.put("g3123sod", bi.g3123sod.getText().toString());
+        json.put("g3123som", bi.g3123som.getText().toString());
 
-        json.put("g3123sodx", bi.g3123sodx.getText().toString());
-        json.put("g3123somx", bi.g3123somx.getText().toString());
         json.put("g3124a", bi.g3124ay.isChecked() ? "1"
                 : bi.g3124an.isChecked() ? "2"
                 : "-1");
@@ -189,12 +176,9 @@ public class SectionG313Activity extends AppCompatActivity {
                 : bi.g3124sn.isChecked() ? "2"
                 : "-1");
 
-        json.put("g3124so", bi.g3124sod.isChecked() ? "1"
-                : bi.g3124som.isChecked() ? "2"
-                : "-1");
+        json.put("g3124sod", bi.g3124sod.getText().toString());
+        json.put("g3124som", bi.g3124som.getText().toString());
 
-        json.put("g3124sodx", bi.g3124sodx.getText().toString());
-        json.put("g3124somx", bi.g3124somx.getText().toString());
         json.put("g3125a", bi.g3125ay.isChecked() ? "1"
                 : bi.g3125an.isChecked() ? "2"
                 : "-1");
@@ -203,12 +187,9 @@ public class SectionG313Activity extends AppCompatActivity {
                 : bi.g3125sn.isChecked() ? "2"
                 : "-1");
 
-        json.put("g3125so", bi.g3125sod.isChecked() ? "1"
-                : bi.g3125som.isChecked() ? "2"
-                : "-1");
+        json.put("g3125sod", bi.g3125sod.getText().toString());
+        json.put("g3125som", bi.g3125som.getText().toString());
 
-        json.put("g3125sodx", bi.g3125sodx.getText().toString());
-        json.put("g3125somx", bi.g3125somx.getText().toString());
         json.put("g3126a", bi.g3126ay.isChecked() ? "1"
                 : bi.g3126an.isChecked() ? "2"
                 : "-1");
@@ -217,12 +198,9 @@ public class SectionG313Activity extends AppCompatActivity {
                 : bi.g3126sn.isChecked() ? "2"
                 : "-1");
 
-        json.put("g3126so", bi.g3126sod.isChecked() ? "1"
-                : bi.g3126som.isChecked() ? "2"
-                : "-1");
+        json.put("g3126sod", bi.g3126sod.getText().toString());
+        json.put("g3126som", bi.g3126som.getText().toString());
 
-        json.put("g3126sodx", bi.g3126sodx.getText().toString());
-        json.put("g3126somx", bi.g3126somx.getText().toString());
         json.put("g3127a", bi.g3127ay.isChecked() ? "1"
                 : bi.g3127an.isChecked() ? "2"
                 : "-1");
@@ -231,12 +209,9 @@ public class SectionG313Activity extends AppCompatActivity {
                 : bi.g3127sn.isChecked() ? "2"
                 : "-1");
 
-        json.put("g3127so", bi.g3127sod.isChecked() ? "1"
-                : bi.g3127som.isChecked() ? "2"
-                : "-1");
+        json.put("g3127sod", bi.g3127sod.getText().toString());
+        json.put("g3127som", bi.g3127som.getText().toString());
 
-        json.put("g3127sodx", bi.g3127sodx.getText().toString());
-        json.put("g3127somx", bi.g3127somx.getText().toString());
         json.put("g3128a", bi.g3128ay.isChecked() ? "1"
                 : bi.g3128an.isChecked() ? "2"
                 : "-1");
@@ -245,12 +220,9 @@ public class SectionG313Activity extends AppCompatActivity {
                 : bi.g3128sn.isChecked() ? "2"
                 : "-1");
 
-        json.put("g3128so", bi.g3128sod.isChecked() ? "1"
-                : bi.g3128som.isChecked() ? "2"
-                : "-1");
+        json.put("g3128sod", bi.g3128sod.getText().toString());
+        json.put("g3128som", bi.g3128som.getText().toString());
 
-        json.put("g3128sodx", bi.g3128sodx.getText().toString());
-        json.put("g3128somx", bi.g3128somx.getText().toString());
         json.put("g3129a", bi.g3129ay.isChecked() ? "1"
                 : bi.g3129an.isChecked() ? "2"
                 : "-1");
@@ -259,12 +231,8 @@ public class SectionG313Activity extends AppCompatActivity {
                 : bi.g3129sn.isChecked() ? "2"
                 : "-1");
 
-        json.put("g3129so", bi.g3129sod.isChecked() ? "1"
-                : bi.g3129som.isChecked() ? "2"
-                : "-1");
-
-        json.put("g3129sodx", bi.g3129sodx.getText().toString());
-        json.put("g3129somx", bi.g3129somx.getText().toString());
+        json.put("g3129sod", bi.g3129sod.getText().toString());
+        json.put("g3129som", bi.g3129som.getText().toString());
 
 
         try {
@@ -275,7 +243,6 @@ public class SectionG313Activity extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-
 
     }
 
