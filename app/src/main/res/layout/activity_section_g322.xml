@@ -49,6 +49,7 @@
 
             </androidx.cardview.widget.CardView>
 
+
             <!-- g3206a  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVg3206a"
@@ -162,7 +163,8 @@
             <!-- g3206so  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVg3206so"
-                style="@style/cardView">
+                style="@style/cardView"
+                android:visibility='@{g3206sn.checked ? View.GONE : View.VISIBLE}'>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -399,7 +401,8 @@
             <!-- g3207so  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVg3207so"
-                style="@style/cardView">
+                style="@style/cardView"
+                android:visibility='@{g3207sn.checked ? View.GONE : View.VISIBLE}'>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -636,7 +639,8 @@
             <!-- g3208so  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVg3208so"
-                style="@style/cardView">
+                style="@style/cardView"
+                android:visibility='@{g3208sn.checked ? View.GONE : View.VISIBLE}'>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -873,7 +877,8 @@
             <!-- g3209so  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVg3209so"
-                style="@style/cardView">
+                style="@style/cardView"
+                android:visibility='@{g3209sn.checked ? View.GONE : View.VISIBLE}'>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -1110,7 +1115,8 @@
             <!-- g3210so  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVg3210so"
-                style="@style/cardView">
+                style="@style/cardView"
+                android:visibility='@{g3210sn.checked ? View.GONE : View.VISIBLE}'>
 
                 <LinearLayout
                     android:layout_width="match_parent"
