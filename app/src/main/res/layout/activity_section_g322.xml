@@ -1,4 +1,5 @@
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
     <data>
@@ -193,43 +194,54 @@
                             android:text="@string/Q_g3206so" />
                     </RelativeLayout>
 
-                    <RadioGroup
-                        android:id="@+id/g3206so"
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
 
-                        <RadioButton
-                            android:id="@+id/g3206sod"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/g3206sod" />
+                        <LinearLayout
+                            style="@style/vlinearlayout"
+                            android:layout_width="0dp"
+                            android:layout_weight="1">
 
-                        <EditText
-                            android:id="@+id/g3206sodx"
-                            android:layout_width="match_parent"
-                            android:layout_height="56dp"
-                            android:layout_marginBottom="12dp"
-                            android:hint="@string/g3206sod"
-                            android:tag="g3206sod"
-                            android:text='@{g3206sod.checked ? g3206sodx.getText().toString() : ""}'
-                            android:visibility='@{g3206sod.checked? View.VISIBLE : View.GONE}' />
+                            <TextView
+                                style="@style/textviewh"
+                                android:text="@string/g3206sod" />
 
-                        <RadioButton
-                            android:id="@+id/g3206som"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/g3206som" />
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/g3206sod"
+                                style="@style/EditTextNum"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:maxLength="2"
+                                app:maxValue="30"
+                                app:minValue="0"
+                                app:type="range" />
+                        </LinearLayout>
 
-                        <EditText
-                            android:id="@+id/g3206somx"
-                            android:layout_width="match_parent"
-                            android:layout_height="56dp"
-                            android:layout_marginBottom="12dp"
-                            android:hint="@string/g3206som"
-                            android:tag="g3206som"
-                            android:text='@{g3206som.checked ? g3206somx.getText().toString() : ""}'
-                            android:visibility='@{g3206som.checked? View.VISIBLE : View.GONE}' />
-                    </RadioGroup>
+                        <LinearLayout
+                            style="@style/vlinearlayout"
+                            android:layout_width="0dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/textviewh"
+                                android:text="@string/g3206som" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/g3206som"
+                                style="@style/EditTextNum"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:maxLength="2"
+                                app:maxValue="30"
+                                app:minValue="0"
+                                app:type="range" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -431,43 +443,54 @@
                             android:text="@string/Q_g3207so" />
                     </RelativeLayout>
 
-                    <RadioGroup
-                        android:id="@+id/g3207so"
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
 
-                        <RadioButton
-                            android:id="@+id/g3207sod"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/g3207sod" />
+                        <LinearLayout
+                            style="@style/vlinearlayout"
+                            android:layout_width="0dp"
+                            android:layout_weight="1">
 
-                        <EditText
-                            android:id="@+id/g3207sodx"
-                            android:layout_width="match_parent"
-                            android:layout_height="56dp"
-                            android:layout_marginBottom="12dp"
-                            android:hint="@string/g3207sod"
-                            android:tag="g3207sod"
-                            android:text='@{g3207sod.checked ? g3207sodx.getText().toString() : ""}'
-                            android:visibility='@{g3207sod.checked? View.VISIBLE : View.GONE}' />
+                            <TextView
+                                style="@style/textviewh"
+                                android:text="@string/g3207sod" />
 
-                        <RadioButton
-                            android:id="@+id/g3207som"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/g3207som" />
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/g3207sod"
+                                style="@style/EditTextNum"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:maxLength="2"
+                                app:maxValue="30"
+                                app:minValue="0"
+                                app:type="range" />
+                        </LinearLayout>
 
-                        <EditText
-                            android:id="@+id/g3207somx"
-                            android:layout_width="match_parent"
-                            android:layout_height="56dp"
-                            android:layout_marginBottom="12dp"
-                            android:hint="@string/g3207som"
-                            android:tag="g3207som"
-                            android:text='@{g3207som.checked ? g3207somx.getText().toString() : ""}'
-                            android:visibility='@{g3207som.checked? View.VISIBLE : View.GONE}' />
-                    </RadioGroup>
+                        <LinearLayout
+                            style="@style/vlinearlayout"
+                            android:layout_width="0dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/textviewh"
+                                android:text="@string/g3207som" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/g3207som"
+                                style="@style/EditTextNum"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:maxLength="2"
+                                app:maxValue="30"
+                                app:minValue="0"
+                                app:type="range" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -669,43 +692,54 @@
                             android:text="@string/Q_g3208so" />
                     </RelativeLayout>
 
-                    <RadioGroup
-                        android:id="@+id/g3208so"
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
 
-                        <RadioButton
-                            android:id="@+id/g3208sod"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/g3208sod" />
+                        <LinearLayout
+                            style="@style/vlinearlayout"
+                            android:layout_width="0dp"
+                            android:layout_weight="1">
 
-                        <EditText
-                            android:id="@+id/g3208sodx"
-                            android:layout_width="match_parent"
-                            android:layout_height="56dp"
-                            android:layout_marginBottom="12dp"
-                            android:hint="@string/g3208sod"
-                            android:tag="g3208sod"
-                            android:text='@{g3208sod.checked ? g3208sodx.getText().toString() : ""}'
-                            android:visibility='@{g3208sod.checked? View.VISIBLE : View.GONE}' />
+                            <TextView
+                                style="@style/textviewh"
+                                android:text="@string/g3208sod" />
 
-                        <RadioButton
-                            android:id="@+id/g3208som"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/g3208som" />
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/g3208sod"
+                                style="@style/EditTextNum"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:maxLength="2"
+                                app:maxValue="30"
+                                app:minValue="0"
+                                app:type="range" />
+                        </LinearLayout>
 
-                        <EditText
-                            android:id="@+id/g3208somx"
-                            android:layout_width="match_parent"
-                            android:layout_height="56dp"
-                            android:layout_marginBottom="12dp"
-                            android:hint="@string/g3208som"
-                            android:tag="g3208som"
-                            android:text='@{g3208som.checked ? g3208somx.getText().toString() : ""}'
-                            android:visibility='@{g3208som.checked? View.VISIBLE : View.GONE}' />
-                    </RadioGroup>
+                        <LinearLayout
+                            style="@style/vlinearlayout"
+                            android:layout_width="0dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/textviewh"
+                                android:text="@string/g3208som" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/g3208som"
+                                style="@style/EditTextNum"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:maxLength="2"
+                                app:maxValue="30"
+                                app:minValue="0"
+                                app:type="range" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -907,43 +941,54 @@
                             android:text="@string/Q_g3209so" />
                     </RelativeLayout>
 
-                    <RadioGroup
-                        android:id="@+id/g3209so"
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
 
-                        <RadioButton
-                            android:id="@+id/g3209sod"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/g3209sod" />
+                        <LinearLayout
+                            style="@style/vlinearlayout"
+                            android:layout_width="0dp"
+                            android:layout_weight="1">
 
-                        <EditText
-                            android:id="@+id/g3209sodx"
-                            android:layout_width="match_parent"
-                            android:layout_height="56dp"
-                            android:layout_marginBottom="12dp"
-                            android:hint="@string/g3209sod"
-                            android:tag="g3209sod"
-                            android:text='@{g3209sod.checked ? g3209sodx.getText().toString() : ""}'
-                            android:visibility='@{g3209sod.checked? View.VISIBLE : View.GONE}' />
+                            <TextView
+                                style="@style/textviewh"
+                                android:text="@string/g3209sod" />
 
-                        <RadioButton
-                            android:id="@+id/g3209som"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/g3209som" />
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/g3209sod"
+                                style="@style/EditTextNum"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:maxLength="2"
+                                app:maxValue="30"
+                                app:minValue="0"
+                                app:type="range" />
+                        </LinearLayout>
 
-                        <EditText
-                            android:id="@+id/g3209somx"
-                            android:layout_width="match_parent"
-                            android:layout_height="56dp"
-                            android:layout_marginBottom="12dp"
-                            android:hint="@string/g3209som"
-                            android:tag="g3209som"
-                            android:text='@{g3209som.checked ? g3209somx.getText().toString() : ""}'
-                            android:visibility='@{g3209som.checked? View.VISIBLE : View.GONE}' />
-                    </RadioGroup>
+                        <LinearLayout
+                            style="@style/vlinearlayout"
+                            android:layout_width="0dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/textviewh"
+                                android:text="@string/g3209som" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/g3209som"
+                                style="@style/EditTextNum"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:maxLength="2"
+                                app:maxValue="30"
+                                app:minValue="0"
+                                app:type="range" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -1145,43 +1190,54 @@
                             android:text="@string/Q_g3210so" />
                     </RelativeLayout>
 
-                    <RadioGroup
-                        android:id="@+id/g3210so"
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
 
-                        <RadioButton
-                            android:id="@+id/g3210sod"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/g3210sod" />
+                        <LinearLayout
+                            style="@style/vlinearlayout"
+                            android:layout_width="0dp"
+                            android:layout_weight="1">
 
-                        <EditText
-                            android:id="@+id/g3210sodx"
-                            android:layout_width="match_parent"
-                            android:layout_height="56dp"
-                            android:layout_marginBottom="12dp"
-                            android:hint="@string/g3210sod"
-                            android:tag="g3210sod"
-                            android:text='@{g3210sod.checked ? g3210sodx.getText().toString() : ""}'
-                            android:visibility='@{g3210sod.checked? View.VISIBLE : View.GONE}' />
+                            <TextView
+                                style="@style/textviewh"
+                                android:text="@string/g3210sod" />
 
-                        <RadioButton
-                            android:id="@+id/g3210som"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/g3210som" />
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/g3210sod"
+                                style="@style/EditTextNum"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:maxLength="2"
+                                app:maxValue="30"
+                                app:minValue="0"
+                                app:type="range" />
+                        </LinearLayout>
 
-                        <EditText
-                            android:id="@+id/g3210somx"
-                            android:layout_width="match_parent"
-                            android:layout_height="56dp"
-                            android:layout_marginBottom="12dp"
-                            android:hint="@string/g3210som"
-                            android:tag="g3210som"
-                            android:text='@{g3210som.checked ? g3210somx.getText().toString() : ""}'
-                            android:visibility='@{g3210som.checked? View.VISIBLE : View.GONE}' />
-                    </RadioGroup>
+                        <LinearLayout
+                            style="@style/vlinearlayout"
+                            android:layout_width="0dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/textviewh"
+                                android:text="@string/g3210som" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/g3210som"
+                                style="@style/EditTextNum"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:maxLength="2"
+                                app:maxValue="30"
+                                app:minValue="0"
+                                app:type="range" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
