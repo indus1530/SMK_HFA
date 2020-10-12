@@ -10,20 +10,18 @@
             type="edu.aku.hassannaqvi.smk_hfa_2020.ui.sections.SectionG322Activity" />
     </data>
 
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
 
         <LinearLayout
             android:id="@+id/GrpName"
             style="@style/vlinearlayout">
 
 
-            <!-- g04  Section Title   -->
+            <!-- g03  Section Title   -->
             <androidx.cardview.widget.CardView
-                android:id="@+id/fldGrpCVg04"
+                android:id="@+id/fldGrpCVg03"
                 style="@style/cardView">
 
                 <LinearLayout style="@style/vlinearlayout">
@@ -36,6 +34,20 @@
 
             </androidx.cardview.widget.CardView>
 
+            <!-- g33  Section Title   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVg33"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/vlinearlayout">
+
+                    <TextView
+                        style="@style/sub"
+                        android:text="@string/g33" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
 
             <!-- g3301a  Radio   -->
             <androidx.cardview.widget.CardView
