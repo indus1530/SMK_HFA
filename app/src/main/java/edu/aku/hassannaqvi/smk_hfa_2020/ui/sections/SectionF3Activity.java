@@ -11,7 +11,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
 import com.edittextpicker.aliazaz.EditTextPicker;
-import com.validatorcrawler.aliazaz.Clear;
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.json.JSONException;
@@ -37,14 +36,6 @@ public class SectionF3Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_f3);
         bi.setCallback(this);
-        setupSkips();
-        setupTextWatchers();
-    }
-
-
-    private void setupTextWatchers() {
-        editTextImplementation(bi.f0301aaa0ayx, bi.f0301aaa0fyx);
-        editTextImplementation(bi.f0302aaa0ayx, bi.f0302aaa0fyx);
     }
 
 
@@ -70,23 +61,6 @@ public class SectionF3Activity extends AppCompatActivity {
     }
 
 
-    private void setupSkips() {
-
-        bi.f0301.setOnCheckedChangeListener((radioGroup, i) -> {
-            Clear.clearAllFields(bi.fldGrpSecf301);
-        });
-
-        bi.f0301aaa0a.setOnCheckedChangeListener((radioGroup, i) -> {
-            Clear.clearAllFields(bi.fldGrpCVf0301aaa0f);
-        });
-
-        bi.f0302.setOnCheckedChangeListener((radioGroup, i) -> {
-            Clear.clearAllFields(bi.fldGrpSecf302);
-        });
-
-    }
-
-
     private boolean UpdateDB() {
         DatabaseHelper db = MainApp.appInfo.getDbHelper();
         int updcount = db.updatesFormColumn(FormsContract.FormsTable.COLUMN_SF, fc.getsF());
@@ -107,31 +81,9 @@ public class SectionF3Activity extends AppCompatActivity {
                 : bi.f0301b.isChecked() ? "2"
                 : "-1");
 
-
-        json.put("f0301aaa0a", bi.f0301aaa0ay.isChecked() ? "1"
-                : bi.f0301aaa0an.isChecked() ? "2"
-                : "-1");
-        json.put("f0301aaa0ayx", bi.f0301aaa0ayx.getText().toString().trim().isEmpty() ? "-1" : bi.f0301aaa0ayx.getText().toString());
-
-        json.put("f0301aaa0f", bi.f0301aaa0fy.isChecked() ? "1"
-                : bi.f0301aaa0fn.isChecked() ? "2"
-                : "-1");
-        json.put("f0301aaa0fyx", bi.f0301aaa0fyx.getText().toString().trim().isEmpty() ? "-1" : bi.f0301aaa0fyx.getText().toString());
-
         json.put("f0302", bi.f0302a.isChecked() ? "1"
                 : bi.f0302b.isChecked() ? "2"
                 : "-1");
-
-
-        json.put("f0302aaa0a", bi.f0302aaa0ay.isChecked() ? "1"
-                : bi.f0302aaa0an.isChecked() ? "2"
-                : "-1");
-        json.put("f0302aaa0ayx", bi.f0302aaa0ayx.getText().toString().trim().isEmpty() ? "-1" : bi.f0302aaa0ayx.getText().toString());
-
-        json.put("f0302aaa0f", bi.f0302aaa0fy.isChecked() ? "1"
-                : bi.f0302aaa0fn.isChecked() ? "2"
-                : "-1");
-        json.put("f0302aaa0fyx", bi.f0302aaa0fyx.getText().toString().trim().isEmpty() ? "-1" : bi.f0302aaa0fyx.getText().toString());
 
         try {
             JSONObject json_merge = JSONUtils.mergeJSONObjects(new JSONObject(MainApp.fc.getsF()), json);
