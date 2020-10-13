@@ -969,43 +969,54 @@
                             android:text="@string/Q_g3134so" />
                     </RelativeLayout>
 
-                    <RadioGroup
-                        android:id="@+id/g3134so"
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
 
-                        <RadioButton
-                            android:id="@+id/g3134sod"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/g3134sod" />
+                        <LinearLayout
+                            style="@style/vlinearlayout"
+                            android:layout_width="0dp"
+                            android:layout_weight="1">
 
-                        <EditText
-                            android:id="@+id/g3134sodx"
-                            android:layout_width="match_parent"
-                            android:layout_height="56dp"
-                            android:layout_marginBottom="12dp"
-                            android:hint="@string/g3134sod"
-                            android:tag="g3134sod"
-                            android:text='@{g3134sod.checked ? g3134sodx.getText().toString() : ""}'
-                            android:visibility='@{g3134sod.checked? View.VISIBLE : View.GONE}' />
+                            <TextView
+                                style="@style/textviewh"
+                                android:text="@string/g3134sod" />
 
-                        <RadioButton
-                            android:id="@+id/g3134som"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/g3134som" />
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/g3134sod"
+                                style="@style/EditTextNum"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:maxLength="2"
+                                app:maxValue="30"
+                                app:minValue="0"
+                                app:type="range" />
+                        </LinearLayout>
 
-                        <EditText
-                            android:id="@+id/g3134somx"
-                            android:layout_width="match_parent"
-                            android:layout_height="56dp"
-                            android:layout_marginBottom="12dp"
-                            android:hint="@string/g3134som"
-                            android:tag="g3134som"
-                            android:text='@{g3134som.checked ? g3134somx.getText().toString() : ""}'
-                            android:visibility='@{g3134som.checked? View.VISIBLE : View.GONE}' />
-                    </RadioGroup>
+                        <LinearLayout
+                            style="@style/vlinearlayout"
+                            android:layout_width="0dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/textviewh"
+                                android:text="@string/g3134som" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/g3134som"
+                                style="@style/EditTextNum"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:maxLength="2"
+                                app:maxValue="30"
+                                app:minValue="0"
+                                app:type="range" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
