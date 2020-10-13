@@ -11,11 +11,9 @@
             type="edu.aku.hassannaqvi.smk_hfa_2020.ui.sections.SectionF7Activity" />
     </data>
 
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
 
         <LinearLayout
             android:id="@+id/GrpName"
@@ -98,7 +96,7 @@
             <LinearLayout
                 android:id="@+id/fldGrpSecf701"
                 style="@style/vlinearlayout"
-                android:visibility='@{f0701a.checked ? View.VISIBLE : View.GONE}'>
+                android:visibility='@{f0701b.checked ? View.GONE : View.VISIBLE}'>
 
 
                 <!-- f0701aa  SUB TextView   -->

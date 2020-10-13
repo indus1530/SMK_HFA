@@ -52,6 +52,7 @@ public class SectionE102Activity extends AppCompatActivity {
     }
 
     private void SaveDraft() throws JSONException {
+
         JSONObject json = new JSONObject();
 
         json.put("e151aav", bi.e151aavy.isChecked() ? "1"

@@ -20,7 +20,9 @@ import edu.aku.hassannaqvi.smk_hfa_2020.contracts.FormsContract;
 import edu.aku.hassannaqvi.smk_hfa_2020.core.DatabaseHelper;
 import edu.aku.hassannaqvi.smk_hfa_2020.core.MainApp;
 import edu.aku.hassannaqvi.smk_hfa_2020.databinding.ActivitySectionH31Binding;
+import edu.aku.hassannaqvi.smk_hfa_2020.utils.JSONUtils;
 
+import static edu.aku.hassannaqvi.smk_hfa_2020.core.MainApp.fc;
 import static edu.aku.hassannaqvi.smk_hfa_2020.utils.UtilKt.openSectionMainActivity;
 
 
@@ -172,6 +174,15 @@ public class SectionH31Activity extends AppCompatActivity {
         json.put("h3113q1", bi.h3113q1y.isChecked() ? "1"
                 : bi.h3113q1n.isChecked() ? "2"
                 : "-1");
+
+        try {
+            JSONObject json_merge = JSONUtils.mergeJSONObjects(new JSONObject(fc.getsH()), json);
+
+            fc.setsH(String.valueOf(json_merge));
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
 
     }
 

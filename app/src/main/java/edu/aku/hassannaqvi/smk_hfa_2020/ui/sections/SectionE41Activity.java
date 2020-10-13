@@ -9,7 +9,6 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
-import com.validatorcrawler.aliazaz.Clear;
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.jetbrains.annotations.NotNull;
@@ -56,14 +55,17 @@ public class SectionE41Activity extends AppCompatActivity {
     }
 
 
-    private void SaveDraft() throws JSONException {JSONObject json = new JSONObject();
+    private void SaveDraft() throws JSONException {
+
+        JSONObject json = new JSONObject();
+
         json.put("e41", bi.e41a.isChecked() ? "1"
                 : bi.e41b.isChecked() ? "2"
-                :  "-1");
+                : "-1");
 
         json.put("e42", bi.e42a.isChecked() ? "1"
                 : bi.e42b.isChecked() ? "2"
-                :  "-1");
+                : "-1");
 
         json.put("e43a", bi.e43aa.isChecked() ? "1"
                 : bi.e43ab.isChecked() ? "2"

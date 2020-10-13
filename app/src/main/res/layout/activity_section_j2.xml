@@ -10,11 +10,9 @@
             type="edu.aku.hassannaqvi.smk_hfa_2020.ui.sections.SectionJ2Activity" />
     </data>
 
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
 
         <LinearLayout
             android:id="@+id/GrpName"
@@ -106,63 +104,6 @@
                         </LinearLayout>
 
                     </LinearLayout>
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-
-            <!-- j0200c  Radio   -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/fldGrpCVj0200c"
-                style="@style/cardView">
-
-                <LinearLayout style="@style/vlinearlayout">
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/bottom">
-
-                        <TextView
-                            android:id="@+id/qtxt_j0200c"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_toEndOf="@id/q_j0200c"
-                            android:text="@string/j0200c" />
-
-                        <TextView
-                            android:id="@+id/q_j0200c"
-                            style="@style/quesNum"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignTop="@id/qtxt_j0200c"
-                            android:layout_alignBottom="@id/qtxt_j0200c"
-                            android:text="@string/Q_j0200c" />
-
-                    </RelativeLayout>
-
-                    <RadioGroup
-                        android:id="@+id/j0200c"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <RadioButton
-                            android:id="@+id/j0200ca"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="@string/j0200ca" />
-
-                        <RadioButton
-                            android:id="@+id/j0200cb"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="@string/j0200cb" />
-
-                    </RadioGroup>
 
                 </LinearLayout>
 

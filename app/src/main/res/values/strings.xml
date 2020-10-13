@@ -1551,6 +1551,43 @@
     <string name="e0611a">Yes</string>
     <string name="e0611b">  No</string>
 
+    <string name="e07">SECTION E-7: \nADOLESCENT HEALTH</string>
+    <string name="e0701">Does this facility provide care for Adolescent Health?</string>
+    <string name="e0701a">Yes</string>
+    <string name="e0701b">No</string>
+    <string name="e0702t1">Ask to be shown the location in the facility where adolescent health services are provided. Find the person most knowledgeable about adolescent health in the facility. Introduce yourself, explain the purpose of the survey and ask the following questions.</string>
+    <string name="e0702t2">Please tell me if this facility provides the following services:</string>
+    <string name="e070201">Provide Counselling on Physical Activity and care</string>
+    <string name="e070201a">Yes</string>
+    <string name="e070201b">No</string>
+    <string name="e070202">Provide Counselling on Healthy Diet and care</string>
+    <string name="e070202a">Yes</string>
+    <string name="e070202b">No</string>
+    <string name="e070203">Provide Counselling on Healthy Behaviors like No chewing or smoking Tobacco Use, No Alcohol Use, and care</string>
+    <string name="e070203a">Yes</string>
+    <string name="e070203b">No</string>
+    <string name="e070204">Provide comprehensive reproductive health counselling and care </string>
+    <string name="e070204a">Yes</string>
+    <string name="e070204b">No</string>
+    <string name="e070205">Separate Adolescents lounge or spaces available for provision of counselling and care </string>
+    <string name="e070205a">Yes</string>
+    <string name="e070205b">No</string>
+    <string name="e0703t">Please tell me if the following documents are available in the facility today:</string>
+    <string name="e070301">Do you have the national guidelines for service provision to adolescents available in this facility today?</string>
+    <string name="e070301a">YES, OBSERVED</string>
+    <string name="e070301b">YES, REPORTED NOT SEEN</string>
+    <string name="e070301c">NO</string>
+    <string name="e0704t">Have you or any provider(s):</string>
+    <string name="e070401">Have you or any providers of adolescent health services received any training on the provision of adolescent health services in the last two years?</string>
+    <string name="e070401a">YES</string>
+    <string name="e070401b">NO</string>
+    <string name="e070402">What Was the Name of Training or Content of Training?</string>
+    <string name="e070403">What was the duration of that Training?</string>
+    <string name="e070404">What was the Organization Name Who Conduct those Training?</string>
+    <string name="e070404a">AKU</string>
+    <string name="e070404x">Other (Specify)</string>
+
+
     <string name="e08">SECTION-8-COMMUNICABLE &amp; NON COMMUNICABLE DISEASES</string>
     <string name="e0801">Does this facility offer HIV counseling and testing services?</string>
     <string name="e0801a">Yes</string>
@@ -2015,57 +2052,40 @@
     <string name="g0107c"> Local vendor deliver to facility </string>
     <string name="g0107x">Other (specify)</string>
 
-    <string name="g0108">Who is responsible for transporting products from central medical stores to your facility? </string>
-    <string name="g0108a">Local supplier delivers   </string>
-    <string name="g0108aa">Yes</string>
-    <string name="g0108ab">No</string>
-    <string name="g0108b">Higher level delivers   </string>
-    <string name="g0108ba">Yes</string>
-    <string name="g0108bb">No</string>
-    <string name="g0108c">This facility collects</string>
-    <string name="g0108ca">Yes</string>
-    <string name="g0108cb">No</string>
-    <string name="g0109">For the most recent order, how long did it take between ordering and receiving products? </string>
-    <string name="g0109a">Less than 2 weeks </string>
-    <string name="g0109b">2 weeks to 1 month </string>
-    <string name="g0109c">Between 1 and 2 months</string>
-    <string name="g0109d">More than 2 months</string>
+    <string name="g0108">For the most recent order, how long did it take between ordering and receiving products? </string>
+    <string name="g0108a">Less than 2 weeks </string>
+    <string name="g0108b">2 weeks to 1 month </string>
+    <string name="g0108c">Between 1 and 2 months</string>
+    <string name="g0108d">More than 2 months</string>
 
-    <string name="g0110"> How long the medicine usually last once replenished ? </string>
-    <string name="g0110a"> Day(s) </string>
-    <string name="g0110b"> Month(s) </string>
+    <string name="g0109"> How long the medicine usually last once replenished ? </string>
+    <string name="g0109a"> Day(s) </string>
+    <string name="g0109b"> Month(s) </string>
 
-    <string name="g0111"> Are there other mechanisms for medicine supply ? </string>
-    <string name="g0111a"> Yes </string>
-    <string name="g0111b"> No </string>
+    <string name="g01110"> Does this facility record equipment in a stock register ? </string>
+    <string name="g01110a"> Yes </string>
+    <string name="g01110b"> No </string>
 
-    <string name="g01112"> If yes, What are the other mechanisms for medicine supply ? </string>
-    <string name="g01112a"> NGO </string>
-    <string name="g01112b"> Donation (Philanthropist) </string>
-    <string name="g01112x"> Other(specify) </string>
+    <string name="g01111"> If yes, ask to see the register to check if it is maintained ? </string>
+    <string name="g01111a"> Yes Maintained Regularly </string>
+    <string name="g01111b"> Yes maintained Irregularly </string>
+    <string name="g01111c"> No the register is nor maintained </string>
 
-    <string name="g01113"> Does this facility record equipment in a stock register ? </string>
-    <string name="g01113a"> Yes </string>
-    <string name="g01113b"> No </string>
-    \
-    <string name="g01114"> If yes, ask to see the register to check if it is maintained ? </string>
-    <string name="g01114a"> Yes Maintained Regularly </string>
-    <string name="g01114b"> Yes maintained Irregularly </string>
-    <string name="g01114c"> No the register is nor maintained </string>
+    <string name="g01112">Does this facility record drug in a stock register? Ask to see the register to check if it is maintained?</string>
+    <string name="g01112a">Yes Maintained Regularly</string>
+    <string name="g01112b">Yes maintained Irregularly</string>
+    <string name="g01112c">No the register is nor maintained</string>
 
-    <string name="g01115">Does this facility record drug in a stock register? Ask to see the register to check if it is maintained?</string>
-    <string name="g01115a">Yes Maintained Regularly</string>
-    <string name="g01115b">Yes maintained Irregularly</string>
-    <string name="g01115c">No the register is nor maintained</string>
-    <string name="g01116">Does this facility follow essential drug list to stock/restock drugs?</string>
-    <string name="g01116a">Yes</string>
-    <string name="g01116b">No</string>
-    <string name="g01117">Are these medicines supplied to patients from this facility free of cost?</string>
-    <string name="g01117a">Yes, all of them</string>
-    <string name="g01117b">Yes, Only for Emergency patients</string>
-    <string name="g01117c">Yes, Only Emergency medicines </string>
-    <string name="g01117d">Partially  </string>
-    <string name="g01117e">No</string>
+    <string name="g01113">Does this facility follow essential drug list to stock/restock drugs?</string>
+    <string name="g01113a">Yes</string>
+    <string name="g01113b">No</string>
+
+    <string name="g01114">Are these medicines supplied to patients from this facility free of cost?</string>
+    <string name="g01114a">Yes, all of them</string>
+    <string name="g01114b">Yes, Only for Emergency patients</string>
+    <string name="g01114c">Yes, Only Emergency medicines </string>
+    <string name="g01114d">Partially  </string>
+    <string name="g01114e">No</string>
 
     <string name="g02"> SECTION 02: \nPROTECTION FROM ENVIRONMENT </string>
     <string name="g0201">Are the Drugs properly Shelved? Observe</string>
@@ -3652,6 +3672,7 @@
     <string name="i0108g"> Immunization </string>
     <string name="i010896"> Other (Specify) </string>
 
+    <string name="i010h9"> Now I am going to ask you some questions about the services you received today. I would like to have your honest opinion about the things that we will talk about. This information will help improve services in general. </string>
     <string name="i0109"> Patient Satisfaction </string>
     <string name="i01091"> Are you satisfied with the waiting to be seen by a health provider ? </string>
     <string name="i01091a"> Very Dissatisfied </string>
@@ -3932,7 +3953,7 @@
     <string name="j0101mf">Staff don’t consider this thing important</string>
     <string name="j0101mx">Other</string>
 
-    <string name="j02"> SECTION 02: \nDelivery and Post Natal </string>
+    <string name="j02"> SECTION J2: \nDelivery and Post Natal </string>
     <string name="j0200">Please enter the Name and Designation of HCP to whom you observe for this section.</string>
     <string name="j0200a"> Name </string>
     <string name="j0200b"> Designation </string>
@@ -3967,90 +3988,7 @@
     <string name="j0201gf">Staff don’t consider this thing important</string>
     <string name="j0201gx">Other</string>
 
-    <!--<string name="j03">SECTION 03: \nEssential Newborn Care </string>
-    <string name="j0300"> Please enter the Name and Designation of HCP to whom you observe for this section. </string>
-    <string name="j0300a"> Name </string>
-    <string name="j0300b"> Designation </string>
-    <string name="j0300c"> Provider Trained by AKU ? </string>
-    <string name="j0300ca"> Yes </string>
-    <string name="j0300cb"> No </string>
-    <string name="j0i00">Verify by direct observation or by role play or by reviewing medical record</string>
-    <string name="j0301a">Wipe the mouth and nose with gauze, when head is delivered</string>
-    <string name="j0301aa">Yes</string>
-    <string name="j0301ab">No</string>
-    <string name="j0301b">Place the baby on clean dry towel or blanket on the mothers abdomen</string>
-    <string name="j0301ba">Yes</string>
-    <string name="j0301bb">No</string>
-    <string name="j0301c">Note the time of birth and sex of baby, and inform mothers</string>
-    <string name="j0301ca">Yes</string>
-    <string name="j0301cb">No</string>
-    <string name="j0301d">Record weight of the baby in record register and inform mother</string>
-    <string name="j0301da">Yes</string>
-    <string name="j0301db">No</string>
-    <string name="j0301e">Wipes the eyes and face and thoroughly dry the baby</string>
-    <string name="j0301ea">Yes</string>
-    <string name="j0301eb">No</string>
-    <string name="j0301f">Stimulates the baby while drying by rubbing up and down along the baby’s spine with the heel of the palm</string>
-    <string name="j0301fa">Yes</string>
-    <string name="j0301fb">No</string>
-    <string name="j0301g">Assess the baby’s breathing while drying and stimulating</string>
-    <string name="j0301ga">Yes</string>
-    <string name="j0301gb">No</string>
-    <string name="j0301h">If the baby is not crying or breathing well within 30 second of birth, clamp and cut the cord immediately and start resuscitation.</string>
-    <string name="j0301ha">Yes</string>
-    <string name="j0301hb">No</string>
-    <string name="j0301i">Remove the wet cloth and place the baby skin to skin on the mother’s chest</string>
-    <string name="j0301ia">Yes</string>
-    <string name="j0301ib">No</string>
-    <string name="j0301j">Cover the baby with a clean dry cloth including the head. Use a baby cap to cover head of newborn</string>
-    <string name="j0301ja">Yes</string>
-    <string name="j0301jb">No</string>
-    <string name="j0301k">Wait for 2-3 minutes after birth or until the cord ceases to pulsate, whichever comes first, before clamping and cutting the cord.</string>
-    <string name="j0301ka">Yes</string>
-    <string name="j0301kb">No</string>
-    <string name="j0301l">Tie the cord when the mother and baby are stable and after completing AMTSL.</string>
-    <string name="j0301la">Yes</string>
-    <string name="j0301lb">No</string>
-    <string name="j0301m">Tie the cord with a ligature or place the disposable cord clamp, if available, 2 fingers (2-3 cm) from the abdomen, making sure the tie is firmly applied with two or three knots. Check for bleeding; if present, retie the cord.</string>
-    <string name="j0301ma">Yes</string>
-    <string name="j0301mb">No</string>
-    <string name="j0301n">Apply chlorhexadine gel on the cord, taking care to apply it on the base of the cord. Inform mother about applying same gel for 07 days</string>
-    <string name="j0301na">Yes</string>
-    <string name="j0301nb">No</string>
-    <string name="j0301o">Instill eye drops (tetracycline or erythromycin), one drop in each eye.</string>
-    <string name="j0301oa">Yes</string>
-    <string name="j0301ob">No</string>
-    <string name="j0301p">Place an identification band, preferably two (one on the wrist and the other on the ankle of the baby). Noting the name of the mother and that of the father (where available), the sex of the baby, and date and time of the delivery.</string>
-    <string name="j0301pa">Yes</string>
-    <string name="j0301pb">No</string>
-    <string name="j0301q">Keep the baby warm, ideally by keeping him/her in skin-to-skin contact on the mother’s chest.</string>
-    <string name="j0301qa">Yes</string>
-    <string name="j0301qb">No</string>
-    <string name="j0301r">In case of a Cesarean section or if the mother is ill, wrap the baby well and cover the head.</string>
-    <string name="j0301ra">Yes</string>
-    <string name="j0301rb">No</string>
-    <string name="j0301s">Check the baby’s axillary temperature with a thermometer</string>
-    <string name="j0301sa">Yes</string>
-    <string name="j0301sb">No</string>
-    <string name="j0301t">Administer Inj. Vitamin K to the newborn and explain to the mother that an injection will be required to prevent hemorrhage in the baby.</string>
-    <string name="j0301ta">Yes</string>
-    <string name="j0301tb">No</string>
-    <string name="j0301u">Support the mother in breastfeeding her baby within one hour of birth and before their transfer out of the delivery room.</string>
-    <string name="j0301ua">Yes</string>
-    <string name="j0301ub">No</string>
-    <string name="j0301v">Monitor and record baby’s breathing, temperature after every 15 minutes for 2 hours, than every 30 minutes for 1 hour, and then every 1 hour for 3 hours.</string>
-    <string name="j0301va">Yes</string>
-    <string name="j0301vb">No</string>
-    <string name="j0301w">If you find “No” for any of the above statement then what is the reason;</string>
-    <string name="j0301wa">Staff is not trained on guideline</string>
-    <string name="j0301wb">Staff is not adequately skill to conduct the proper assessment</string>
-    <string name="j0301wc">Supplies are not available</string>
-    <string name="j0301wd">Equipment’s are not available</string>
-    <string name="j0301we">Increased Work load / Shortage of Time</string>
-    <string name="j0301wf">Staff don’t consider this thing important</string>
-    <string name="j0301wx">Other</string>-->
-
-    <string name="j3title">SECTION J3: Reproductive Health / Family Planning</string>
+    <string name="j3title">SECTION J3: \nReproductive Health / Family Planning</string>
     <string name="j31">The provider record all information through CRL-6 forms and Family Planning registers</string>
     <string name="j31a">YES</string>
     <string name="j31b">NO</string>
@@ -4100,7 +4038,7 @@
     <string name="j37f">Staff don’t consider this thing important</string>
     <string name="j37x">Other</string>
 
-    <string name="j4">SECTION-4-Communication, Respect and Confidentiality</string>
+    <string name="j4">SECTION J4: \nCommunication, Respect and Confidentiality</string>
     <string name="j40">Please enter the Name and Designation of HCP to whom you observe for this section.</string>
     <string name="j40a">Name</string>
     <string name="j40b">Designation</string>
@@ -4132,8 +4070,7 @@
     <string name="j407c">No separate space is available for counseling / maintaining confidentiality</string>
     <string name="j407d">Partition curtains are not available</string>
 
-    <string name="section5referralandlinkages_mainheading">SECTION-5- Referral and Linkages: </string>
-    <string name="j5title">SECTION-9-Referral and Linkages</string>
+    <string name="j5title">SECTION J5: \nReferral and Linkages</string>
     <string name="j5">Please enter the Name and Designation of HCP to whom you observe for this section.</string>
     <string name="j5a">Name</string>
     <string name="j5b">Designation</string>
@@ -5308,7 +5245,22 @@
     <string name='Q_e0609'>e0609</string>
     <string name='Q_e0610'>e0610</string>
     <string name='Q_e0611'>e0611</string>
-
+    <string name='Q_e0701'>e0701</string>
+    <string name='Q_e070201'>e070201</string>
+    <string name='Q_e070202'>e070202</string>
+    <string name='Q_e070203'>e070203</string>
+    <string name='Q_e070204'>e070204</string>
+    <string name='Q_e070205'>e070205</string>
+    <string name='Q_e0702t1'>e0702t1</string>
+    <string name='Q_e0702t2'>e0702t2</string>
+    <string name='Q_e070301'>e070301</string>
+    <string name='Q_e0703t'>e0703t</string>
+    <string name='Q_e070401'>e070401</string>
+    <string name='Q_e070402'>e070402</string>
+    <string name='Q_e070403'>e070403</string>
+    <string name='Q_e070404'>e070404</string>
+    <string name='Q_e0704t'>e0704t</string>
+    <string name='Q_sece7title'>sece7title</string>
     <string name='Q_e08'>e08</string>
     <string name='Q_e0801'>e0801</string>
     <string name='Q_e0802'>e0802</string>
@@ -6840,7 +6792,7 @@
     <string name='Q_h3title'>h3title</string>
     <string name="section3indicatordefinitionsandreportingnumbersovertime_mainheading">SECTION-3- INDICATOR DEFINITIONS AND REPORTING NUMBERS OVER TIME: </string>
 
-    <string name="h3title">SECTION-H3- INDICATOR DEFINITIONS AND REPORTING  NUMBERS OVER TIME</string>
+    <string name="h3title">SECTION-H3: \nINDICATOR DEFINITIONS AND REPORTING  NUMBERS OVER TIME</string>
     <string name="h31">List of Indicators</string>
     <string name="h31hint">Review the SOURCE REGISTERS for following indicators for 3 months</string>
     <string name="h3101">ANC – 1 visit</string>

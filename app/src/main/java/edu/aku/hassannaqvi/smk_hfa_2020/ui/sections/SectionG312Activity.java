@@ -106,7 +106,6 @@ public class SectionG312Activity extends AppCompatActivity {
 
         JSONObject json = new JSONObject();
 
-
         json.put("g3112a", bi.g3112ay.isChecked() ? "1"
                 : bi.g3112an.isChecked() ? "2"
                 : "-1");
