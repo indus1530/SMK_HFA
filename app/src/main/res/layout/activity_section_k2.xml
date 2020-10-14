@@ -10,11 +10,9 @@
             type="edu.aku.hassannaqvi.smk_hfa_2020.ui.sections.SectionK2Activity" />
     </data>
 
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
 
         <LinearLayout
             android:id="@+id/GrpName"
@@ -95,7 +93,7 @@
             <LinearLayout
                 android:id="@+id/llk0021"
                 style="@style/vlinearlayout"
-                android:visibility='@{k0021a.checked ? View.VISIBLE : View.GONE}'>
+                android:visibility='@{k0021b.checked ? View.GONE : View.VISIBLE}'>
 
 
                 <!-- k0022  Radio   -->
@@ -217,7 +215,7 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cvk0024"
                     style="@style/cardView"
-                    android:visibility='@{k0023a.checked ? View.VISIBLE : View.GONE}'>
+                    android:visibility='@{k0023b.checked ? View.GONE : View.VISIBLE}'>
 
                     <LinearLayout style="@style/vlinearlayout">
 

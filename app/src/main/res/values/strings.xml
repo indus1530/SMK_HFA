@@ -4166,12 +4166,12 @@
     <string name="j0901fx"> Others (Specify) </string>
 
 
-    <string name="modktitle"> K: COVID-19 ARRANGEMENTS IN HEALTH FACILITY </string>
+    <string name="modktitle">SECTION K: \nARRANGEMENTS </string>
     <string name="k0001"> Does this facility offer COVID services ? </string>
     <string name="k0001a"> Yes </string>
     <string name="k0001b"> No </string>
 
-    <string name="k001"> SECTION 01: \nHuman Resource </string>
+    <string name="k001"> SECTION K1: \nHuman Resource </string>
     <string name="k0011"> Does this facility have designated staff for COVID-19 specifically ? </string>
     <string name="k0011a"> Yes </string>
     <string name="k0011b"> No </string>
@@ -4180,7 +4180,7 @@
     <string name="k00111a"> Yes </string>
     <string name="k00111b"> No </string>
 
-    <string name="k00112"> How many ? </string>
+    <string name="k00112"> How Many (Numbers) ? </string>
     <string name="k001121"> Generalist (Non Specialist Medical Doctors) / RMO </string>
     <string name="k001121a"> Yes </string>
     <string name="k001121b"> No </string>
@@ -4239,7 +4239,7 @@
     <string name="k0014b"> No </string>
 
 
-    <string name="k002"> SECTION 02: \nSurveillance </string>
+    <string name="k002"> SECTION K2: \nSurveillance </string>
     <string name="k0021"> Is there any system for alert notification and data management available in this facility for COVID-19 ? </string>
     <string name="k0021a"> Yes </string>
     <string name="k0021b"> No </string>
