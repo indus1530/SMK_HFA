@@ -4297,8 +4297,7 @@
     <string name="k0038c"> Separate room constructed in the facility </string>
     <string name="k0038d"> No </string>
 
-
-    <string name="k004"> SECTION 04: \nServices </string>
+    <string name="k004"> SECTION K4: \nServices </string>
     <string name="k0041"> What services are providing by this facility ? </string>
     <string name="k0041a"> Routine OPD services only to COVID-19 patients </string>
     <string name="k0041b"> All Services opened for all COVID and Non-COVID patients (OPDs, In-patient) </string>
@@ -4355,7 +4354,7 @@
     <string name="k00411a"> Rooms / Structures: </string>
 
 
-    <string name="k005"> SECTION 05: \nR M N C H Services </string>
+    <string name="k005"> SECTION K5: \nR M N C H Services </string>
     <string name="k0051"> Does this facility provide  R M N C H  services ? </string>
     <string name="k0051a"> Yes </string>
     <string name="k0051b"> No </string>
@@ -4387,7 +4386,7 @@
     <string name="k0056c"> Not Available </string>
 
 
-    <string name="k006"> SECTION-6: \nMedical Supplies &amp; Equipment </string>
+    <string name="k006"> SECTION K6: \nMedical Supplies &amp; Equipment </string>
     <string name="k00611"> Infrared Thermometer </string>
     <string name="k00611a"> Yes, Available Before Covid </string>
     <string name="k00611b"> Yes, Available During Pandemic </string>
@@ -4669,7 +4668,7 @@
     <string name="k0060282q"> Quantity </string>
 
 
-    <string name="k007"> SECTION 07: \nInformation, Education &amp; Communication  </string>
+    <string name="k007"> SECTION K7: \nInformation, Education &amp; Communication  </string>
     <string name="k007sub"> Culturally appropriate (in local language) Information, Education, Communication (ICE)materials are displayed outside the facility and in waiting area, for: </string>
     <string name="k0071"> Hand washing procedure </string>
     <string name="k0071a"> Displayed, Before COVID 19 </string>
