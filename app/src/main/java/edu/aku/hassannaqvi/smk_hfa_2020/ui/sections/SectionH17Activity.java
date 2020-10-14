@@ -48,7 +48,7 @@ public class SectionH17Activity extends AppCompatActivity {
         }
         if (UpdateDB()) {
             finish();
-            startActivity(new Intent(this, SectionH4Activity.class));
+            startActivity(new Intent(this, SectionH7Activity.class));
         } else {
             Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
         }
