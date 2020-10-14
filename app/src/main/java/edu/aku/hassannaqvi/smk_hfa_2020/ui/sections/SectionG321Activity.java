@@ -95,9 +95,8 @@ public class SectionG321Activity extends AppCompatActivity {
         json.put("g3201s", bi.g3201sy.isChecked() ? "1"
                 : bi.g3201sn.isChecked() ? "2"
                 : "-1");
-
-        json.put("g3201sod", bi.g3201sod.getText().toString());
-        json.put("g3201som", bi.g3201som.getText().toString());
+        json.put("g3201sod", bi.g3201sod.getText().toString().trim().isEmpty() ? "-1" : bi.g3201sod.getText().toString());
+        json.put("g3201som", bi.g3201som.getText().toString().trim().isEmpty() ? "-1" : bi.g3201som.getText().toString());
 
         json.put("g3201p", bi.g3201py.isChecked() ? "1"
                 : bi.g3201pn.isChecked() ? "2"
@@ -110,9 +109,8 @@ public class SectionG321Activity extends AppCompatActivity {
         json.put("g3202s", bi.g3202sy.isChecked() ? "1"
                 : bi.g3202sn.isChecked() ? "2"
                 : "-1");
-
-        json.put("g3202sod", bi.g3202sod.getText().toString());
-        json.put("g3202som", bi.g3202som.getText().toString());
+        json.put("g3202sod", bi.g3202sod.getText().toString().trim().isEmpty() ? "-1" : bi.g3202sod.getText().toString());
+        json.put("g3202som", bi.g3202som.getText().toString().trim().isEmpty() ? "-1" : bi.g3202som.getText().toString());
 
         json.put("g3202p", bi.g3202py.isChecked() ? "1"
                 : bi.g3202pn.isChecked() ? "2"
@@ -125,9 +123,8 @@ public class SectionG321Activity extends AppCompatActivity {
         json.put("g3203s", bi.g3203sy.isChecked() ? "1"
                 : bi.g3203sn.isChecked() ? "2"
                 : "-1");
-
-        json.put("g3203sod", bi.g3203sod.getText().toString());
-        json.put("g3203som", bi.g3203som.getText().toString());
+        json.put("g3203sod", bi.g3203sod.getText().toString().trim().isEmpty() ? "-1" : bi.g3203sod.getText().toString());
+        json.put("g3203som", bi.g3203som.getText().toString().trim().isEmpty() ? "-1" : bi.g3203som.getText().toString());
 
         json.put("g3203p", bi.g3203py.isChecked() ? "1"
                 : bi.g3203pn.isChecked() ? "2"
@@ -140,9 +137,8 @@ public class SectionG321Activity extends AppCompatActivity {
         json.put("g3204s", bi.g3204sy.isChecked() ? "1"
                 : bi.g3204sn.isChecked() ? "2"
                 : "-1");
-
-        json.put("g3204sod", bi.g3204sod.getText().toString());
-        json.put("g3204som", bi.g3204som.getText().toString());
+        json.put("g3204sod", bi.g3204sod.getText().toString().trim().isEmpty() ? "-1" : bi.g3204sod.getText().toString());
+        json.put("g3204som", bi.g3204som.getText().toString().trim().isEmpty() ? "-1" : bi.g3204som.getText().toString());
 
         json.put("g3204p", bi.g3204py.isChecked() ? "1"
                 : bi.g3204pn.isChecked() ? "2"
@@ -156,8 +152,8 @@ public class SectionG321Activity extends AppCompatActivity {
                 : bi.g3205sn.isChecked() ? "2"
                 : "-1");
 
-        json.put("g3205sod", bi.g3205sod.getText().toString());
-        json.put("g3205som", bi.g3205som.getText().toString());
+        json.put("g3205sod", bi.g3205sod.getText().toString().trim().isEmpty() ? "-1" : bi.g3205sod.getText().toString());
+        json.put("g3205som", bi.g3205som.getText().toString().trim().isEmpty() ? "-1" : bi.g3205som.getText().toString());
 
         json.put("g3205p", bi.g3205py.isChecked() ? "1"
                 : bi.g3205pn.isChecked() ? "2"

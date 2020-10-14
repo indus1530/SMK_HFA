@@ -1242,7 +1242,7 @@
     <string name="e0308b">No</string>
 
     <string name="section4immunization_mainheading">SECTION-4- IMMUNIZATION: </string>
-    <string name="e4title">SECTION-E4- IMMUNIZATION</string>
+    <string name="e4title">SECTION E4: \nIMMUNIZATION</string>
     <string name="e41">Does this facility offer immunization services?</string>
     <string name="e41a">YES</string>
     <string name="e41b">NO</string>
@@ -4166,7 +4166,8 @@
     <string name="j0901fx"> Others (Specify) </string>
 
 
-    <string name="modktitle">SECTION K: \nARRANGEMENTS </string>
+    <string name="modktitle">SECTION K: COVID-19 HEALTH FACILITY ASSESSMENT  </string>
+    <string name="modktitle1">SECTION K: \nARRANGEMENTS </string>
     <string name="k0001"> Does this facility offer COVID services ? </string>
     <string name="k0001a"> Yes </string>
     <string name="k0001b"> No </string>

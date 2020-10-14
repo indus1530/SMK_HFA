@@ -29,7 +29,7 @@
 
                     <TextView
                         style="@style/textView3Head"
-                        android:text="@string/modktitle" />
+                        android:text="@string/modktitle1" />
 
                 </LinearLayout>
 

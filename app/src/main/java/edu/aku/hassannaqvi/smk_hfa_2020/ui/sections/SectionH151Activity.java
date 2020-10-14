@@ -287,7 +287,6 @@ public class SectionH151Activity extends AppCompatActivity {
         json.put("h1501a0c", bi.h1501a0cy.isChecked() ? "1"
                 : bi.h1501a0cn.isChecked() ? "2"
                 : "-1");
-
         json.put("h1501a0dy", bi.h1501a0dy.getText().toString().trim().isEmpty() ? "-1" : bi.h1501a0dy.getText().toString());
         json.put("h1501a0dn", bi.h1501a0dn.getText().toString().trim().isEmpty() ? "-1" : bi.h1501a0dn.getText().toString());
 
@@ -303,7 +302,6 @@ public class SectionH151Activity extends AppCompatActivity {
         json.put("h1501b0c", bi.h1501b0cy.isChecked() ? "1"
                 : bi.h1501b0cn.isChecked() ? "2"
                 : "-1");
-
         json.put("h1501b0dy", bi.h1501b0dy.getText().toString().trim().isEmpty() ? "-1" : bi.h1501b0dy.getText().toString());
         json.put("h1501b0dn", bi.h1501b0dn.getText().toString().trim().isEmpty() ? "-1" : bi.h1501b0dn.getText().toString());
 
@@ -319,7 +317,6 @@ public class SectionH151Activity extends AppCompatActivity {
         json.put("h1501c0c", bi.h1501c0cy.isChecked() ? "1"
                 : bi.h1501c0cn.isChecked() ? "2"
                 : "-1");
-
         json.put("h1501c0dy", bi.h1501c0dy.getText().toString().trim().isEmpty() ? "-1" : bi.h1501c0dy.getText().toString());
         json.put("h1501c0dn", bi.h1501c0dn.getText().toString().trim().isEmpty() ? "-1" : bi.h1501c0dn.getText().toString());
 
@@ -335,7 +332,6 @@ public class SectionH151Activity extends AppCompatActivity {
         json.put("h1501d0c", bi.h1501d0cy.isChecked() ? "1"
                 : bi.h1501d0cn.isChecked() ? "2"
                 : "-1");
-
         json.put("h1501d0dy", bi.h1501d0dy.getText().toString().trim().isEmpty() ? "-1" : bi.h1501d0dy.getText().toString());
         json.put("h1501d0dn", bi.h1501d0dn.getText().toString().trim().isEmpty() ? "-1" : bi.h1501d0dn.getText().toString());
 
@@ -351,7 +347,6 @@ public class SectionH151Activity extends AppCompatActivity {
         json.put("h1501e0c", bi.h1501e0cy.isChecked() ? "1"
                 : bi.h1501e0cn.isChecked() ? "2"
                 : "-1");
-
         json.put("h1501e0dy", bi.h1501e0dy.getText().toString().trim().isEmpty() ? "-1" : bi.h1501e0dy.getText().toString());
         json.put("h1501e0dn", bi.h1501e0dn.getText().toString().trim().isEmpty() ? "-1" : bi.h1501e0dn.getText().toString());
 
@@ -367,7 +362,6 @@ public class SectionH151Activity extends AppCompatActivity {
         json.put("h1501f0c", bi.h1501f0cy.isChecked() ? "1"
                 : bi.h1501f0cn.isChecked() ? "2"
                 : "-1");
-
         json.put("h1501f0dy", bi.h1501f0dy.getText().toString().trim().isEmpty() ? "-1" : bi.h1501f0dy.getText().toString());
         json.put("h1501f0dn", bi.h1501f0dn.getText().toString().trim().isEmpty() ? "-1" : bi.h1501f0dn.getText().toString());
 
@@ -383,7 +377,6 @@ public class SectionH151Activity extends AppCompatActivity {
         json.put("h1501g0c", bi.h1501g0cy.isChecked() ? "1"
                 : bi.h1501g0cn.isChecked() ? "2"
                 : "-1");
-
         json.put("h1501g0dy", bi.h1501g0dy.getText().toString().trim().isEmpty() ? "-1" : bi.h1501g0dy.getText().toString());
         json.put("h1501g0dn", bi.h1501g0dn.getText().toString().trim().isEmpty() ? "-1" : bi.h1501g0dn.getText().toString());
 
@@ -399,7 +392,6 @@ public class SectionH151Activity extends AppCompatActivity {
         json.put("h1501h0c", bi.h1501h0cy.isChecked() ? "1"
                 : bi.h1501h0cn.isChecked() ? "2"
                 : "-1");
-
         json.put("h1501h0dy", bi.h1501h0dy.getText().toString().trim().isEmpty() ? "-1" : bi.h1501h0dy.getText().toString());
         json.put("h1501h0dn", bi.h1501h0dn.getText().toString().trim().isEmpty() ? "-1" : bi.h1501h0dn.getText().toString());
 

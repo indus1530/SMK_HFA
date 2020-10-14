@@ -102,9 +102,8 @@ public class SectionG323Activity extends AppCompatActivity {
         json.put("g3301s", bi.g3301sy.isChecked() ? "1"
                 : bi.g3301sn.isChecked() ? "2"
                 : "-1");
-
-        json.put("g3301sod", bi.g3301sod.getText().toString());
-        json.put("g3301som", bi.g3301som.getText().toString());
+        json.put("g3301sod", bi.g3301sod.getText().toString().trim().isEmpty() ? "-1" : bi.g3301sod.getText().toString());
+        json.put("g3301som", bi.g3301som.getText().toString().trim().isEmpty() ? "-1" : bi.g3301som.getText().toString());
 
         json.put("g3301p", bi.g3301py.isChecked() ? "1"
                 : bi.g3301pn.isChecked() ? "2"
@@ -117,9 +116,8 @@ public class SectionG323Activity extends AppCompatActivity {
         json.put("g3302s", bi.g3302sy.isChecked() ? "1"
                 : bi.g3302sn.isChecked() ? "2"
                 : "-1");
-
-        json.put("g3302sod", bi.g3302sod.getText().toString());
-        json.put("g3302som", bi.g3302som.getText().toString());
+        json.put("g3302sod", bi.g3302sod.getText().toString().trim().isEmpty() ? "-1" : bi.g3302sod.getText().toString());
+        json.put("g3302som", bi.g3302som.getText().toString().trim().isEmpty() ? "-1" : bi.g3302som.getText().toString());
 
         json.put("g3302p", bi.g3302py.isChecked() ? "1"
                 : bi.g3302pn.isChecked() ? "2"
@@ -132,9 +130,8 @@ public class SectionG323Activity extends AppCompatActivity {
         json.put("g3303s", bi.g3303sy.isChecked() ? "1"
                 : bi.g3303sn.isChecked() ? "2"
                 : "-1");
-
-        json.put("g3303sod", bi.g3303sod.getText().toString());
-        json.put("g3303som", bi.g3303som.getText().toString());
+        json.put("g3303sod", bi.g3303sod.getText().toString().trim().isEmpty() ? "-1" : bi.g3303sod.getText().toString());
+        json.put("g3303som", bi.g3303som.getText().toString().trim().isEmpty() ? "-1" : bi.g3303som.getText().toString());
 
         json.put("g3303p", bi.g3303py.isChecked() ? "1"
                 : bi.g3303pn.isChecked() ? "2"
@@ -147,9 +144,8 @@ public class SectionG323Activity extends AppCompatActivity {
         json.put("g3304s", bi.g3304sy.isChecked() ? "1"
                 : bi.g3304sn.isChecked() ? "2"
                 : "-1");
-
-        json.put("g3304sod", bi.g3304sod.getText().toString());
-        json.put("g3304som", bi.g3304som.getText().toString());
+        json.put("g3304sod", bi.g3304sod.getText().toString().trim().isEmpty() ? "-1" : bi.g3304sod.getText().toString());
+        json.put("g3304som", bi.g3304som.getText().toString().trim().isEmpty() ? "-1" : bi.g3304som.getText().toString());
 
         json.put("g3304p", bi.g3304py.isChecked() ? "1"
                 : bi.g3304pn.isChecked() ? "2"
@@ -162,9 +158,8 @@ public class SectionG323Activity extends AppCompatActivity {
         json.put("g3305s", bi.g3305sy.isChecked() ? "1"
                 : bi.g3305sn.isChecked() ? "2"
                 : "-1");
-
-        json.put("g3305sod", bi.g3305sod.getText().toString());
-        json.put("g3305som", bi.g3305som.getText().toString());
+        json.put("g3305sod", bi.g3305sod.getText().toString().trim().isEmpty() ? "-1" : bi.g3305sod.getText().toString());
+        json.put("g3305som", bi.g3305som.getText().toString().trim().isEmpty() ? "-1" : bi.g3305som.getText().toString());
 
         json.put("g3305p", bi.g3305py.isChecked() ? "1"
                 : bi.g3305pn.isChecked() ? "2"
@@ -177,9 +172,8 @@ public class SectionG323Activity extends AppCompatActivity {
         json.put("g3306s", bi.g3306sy.isChecked() ? "1"
                 : bi.g3306sn.isChecked() ? "2"
                 : "-1");
-
-        json.put("g3306sod", bi.g3306sod.getText().toString());
-        json.put("g3306som", bi.g3306som.getText().toString());
+        json.put("g3306sod", bi.g3306sod.getText().toString().trim().isEmpty() ? "-1" : bi.g3306sod.getText().toString());
+        json.put("g3306som", bi.g3306som.getText().toString().trim().isEmpty() ? "-1" : bi.g3306som.getText().toString());
 
         json.put("g3306p", bi.g3306py.isChecked() ? "1"
                 : bi.g3306pn.isChecked() ? "2"

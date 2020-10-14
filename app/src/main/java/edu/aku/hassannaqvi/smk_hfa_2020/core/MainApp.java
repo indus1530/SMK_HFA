@@ -44,11 +44,11 @@ public class MainApp extends Application {
 
     /*F38158 TEST SERVER*/
     public static final String _IP = "f38158";// .TEST server
-    public static final String _HOST_URL = "http://" + MainApp._IP + "/uen_hfa/api/"; // .TEST server
+    public static final String _HOST_URL = "http://" + MainApp._IP + "/smk_hfa/api/"; // .TEST server
 
     public static final String _SERVER_URL = "sync.php";
 
-    public static final String _UPDATE_URL = "https://" + MainApp._IP + "/uen_hfa/app/";
+    public static final String _UPDATE_URL = "https://" + MainApp._IP + "/smk_hfa/app/";
 
 
     public static final Integer MONTHS_LIMIT = 11;

@@ -54,7 +54,6 @@ public class SectionF2Activity extends AppCompatActivity {
                 : bi.f0201b.isChecked() ? "2"
                 : "-1");
 
-
         json.put("f0202", bi.f0202a.isChecked() ? "1"
                 : bi.f0202b.isChecked() ? "2"
                 : "-1");
@@ -71,7 +70,6 @@ public class SectionF2Activity extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-
 
     }
 

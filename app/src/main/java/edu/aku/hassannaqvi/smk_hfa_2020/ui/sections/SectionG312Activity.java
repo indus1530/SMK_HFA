@@ -113,9 +113,8 @@ public class SectionG312Activity extends AppCompatActivity {
         json.put("g3112s", bi.g3112sy.isChecked() ? "1"
                 : bi.g3112sn.isChecked() ? "2"
                 : "-1");
-
-        json.put("g3112sod", bi.g3112sod.getText().toString());
-        json.put("g3112som", bi.g3112som.getText().toString());
+        json.put("g3112sod", bi.g3112sod.getText().toString().trim().isEmpty() ? "-1" : bi.g3112sod.getText().toString());
+        json.put("g3112som", bi.g3112som.getText().toString().trim().isEmpty() ? "-1" : bi.g3112som.getText().toString());
 
         json.put("g3113a", bi.g3113ay.isChecked() ? "1"
                 : bi.g3113an.isChecked() ? "2"
@@ -124,9 +123,8 @@ public class SectionG312Activity extends AppCompatActivity {
         json.put("g3113s", bi.g3113sy.isChecked() ? "1"
                 : bi.g3113sn.isChecked() ? "2"
                 : "-1");
-
-        json.put("g3113sod", bi.g3113sod.getText().toString());
-        json.put("g3113som", bi.g3113som.getText().toString());
+        json.put("g3113sod", bi.g3113sod.getText().toString().trim().isEmpty() ? "-1" : bi.g3113sod.getText().toString());
+        json.put("g3113som", bi.g3113som.getText().toString().trim().isEmpty() ? "-1" : bi.g3113som.getText().toString());
 
         json.put("g3114a", bi.g3114ay.isChecked() ? "1"
                 : bi.g3114an.isChecked() ? "2"
@@ -135,9 +133,8 @@ public class SectionG312Activity extends AppCompatActivity {
         json.put("g3114s", bi.g3114sy.isChecked() ? "1"
                 : bi.g3114sn.isChecked() ? "2"
                 : "-1");
-
-        json.put("g3114sod", bi.g3114sod.getText().toString());
-        json.put("g3114som", bi.g3114som.getText().toString());
+        json.put("g3114sod", bi.g3114sod.getText().toString().trim().isEmpty() ? "-1" : bi.g3114sod.getText().toString());
+        json.put("g3114som", bi.g3114som.getText().toString().trim().isEmpty() ? "-1" : bi.g3114som.getText().toString());
 
         json.put("g3115a", bi.g3115ay.isChecked() ? "1"
                 : bi.g3115an.isChecked() ? "2"
@@ -146,9 +143,8 @@ public class SectionG312Activity extends AppCompatActivity {
         json.put("g3115s", bi.g3115sy.isChecked() ? "1"
                 : bi.g3115sn.isChecked() ? "2"
                 : "-1");
-
-        json.put("g3115sod", bi.g3115sod.getText().toString());
-        json.put("g3115som", bi.g3115som.getText().toString());
+        json.put("g3115sod", bi.g3115sod.getText().toString().trim().isEmpty() ? "-1" : bi.g3115sod.getText().toString());
+        json.put("g3115som", bi.g3115som.getText().toString().trim().isEmpty() ? "-1" : bi.g3115som.getText().toString());
 
         json.put("g3116a", bi.g3116ay.isChecked() ? "1"
                 : bi.g3116an.isChecked() ? "2"
@@ -157,9 +153,8 @@ public class SectionG312Activity extends AppCompatActivity {
         json.put("g3116s", bi.g3116sy.isChecked() ? "1"
                 : bi.g3116sn.isChecked() ? "2"
                 : "-1");
-
-        json.put("g3116sod", bi.g3116sod.getText().toString());
-        json.put("g3116som", bi.g3116som.getText().toString());
+        json.put("g3116sod", bi.g3116sod.getText().toString().trim().isEmpty() ? "-1" : bi.g3116sod.getText().toString());
+        json.put("g3116som", bi.g3116som.getText().toString().trim().isEmpty() ? "-1" : bi.g3116som.getText().toString());
 
         json.put("g3117a", bi.g3117ay.isChecked() ? "1"
                 : bi.g3117an.isChecked() ? "2"
@@ -168,9 +163,8 @@ public class SectionG312Activity extends AppCompatActivity {
         json.put("g3117s", bi.g3117sy.isChecked() ? "1"
                 : bi.g3117sn.isChecked() ? "2"
                 : "-1");
-
-        json.put("g3117sod", bi.g3117sod.getText().toString());
-        json.put("g3117som", bi.g3117som.getText().toString());
+        json.put("g3117sod", bi.g3117sod.getText().toString().trim().isEmpty() ? "-1" : bi.g3117sod.getText().toString());
+        json.put("g3117som", bi.g3117som.getText().toString().trim().isEmpty() ? "-1" : bi.g3117som.getText().toString());
 
         json.put("g3118a", bi.g3118ay.isChecked() ? "1"
                 : bi.g3118an.isChecked() ? "2"
@@ -179,9 +173,8 @@ public class SectionG312Activity extends AppCompatActivity {
         json.put("g3118s", bi.g3118sy.isChecked() ? "1"
                 : bi.g3118sn.isChecked() ? "2"
                 : "-1");
-
-        json.put("g3118sod", bi.g3118sod.getText().toString());
-        json.put("g3118som", bi.g3118som.getText().toString());
+        json.put("g3118sod", bi.g3118sod.getText().toString().trim().isEmpty() ? "-1" : bi.g3118sod.getText().toString());
+        json.put("g3118som", bi.g3118som.getText().toString().trim().isEmpty() ? "-1" : bi.g3118som.getText().toString());
 
         json.put("g3119a", bi.g3119ay.isChecked() ? "1"
                 : bi.g3119an.isChecked() ? "2"
@@ -190,10 +183,8 @@ public class SectionG312Activity extends AppCompatActivity {
         json.put("g3119s", bi.g3119sy.isChecked() ? "1"
                 : bi.g3119sn.isChecked() ? "2"
                 : "-1");
-
-        json.put("g3119sod", bi.g3119sod.getText().toString());
-        json.put("g3119som", bi.g3119som.getText().toString());
-
+        json.put("g3119sod", bi.g3119sod.getText().toString().trim().isEmpty() ? "-1" : bi.g3119sod.getText().toString());
+        json.put("g3119som", bi.g3119som.getText().toString().trim().isEmpty() ? "-1" : bi.g3119som.getText().toString());
 
         try {
             JSONObject json_merge = JSONUtils.mergeJSONObjects(new JSONObject(MainApp.fc.getsG()), json);
@@ -203,7 +194,6 @@ public class SectionG312Activity extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-
 
     }
 

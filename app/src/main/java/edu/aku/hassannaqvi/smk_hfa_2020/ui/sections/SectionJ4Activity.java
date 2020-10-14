@@ -37,9 +37,11 @@ public class SectionJ4Activity extends AppCompatActivity {
         setupSkips();
     }
 
+
     private void setupSkips() {
 
     }
+
 
     private boolean UpdateDB() {
         DatabaseHelper db = MainApp.appInfo.getDbHelper();
@@ -51,6 +53,7 @@ public class SectionJ4Activity extends AppCompatActivity {
             return false;
         }
     }
+
 
     private void SaveDraft() throws JSONException {
 
@@ -103,6 +106,7 @@ public class SectionJ4Activity extends AppCompatActivity {
 
     }
 
+
     public void BtnContinue() {
         if (!formValidation()) return;
         try {
@@ -118,13 +122,16 @@ public class SectionJ4Activity extends AppCompatActivity {
         }
     }
 
+
     public void BtnEnd() {
         openSectionMainActivity(this, "J");
     }
 
+
     private boolean formValidation() {
         return Validator.emptyCheckingContainer(this, bi.GrpName);
     }
+
 
     public void showTooltip(@NotNull View view) {
         if (view.getId() != View.NO_ID) {

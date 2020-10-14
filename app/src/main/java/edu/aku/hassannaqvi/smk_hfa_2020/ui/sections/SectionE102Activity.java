@@ -20,6 +20,7 @@ import edu.aku.hassannaqvi.smk_hfa_2020.contracts.FormsContract;
 import edu.aku.hassannaqvi.smk_hfa_2020.core.DatabaseHelper;
 import edu.aku.hassannaqvi.smk_hfa_2020.core.MainApp;
 import edu.aku.hassannaqvi.smk_hfa_2020.databinding.ActivitySectionE102Binding;
+import edu.aku.hassannaqvi.smk_hfa_2020.utils.JSONUtils;
 
 import static edu.aku.hassannaqvi.smk_hfa_2020.core.MainApp.fc;
 import static edu.aku.hassannaqvi.smk_hfa_2020.utils.UtilKt.openSectionMainActivity;
@@ -36,9 +37,11 @@ public class SectionE102Activity extends AppCompatActivity {
         setupSkips();
     }
 
+
     private void setupSkips() {
 
     }
+
 
     private boolean UpdateDB() {
         DatabaseHelper db = MainApp.appInfo.getDbHelper();
@@ -50,6 +53,7 @@ public class SectionE102Activity extends AppCompatActivity {
             return false;
         }
     }
+
 
     private void SaveDraft() throws JSONException {
 
@@ -173,16 +177,27 @@ public class SectionE102Activity extends AppCompatActivity {
 
         json.put("e153cf", bi.e153cfy.isChecked() ? "1"
                 : bi.e153cfn.isChecked() ? "2"
-                :  "-1");
+                : "-1");
 
         json.put("e153dav", bi.e153davy.isChecked() ? "1"
                 : bi.e153davn.isChecked() ? "2"
-                :  "-1");
+                : "-1");
 
         json.put("e153df", bi.e153dfy.isChecked() ? "1"
                 : bi.e153dfn.isChecked() ? "2"
-                :  "-1");
+                : "-1");
+
+        try {
+            JSONObject json_merge = JSONUtils.mergeJSONObjects(new JSONObject(fc.getsE()), json);
+
+            fc.setsE(String.valueOf(json_merge));
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
     }
+
 
     public void BtnContinue() {
         if (!formValidation()) return;
@@ -199,13 +214,16 @@ public class SectionE102Activity extends AppCompatActivity {
         }
     }
 
+
     public void BtnEnd() {
         openSectionMainActivity(this, "E");
     }
 
+
     private boolean formValidation() {
         return Validator.emptyCheckingContainer(this, bi.GrpName);
     }
+
 
     public void showTooltip(@NotNull View view) {
         if (view.getId() != View.NO_ID) {

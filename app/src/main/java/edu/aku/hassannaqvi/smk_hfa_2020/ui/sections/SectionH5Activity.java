@@ -76,7 +76,6 @@ public class SectionH5Activity extends AppCompatActivity {
         json.put("h0501b", bi.h0501b.isChecked() ? "2" : "-1");
         json.put("h0501c", bi.h0501c.isChecked() ? "3" : "-1");
         json.put("h0501x", bi.h0501x.isChecked() ? "96" : "-1");
-
         json.put("h0501xx", bi.h0501xx.getText().toString().trim().isEmpty() ? "-1" : bi.h0501xx.getText().toString());
 
         try {

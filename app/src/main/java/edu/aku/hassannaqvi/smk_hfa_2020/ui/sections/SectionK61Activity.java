@@ -264,7 +264,6 @@ public class SectionK61Activity extends AppCompatActivity {
                 : "-1");
         json.put("k00692q", bi.k00692q.getText().toString().trim().isEmpty() ? "-1" : bi.k00692q.getText().toString());
 
-
         try {
             JSONObject json_merge = JSONUtils.mergeJSONObjects(new JSONObject(MainApp.fc.getsK()), json);
 
@@ -273,7 +272,6 @@ public class SectionK61Activity extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-
 
     }
 

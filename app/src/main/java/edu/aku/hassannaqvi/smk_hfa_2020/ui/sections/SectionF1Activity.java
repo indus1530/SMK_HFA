@@ -42,10 +42,12 @@ public class SectionF1Activity extends AppCompatActivity {
         setupTextWatchers();
     }
 
+
     private void setupTextWatchers() {
         editTextImplementation(bi.f0101aa0ayx, bi.f0101aa0fyx);
         editTextImplementation(bi.f0101ab0ayx, bi.f0101ab0fyx);
     }
+
 
     public void editTextImplementation(EditTextPicker edit01, EditTextPicker edit02) {
 
@@ -66,6 +68,7 @@ public class SectionF1Activity extends AppCompatActivity {
             }
         });
     }
+
 
     private void setupSkips() {
 
@@ -89,6 +92,7 @@ public class SectionF1Activity extends AppCompatActivity {
         });
     }
 
+
     private boolean UpdateDB() {
         DatabaseHelper db = MainApp.appInfo.getDbHelper();
         int updcount = db.updatesFormColumn(FormsContract.FormsTable.COLUMN_SF, fc.getsF());
@@ -99,6 +103,7 @@ public class SectionF1Activity extends AppCompatActivity {
             return false;
         }
     }
+
 
     private void SaveDraft() throws JSONException {
 
@@ -172,12 +177,16 @@ public class SectionF1Activity extends AppCompatActivity {
         json.put("f0110", bi.f0110a.isChecked() ? "1"
                 : bi.f0110b.isChecked() ? "2"
                 : "-1");
+
         MainApp.fc.setsF(String.valueOf(json));
+
     }
+
 
     private boolean formValidation() {
         return Validator.emptyCheckingContainer(this, bi.GrpName);
     }
+
 
     public void BtnContinue() {
         if (!formValidation()) return;

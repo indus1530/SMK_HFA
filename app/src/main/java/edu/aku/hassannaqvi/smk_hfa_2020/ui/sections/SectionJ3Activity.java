@@ -20,7 +20,9 @@ import edu.aku.hassannaqvi.smk_hfa_2020.contracts.FormsContract;
 import edu.aku.hassannaqvi.smk_hfa_2020.core.DatabaseHelper;
 import edu.aku.hassannaqvi.smk_hfa_2020.core.MainApp;
 import edu.aku.hassannaqvi.smk_hfa_2020.databinding.ActivitySectionJ3Binding;
+import edu.aku.hassannaqvi.smk_hfa_2020.utils.JSONUtils;
 
+import static edu.aku.hassannaqvi.smk_hfa_2020.core.MainApp.fc;
 import static edu.aku.hassannaqvi.smk_hfa_2020.utils.UtilKt.openSectionMainActivity;
 
 public class SectionJ3Activity extends AppCompatActivity {
@@ -161,6 +163,15 @@ public class SectionJ3Activity extends AppCompatActivity {
         json.put("j37e", bi.j37e.isChecked() ? "5" : "-1");
         json.put("j37f", bi.j37f.isChecked() ? "6" : "-1");
         json.put("j37x", bi.j37x.isChecked() ? "96" : "-1");
+
+        try {
+            JSONObject json_merge = JSONUtils.mergeJSONObjects(new JSONObject(fc.getsJ()), json);
+
+            fc.setsJ(String.valueOf(json_merge));
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
 
     }
 

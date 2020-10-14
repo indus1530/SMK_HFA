@@ -113,7 +113,6 @@ public class SectionG1Activity extends AppCompatActivity {
                 : "-1");
         json.put("g0107xx", bi.g0107xx.getText().toString().trim().isEmpty() ? "-1" : bi.g0107xx.getText().toString());
 
-
         json.put("g0108", bi.g0108a.isChecked() ? "1"
                 : bi.g0108b.isChecked() ? "2"
                 : bi.g0108c.isChecked() ? "3"

@@ -21,6 +21,7 @@ import edu.aku.hassannaqvi.smk_hfa_2020.contracts.FormsContract;
 import edu.aku.hassannaqvi.smk_hfa_2020.core.DatabaseHelper;
 import edu.aku.hassannaqvi.smk_hfa_2020.core.MainApp;
 import edu.aku.hassannaqvi.smk_hfa_2020.databinding.ActivitySectionE101Binding;
+import edu.aku.hassannaqvi.smk_hfa_2020.utils.JSONUtils;
 
 import static edu.aku.hassannaqvi.smk_hfa_2020.core.MainApp.fc;
 import static edu.aku.hassannaqvi.smk_hfa_2020.utils.UtilKt.openSectionMainActivity;
@@ -37,6 +38,7 @@ public class SectionE101Activity extends AppCompatActivity {
         setupSkips();
     }
 
+
     private void setupSkips() {
 
         bi.e11.setOnCheckedChangeListener(((radioGroup, i) -> {
@@ -52,6 +54,7 @@ public class SectionE101Activity extends AppCompatActivity {
         }));
     }
 
+
     private boolean UpdateDB() {
         DatabaseHelper db = MainApp.appInfo.getDbHelper();
         int updcount = db.updatesFormColumn(FormsContract.FormsTable.COLUMN_SE, fc.getsE());
@@ -62,6 +65,7 @@ public class SectionE101Activity extends AppCompatActivity {
             return false;
         }
     }
+
 
     private void SaveDraft() throws JSONException {
 
@@ -119,26 +123,35 @@ public class SectionE101Activity extends AppCompatActivity {
         json.put("e13b", bi.e13ba.isChecked() ? "1"
                 : bi.e13bb.isChecked() ? "2"
                 : bi.e13bc.isChecked() ? "3"
-                :  "-1");
+                : "-1");
 
         json.put("e14a", bi.e14aa.isChecked() ? "1"
                 : bi.e14ab.isChecked() ? "2"
-                :  "-1");
+                : "-1");
 
         json.put("e14b", bi.e14ba.isChecked() ? "1"
                 : bi.e14bb.isChecked() ? "2"
-                :  "-1");
+                : "-1");
 
-        json.put("e14c", bi.e14c.getText().toString());
-
-        json.put("e14d", bi.e14d.getText().toString());
+        json.put("e14c", bi.e14c.getText().toString().trim().isEmpty() ? "-1" : bi.e14c.getText().toString());
+        json.put("e14d", bi.e14d.getText().toString().trim().isEmpty() ? "-1" : bi.e14d.getText().toString());
 
         json.put("e14e", bi.e14ea.isChecked() ? "1"
                 : bi.e14ex.isChecked() ? "96"
-                :  "-1");
+                : "-1");
+        json.put("e14exx", bi.e14exx.getText().toString().trim().isEmpty() ? "-1" : bi.e14exx.getText().toString());
 
-        json.put("e14exx", bi.e14exx.getText().toString());
+        try {
+            JSONObject json_merge = JSONUtils.mergeJSONObjects(new JSONObject(fc.getsE()), json);
+
+            fc.setsE(String.valueOf(json_merge));
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
     }
+
 
     public void BtnContinue() {
         if (!formValidation()) return;
@@ -155,13 +168,16 @@ public class SectionE101Activity extends AppCompatActivity {
         }
     }
 
+
     public void BtnEnd() {
         openSectionMainActivity(this, "E");
     }
 
+
     private boolean formValidation() {
         return Validator.emptyCheckingContainer(this, bi.GrpName);
     }
+
 
     public void showTooltip(@NotNull View view) {
         if (view.getId() != View.NO_ID) {

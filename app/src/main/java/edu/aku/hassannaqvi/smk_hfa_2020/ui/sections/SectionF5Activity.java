@@ -81,7 +81,6 @@ public class SectionF5Activity extends AppCompatActivity {
                 : bi.f0501b.isChecked() ? "2"
                 : "-1");
 
-
         try {
             JSONObject json_merge = JSONUtils.mergeJSONObjects(new JSONObject(MainApp.fc.getsF()), json);
 

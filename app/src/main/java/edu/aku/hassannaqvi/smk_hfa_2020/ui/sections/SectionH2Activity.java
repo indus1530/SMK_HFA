@@ -110,5 +110,4 @@ public class SectionH2Activity extends AppCompatActivity {
         return Validator.emptyCheckingContainer(this, bi.GrpName);
     }
 
-
 }
