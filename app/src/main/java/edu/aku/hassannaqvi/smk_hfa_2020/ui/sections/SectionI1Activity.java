@@ -171,7 +171,7 @@ public class SectionI1Activity extends AppCompatActivity implements EndSectionAc
             db.updatesPSCColumn(PatientsContract.PatientsTable.COLUMN_UID, psc.get_UID());
             return true;
         } else {
-            Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Sorry. You can't go further.\n Please contact IT Team (Failed to update DB)", Toast.LENGTH_SHORT).show();
             return false;
         }
     }

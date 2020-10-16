@@ -35,11 +35,10 @@ import androidx.databinding.DataBindingUtil;
 
 import java.io.File;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
 import java.util.List;
-import java.util.Map;
+import java.util.Locale;
 import java.util.Objects;
 
 import edu.aku.hassannaqvi.smk_hfa_2020.R;
@@ -60,16 +59,13 @@ public class MainActivity extends AppCompatActivity {
     static File file;
     private final String TAG = "MainActivity";
     ActivityMainBinding bi;
-    String dtToday = new SimpleDateFormat("dd-MM-yy HH:mm").format(new Date().getTime());
-    String dtToday1 = new SimpleDateFormat("dd-MMM-yyyy").format(new Date());
-    String sysdateToday = new SimpleDateFormat("dd-MM-yy").format(new Date());
+    String dtToday = new SimpleDateFormat("dd-MM-yy HH:mm", Locale.getDefault()).format(new Date().getTime());
+    String dtToday1 = new SimpleDateFormat("dd-MMM-yyyy", Locale.getDefault()).format(new Date());
+    String sysdateToday = new SimpleDateFormat("dd-MM-yy", Locale.getDefault()).format(new Date());
     SharedPreferences sharedPref;
     SharedPreferences.Editor editor;
     AlertDialog.Builder builder;
     String m_Text = "";
-    ProgressDialog mProgressDialog;
-    ArrayList<String> lablesAreas;
-    Map<String, String> AreasMap;
     SharedPreferences sharedPrefDownload;
     SharedPreferences.Editor editorDownload;
     DownloadManager downloadManager;

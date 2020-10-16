@@ -21,6 +21,7 @@ import java.util.Collections;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 
 import edu.aku.hassannaqvi.smk_hfa_2020.R;
@@ -211,8 +212,6 @@ public class SectionAActivity extends AppCompatActivity {
         if (UpdateDB()) {
             finish();
             startActivity(new Intent(this, SectionMainActivity.class));
-        } else {
-            Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -227,7 +226,7 @@ public class SectionAActivity extends AppCompatActivity {
             db.updatesFormColumn(FormsContract.FormsTable.COLUMN_UID, fc.get_UID());
             return true;
         } else {
-            Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Sorry. You can't go further.\n Please contact IT Team (Failed to update DB)", Toast.LENGTH_SHORT).show();
             return false;
         }
 
@@ -239,7 +238,7 @@ public class SectionAActivity extends AppCompatActivity {
 
         fc = new FormsContract();
 
-        fc.setSysdate(new SimpleDateFormat("dd-MM-yy HH:mm").format(new Date().getTime()));
+        fc.setSysdate(new SimpleDateFormat("dd-MM-yy HH:mm", Locale.getDefault()).format(new Date().getTime()));
 
         fc.setUserName(MainApp.userName);
 

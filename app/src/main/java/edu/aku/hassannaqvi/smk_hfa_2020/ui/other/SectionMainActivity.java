@@ -26,16 +26,12 @@ import edu.aku.hassannaqvi.smk_hfa_2020.ui.sections.SectionH16Activity;
 import edu.aku.hassannaqvi.smk_hfa_2020.ui.sections.SectionH2Activity;
 import edu.aku.hassannaqvi.smk_hfa_2020.ui.sections.SectionI1Activity;
 import edu.aku.hassannaqvi.smk_hfa_2020.ui.sections.SectionJ1Activity;
-import edu.aku.hassannaqvi.smk_hfa_2020.ui.sections.SectionJ2Activity;
-import edu.aku.hassannaqvi.smk_hfa_2020.ui.sections.SectionJ3Activity;
-import edu.aku.hassannaqvi.smk_hfa_2020.ui.sections.SectionJ4Activity;
 import edu.aku.hassannaqvi.smk_hfa_2020.ui.sections.SectionK1Activity;
 import edu.aku.hassannaqvi.smk_hfa_2020.utils.JSONUtils;
 
 import static edu.aku.hassannaqvi.smk_hfa_2020.core.MainApp.fc;
 
 public class SectionMainActivity extends AppCompatActivity {
-    //public static String maternalCount = 0, paedsCount = 0;
     public static int countC2 = 0, countI = 0;
     ActivitySectionMainBinding bi;
     boolean flag = false;
@@ -142,7 +138,6 @@ public class SectionMainActivity extends AppCompatActivity {
                 && !bi.form10.isEnabled()) {
             finish();
             startActivity(new Intent(this, EndingActivity.class).putExtra("complete", true));
-            //MainApp.endActivity(this, SectionBActivity.class);
         } else {
             Toast.makeText(this, "Sections still in Pending!", Toast.LENGTH_SHORT).show();
         }
@@ -200,19 +195,7 @@ public class SectionMainActivity extends AppCompatActivity {
                     oF = new Intent(this, SectionI1Activity.class);
                     break;
                 case R.id.form09:
-                    if (fc.getA10().equals("1")) {
                         oF = new Intent(this, SectionJ1Activity.class);
-                    } else {
-                        if (fc.getDistrictType().equals("2") || fc.getDistrictType().equals("4")) {
-                            oF = new Intent(this, SectionJ1Activity.class);
-                        } else if (!fc.getDistrictType().equals("1")) {
-                            oF = new Intent(this, SectionJ2Activity.class);
-                        } else if (fc.getDistrictType().equals("3") || fc.getDistrictType().equals("4")) {
-                            oF = new Intent(this, SectionJ3Activity.class);
-                        } else if (fc.getDistrictType().equals("1")) {
-                            oF = new Intent(this, SectionJ4Activity.class);
-                        }
-                    }
                     break;
                 case R.id.form10:
                     oF = new Intent(this, SectionK1Activity.class);
@@ -220,7 +203,7 @@ public class SectionMainActivity extends AppCompatActivity {
             }
             startActivity(oF);
         } else {
-            Toast.makeText(getApplicationContext(), "Please login Again!", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Please login Again!", Toast.LENGTH_LONG).show();
         }
     }
 
