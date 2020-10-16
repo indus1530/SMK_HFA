@@ -16,6 +16,7 @@ import org.json.JSONObject;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Locale;
 
 import edu.aku.hassannaqvi.smk_hfa_2020.R;
 import edu.aku.hassannaqvi.smk_hfa_2020.contracts.FormsContract;
@@ -106,8 +107,8 @@ public class SectionBActivity extends AppCompatActivity {
                 : bi.a14b.isChecked() ? "2"
                 : "-1");
 
-        json.put("BDate", new SimpleDateFormat("dd-MM-yyyy").format(new Date().getTime()));
-        json.put("BTime", new SimpleDateFormat("HH:mm").format(new Date().getTime()));
+        json.put("BDate", new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date().getTime()));
+        json.put("BTime", new SimpleDateFormat("HH:mm", Locale.getDefault()).format(new Date().getTime()));
 
         json.put("a15", bi.a15a.isChecked() ? "1"
                 : bi.a15b.isChecked() ? "2"
@@ -148,7 +149,6 @@ public class SectionBActivity extends AppCompatActivity {
 
         json.put("a20", bi.a20a.isChecked() ? "1"
                 : bi.a20b.isChecked() ? "2"
-                : bi.a20c.isChecked() ? "3"
                 : "-1");
 
         json.put("a21", bi.a21.getText().toString().trim().isEmpty() ? "-1" : bi.a21.getText().toString());

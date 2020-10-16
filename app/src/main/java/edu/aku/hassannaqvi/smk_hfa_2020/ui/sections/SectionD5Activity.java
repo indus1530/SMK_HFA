@@ -198,6 +198,18 @@ public class SectionD5Activity extends AppCompatActivity {
                 : bi.d0503hb.isChecked() ? "2"
                 : "-1");
 
+        json.put("d0503i", bi.d0503ia.isChecked() ? "1"
+                : bi.d0503ib.isChecked() ? "2"
+                : "-1");
+
+        json.put("d0503j", bi.d0503ja.isChecked() ? "1"
+                : bi.d0503jb.isChecked() ? "2"
+                : "-1");
+
+        json.put("d0503k", bi.d0503ka.isChecked() ? "1"
+                : bi.d0503kb.isChecked() ? "2"
+                : "-1");
+
         try {
             JSONObject json_merge = JSONUtils.mergeJSONObjects(new JSONObject(fc.getsD()), json);
 

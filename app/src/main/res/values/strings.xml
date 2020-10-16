@@ -159,7 +159,7 @@
 
     <string name="a19"> Name of Government Contractualized </string>
     <string name="a19a"> P.P.H.I </string>
-    <string name="a19b"> P.H.F.M.C </string>
+    <string name="a19b"> AKUH </string>
     <string name="a19c"> INDUS </string>
     <string name="a19d"> I.H.S </string>
     <string name="a19e"> HANDS </string>
@@ -191,7 +191,7 @@
     <string name="b04">Excluding delivery Bed (Delivery table and OT table) how many overnight inpatient beds in total does this facility have for Children?</string>
     <string name="b05">Of the overnight/inpatient beds in the facility how many are dedicated maternity beds? This not include Labor room and OT beds</string>
 
-    <string name="modctitle"> C: STAFFING (NUMBERS &amp; THEIR CAPACITY) </string>
+    <string name="modctitle"> C: STAFFING (NUMBERS &amp; THEIR CAPACITY) (Not for Private) </string>
     <string name="c01"> SECTION 01: \nQualification Category of Staff </string>
     <string name="c01a">Generalist (Non Specialist Medical Doctors)</string>
     <string name="c01aa">Sanctioned</string>
@@ -334,7 +334,7 @@
     <string name="d0303a">Yes</string>
     <string name="d0303b">No</string>
 
-    <string name="d0304">On the day of visit, is primary source functional ?</string>
+    <string name="d0304">On the day of visit, is primary source available ?</string>
     <string name="d0304a">Yes</string>
     <string name="d0304b">No</string>
 
@@ -450,6 +450,15 @@
     <string name="d0503h">Disposable syringes with disposable needles</string>
     <string name="d0503ha">Yes</string>
     <string name="d0503hb">No</string>
+    <string name="d0503i">Two separate bucket for 5% chlorine and soap water with sand</string>
+    <string name="d0503ia">Yes</string>
+    <string name="d0503ib">No</string>
+    <string name="d0503j">Brush, Elbow lenght gloves</string>
+    <string name="d0503ja">Yes</string>
+    <string name="d0503jb">No</string>
+    <string name="d0503k">Medistel / Chlorine Solution</string>
+    <string name="d0503ka">Yes</string>
+    <string name="d0503kb">No</string>
 
     <string name="d06"> SECTION 06: \nHEALTH CARE WASTE MANAGEMENT </string>
     <string name="d0601">The health facility has leak proof, covered, labeled waste bins available in every treatment areas as per main 04 categories</string>
@@ -594,7 +603,7 @@
     <string name="d0801l0fq">Quantity</string>
 
 
-    <string name="modetitle">MODULE -E: AVAILABLE SERVICES</string>
+    <string name="modetitle"> E: AVAILABLE SERVICES</string>
     <!--    <string name="e01"> SECTION 01: \nFAMILY PLANNING SERVICES </string>-->
 
     <!--    <string name="e0101">Does this facility offer family planning services?</string>-->
@@ -1634,7 +1643,7 @@
     <string name="e0814b">No</string>
 
 
-    <string name="modftitle"> F: DIAGNOSTICS </string>
+    <string name="modftitle"> F: DIAGNOSTICS (Not for Private) </string>
     <string name="f01"> Section 01: \nClinical Chemistry </string>
     <string name="f0100"> Does this facility do blood glucose tests using a glucometer ? </string>
     <string name="f0100a"> Yes </string>
@@ -2007,7 +2016,7 @@
     <string name="f0701aad0fn">No</string>
     <string name="f0701aad0fq">Quantity</string>
 
-    <string name="modgtitle"> G: COMMODITIES &amp; SUPPLIES</string>
+    <string name="modgtitle"> G: COMMODITIES &amp; SUPPLIES (Not for Private) </string>
     <string name="g01"> SECTION 01: \nSUPPLY CHAIN MANAGEMENT </string>
     <string name="g0101">Who is the principal person responsible for managing the ordering of medical supplies at this facility? </string>
     <string name="g0101a">Nurse</string>
@@ -4167,7 +4176,7 @@
     <string name="j0901fx"> Others (Specify) </string>
 
 
-    <string name="modktitle">SECTION K: COVID-19 HEALTH FACILITY ASSESSMENT  </string>
+    <string name="modktitle"> K: COVID-19 HEALTH FACILITY ASSESSMENT  </string>
     <string name="modktitle1">SECTION K: \nARRANGEMENTS </string>
     <string name="k0001"> Does this facility offer COVID services ? </string>
     <string name="k0001a"> Yes </string>
@@ -4893,6 +4902,9 @@
     <string name='Q_d0503f'>d0503f</string>
     <string name='Q_d0503g'>d0503g</string>
     <string name='Q_d0503h'>d0503h</string>
+    <string name='Q_d0503i'>d0503i</string>
+    <string name='Q_d0503j'>d0503j</string>
+    <string name='Q_d0503k'>d0503k</string>
     <string name='Q_d06'>d06</string>
     <string name='Q_d0601'>d0601</string>
     <string name='Q_d0601a'>d0601a</string>

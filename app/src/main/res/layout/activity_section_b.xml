@@ -504,12 +504,6 @@
                             android:layout_height="wrap_content"
                             android:text="@string/a20b" />
 
-                        <RadioButton
-                            android:id="@+id/a20c"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/a20c" />
-
                     </RadioGroup>
 
                 </LinearLayout>
