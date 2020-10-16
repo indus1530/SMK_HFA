@@ -252,7 +252,6 @@ public class SectionAActivity extends AppCompatActivity {
 
         fc.setA03d(bi.a03d.getText().toString().trim().isEmpty() ? "-1" : bi.a03d.getText().toString());
         fc.setA03m(bi.a03m.getText().toString().trim().isEmpty() ? "-1" : bi.a03m.getText().toString());
-        fc.setA03y(bi.a03y.getText().toString().trim().isEmpty() ? "-1" : bi.a03y.getText().toString());
 
         fc.setDistrictCode(districtCodes.get(bi.a07.getSelectedItemPosition()));
         fc.setA07(districtCodes.get(bi.a07.getSelectedItemPosition()));

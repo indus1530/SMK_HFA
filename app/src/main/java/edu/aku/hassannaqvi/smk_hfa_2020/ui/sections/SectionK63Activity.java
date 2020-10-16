@@ -128,8 +128,6 @@ public class SectionK63Activity extends AppCompatActivity {
         if (UpdateDB()) {
             finish();
             startActivity(new Intent(this, SectionK7Activity.class));
-        } else {
-            Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
         }
     }
 

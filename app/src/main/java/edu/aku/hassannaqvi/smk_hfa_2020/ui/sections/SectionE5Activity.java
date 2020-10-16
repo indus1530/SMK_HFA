@@ -160,8 +160,6 @@ public class SectionE5Activity extends AppCompatActivity {
         if (UpdateDB()) {
             finish();
             startActivity(new Intent(this, SectionE6Activity.class));
-        } else {
-            Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
         }
     }
 

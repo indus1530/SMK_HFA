@@ -52,9 +52,7 @@
 
                     </RelativeLayout>
 
-
                     <LinearLayout style="@style/hlinearlayout">
-
 
                         <LinearLayout
                             style="@style/vlinearlayout"
@@ -65,7 +63,7 @@
                                 style="@style/textviewh"
                                 android:text="@string/day" />
 
-                            <com.edittextpicker.aliazaz.EditTextPicker
+                            <!--<com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/a03d"
                                 style="@style/EditTextNum"
                                 android:hint="##"
@@ -73,10 +71,18 @@
                                 android:textAlignment="center"
                                 app:maxValue="31"
                                 app:minValue="1"
-                                app:type="range" />
+                                app:type="range" />-->
+
+                            <io.blackbox_vision.datetimepickeredittext.view.DatePickerEditText
+                                android:id="@+id/a03d"
+                                android:layout_width="match_parent"
+                                android:layout_height="56dp"
+                                android:gravity="center"
+                                android:hint="@string/day"
+                                app:dateFormat="dd-MM-yy"
+                                app:maxDate="CR_DATE" />
 
                         </LinearLayout>
-
 
                         <LinearLayout
                             style="@style/vlinearlayout"
@@ -85,9 +91,9 @@
 
                             <TextView
                                 style="@style/textviewh"
-                                android:text="@string/month" />
+                                android:text="@string/time" />
 
-                            <com.edittextpicker.aliazaz.EditTextPicker
+                            <!--<com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/a03m"
                                 style="@style/EditTextNum"
                                 android:hint="##"
@@ -95,32 +101,18 @@
                                 android:textAlignment="center"
                                 app:maxValue="12"
                                 app:minValue="1"
-                                app:type="range" />
+                                app:type="range" />-->
+
+                            <io.blackbox_vision.datetimepickeredittext.view.TimePickerInputEditText
+                                android:id="@+id/a03m"
+                                android:layout_width="match_parent"
+                                android:layout_height="56dp"
+                                android:gravity="center"
+                                android:hint="HH:mm"
+                                app:is24HourView="true"
+                                app:timeFormat="HH:mm" />
 
                         </LinearLayout>
-
-
-                        <LinearLayout
-                            style="@style/vlinearlayout"
-                            android:layout_width="0dp"
-                            android:layout_weight="1">
-
-                            <TextView
-                                style="@style/textviewh"
-                                android:text="@string/year" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/a03y"
-                                style="@style/EditTextNum"
-                                android:hint="####"
-                                android:maxLength="4"
-                                android:textAlignment="center"
-                                app:maxValue="2021"
-                                app:minValue="2019"
-                                app:type="range" />
-
-                        </LinearLayout>
-
 
                     </LinearLayout>
 

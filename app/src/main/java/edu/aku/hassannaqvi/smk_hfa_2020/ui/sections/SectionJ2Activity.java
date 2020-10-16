@@ -19,6 +19,7 @@ import org.json.JSONObject;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Locale;
 
 import edu.aku.hassannaqvi.smk_hfa_2020.R;
 import edu.aku.hassannaqvi.smk_hfa_2020.contracts.FormsContract;
@@ -73,21 +74,12 @@ public class SectionJ2Activity extends AppCompatActivity {
         if (!formValidation()) return;
         try {
             SaveDraft();
-        } catch (Exception e) {
+        } catch (JSONException e) {
             e.printStackTrace();
         }
         if (UpdateDB()) {
             finish();
-            Intent intent;
-
-            if (MainApp.fc.getA10().equals("2") && MainApp.fc.getDistrictType().equals("1") && MainApp.fc.getDistrictType().equals("2")) {
-                intent = new Intent(this, SectionJ4Activity.class);
-            } else {
-                intent = new Intent(this, SectionJ3Activity.class);
-            }
-            startActivity(intent);
-        } else {
-            Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(this, SectionJ3Activity.class));
         }
     }
 
@@ -155,8 +147,8 @@ public class SectionJ2Activity extends AppCompatActivity {
                 e.printStackTrace();
             }
         } else {
-            json.put("JDate", new SimpleDateFormat("dd-MM-yyyy").format(new Date().getTime()));
-            json.put("JTime", new SimpleDateFormat("HH:mm").format(new Date().getTime()));
+            json.put("JDate", new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date().getTime()));
+            json.put("JTime", new SimpleDateFormat("HH:mm", Locale.getDefault()).format(new Date().getTime()));
             fc.setsJ(String.valueOf(json));
         }
 

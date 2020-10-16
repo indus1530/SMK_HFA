@@ -16,12 +16,15 @@ import org.jetbrains.annotations.NotNull;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+
 import edu.aku.hassannaqvi.smk_hfa_2020.R;
 import edu.aku.hassannaqvi.smk_hfa_2020.contracts.FormsContract;
 import edu.aku.hassannaqvi.smk_hfa_2020.core.DatabaseHelper;
 import edu.aku.hassannaqvi.smk_hfa_2020.core.MainApp;
 import edu.aku.hassannaqvi.smk_hfa_2020.databinding.ActivitySectionE101Binding;
-import edu.aku.hassannaqvi.smk_hfa_2020.utils.JSONUtils;
 
 import static edu.aku.hassannaqvi.smk_hfa_2020.core.MainApp.fc;
 import static edu.aku.hassannaqvi.smk_hfa_2020.utils.UtilKt.openSectionMainActivity;
@@ -71,13 +74,16 @@ public class SectionE101Activity extends AppCompatActivity {
 
         JSONObject json = new JSONObject();
 
+        json.put("FDate", new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date().getTime()));
+        json.put("FTime", new SimpleDateFormat("HH:mm", Locale.getDefault()).format(new Date().getTime()));
+
         json.put("e11", bi.e11a.isChecked() ? "1"
                 : bi.e11b.isChecked() ? "2"
-                :  "-1");
+                : "-1");
 
         json.put("e12a2a", bi.e12aa.isChecked() ? "1"
                 : bi.e12ab.isChecked() ? "2"
-                :  "-1");
+                : "-1");
 
         json.put("e12b2b", bi.e12ba.isChecked() ? "1"
                 : bi.e12bb.isChecked() ? "2"
@@ -141,14 +147,7 @@ public class SectionE101Activity extends AppCompatActivity {
                 : "-1");
         json.put("e14exx", bi.e14exx.getText().toString().trim().isEmpty() ? "-1" : bi.e14exx.getText().toString());
 
-        try {
-            JSONObject json_merge = JSONUtils.mergeJSONObjects(new JSONObject(fc.getsE()), json);
-
-            fc.setsE(String.valueOf(json_merge));
-
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
+        MainApp.fc.setsE(String.valueOf(json));
 
     }
 
@@ -163,8 +162,6 @@ public class SectionE101Activity extends AppCompatActivity {
         if (UpdateDB()) {
             finish();
             startActivity(new Intent(this, bi.e11b.isChecked() ? SectionE2Activity.class : SectionE102Activity.class));
-        } else {
-            Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
         }
     }
 

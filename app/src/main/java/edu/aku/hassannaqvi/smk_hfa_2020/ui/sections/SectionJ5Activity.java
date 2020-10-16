@@ -42,6 +42,7 @@ public class SectionJ5Activity extends AppCompatActivity {
 
     }
 
+
     private boolean UpdateDB() {
         DatabaseHelper db = MainApp.appInfo.getDbHelper();
         int updcount = db.updatesFormColumn(FormsContract.FormsTable.COLUMN_SJ, fc.getsJ());
@@ -52,6 +53,7 @@ public class SectionJ5Activity extends AppCompatActivity {
             return false;
         }
     }
+
 
     private void SaveDraft() throws JSONException {
 
@@ -101,6 +103,7 @@ public class SectionJ5Activity extends AppCompatActivity {
 
     }
 
+
     public void BtnContinue() {
         if (!formValidation()) return;
         try {
@@ -111,18 +114,19 @@ public class SectionJ5Activity extends AppCompatActivity {
         if (UpdateDB()) {
             finish();
             startActivity(new Intent(this, SectionMainActivity.class));
-        } else {
-            Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
         }
     }
+
 
     public void BtnEnd() {
         openSectionMainActivity(this, "J");
     }
 
+
     private boolean formValidation() {
         return Validator.emptyCheckingContainer(this, bi.GrpName);
     }
+
 
     public void showTooltip(@NotNull View view) {
         if (view.getId() != View.NO_ID) {

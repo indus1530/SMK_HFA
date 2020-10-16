@@ -17,6 +17,7 @@ import org.json.JSONObject;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Locale;
 
 import edu.aku.hassannaqvi.smk_hfa_2020.R;
 import edu.aku.hassannaqvi.smk_hfa_2020.contracts.FormsContract;
@@ -81,16 +82,7 @@ public class SectionJ1Activity extends AppCompatActivity {
         }
         if (UpdateDB()) {
             finish();
-            Intent intent;
-
-            if (MainApp.fc.getA10().equals("2") && MainApp.fc.getDistrictType().equals("1")) {
-                intent = new Intent(this, SectionJ4Activity.class);
-            } else {
-                intent = new Intent(this, SectionJ2Activity.class);
-            }
-            startActivity(intent);
-        } else {
-            Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(this, SectionJ2Activity.class));
         }
     }
 
@@ -111,8 +103,8 @@ public class SectionJ1Activity extends AppCompatActivity {
 
         JSONObject json = new JSONObject();
 
-        json.put("JDate", new SimpleDateFormat("dd-MM-yyyy").format(new Date().getTime()));
-        json.put("JTime", new SimpleDateFormat("HH:mm").format(new Date().getTime()));
+        json.put("JDate", new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date().getTime()));
+        json.put("JTime", new SimpleDateFormat("HH:mm", Locale.getDefault()).format(new Date().getTime()));
 
         json.put("j0100a", bi.j0100a.getText().toString().trim().length() > 0 ? bi.j0100a.getText().toString() : "-1");
         json.put("j0100b", bi.j0100b.getText().toString().trim().length() > 0 ? bi.j0100b.getText().toString() : "-1");
