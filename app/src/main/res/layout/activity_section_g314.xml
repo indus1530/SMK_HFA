@@ -190,53 +190,54 @@
                             android:text="@string/Q_g3130so" />
                     </RelativeLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
                     <LinearLayout
-                        style="@style/vlinearlayout"
-                        android:layout_width="0dp"
-                        android:layout_weight="1">
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
 
-                        <TextView
-                            style="@style/textviewh"
-                            android:text="@string/g3130sod" />
+                        <LinearLayout
+                            style="@style/vlinearlayout"
+                            android:layout_width="0dp"
+                            android:layout_weight="1">
 
-                        <com.edittextpicker.aliazaz.EditTextPicker
-                            android:id="@+id/g3130sod"
-                            style="@style/EditTextNum"
-                            android:gravity="center"
-                            android:hint="##"
-                            android:maxLength="2"
-                            app:maxValue="30"
-                            app:minValue="0"
-                            app:type="range" />
+                            <TextView
+                                style="@style/textviewh"
+                                android:text="@string/g3130sod" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/g3130sod"
+                                style="@style/EditTextNum"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:maxLength="2"
+                                app:maxValue="30"
+                                app:minValue="0"
+                                app:type="range" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/vlinearlayout"
+                            android:layout_width="0dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/textviewh"
+                                android:text="@string/g3130som" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/g3130som"
+                                style="@style/EditTextNum"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:maxLength="2"
+                                app:maxValue="30"
+                                app:minValue="0"
+                                app:type="range" />
+
+                        </LinearLayout>
 
                     </LinearLayout>
-                    <LinearLayout
-                        style="@style/vlinearlayout"
-                        android:layout_width="0dp"
-                        android:layout_weight="1">
-
-                        <TextView
-                            style="@style/textviewh"
-                            android:text="@string/g3130som" />
-
-                        <com.edittextpicker.aliazaz.EditTextPicker
-                            android:id="@+id/g3130som"
-                            style="@style/EditTextNum"
-                            android:gravity="center"
-                            android:hint="##"
-                            android:maxLength="2"
-                            app:maxValue="30"
-                            app:minValue="0"
-                            app:type="range" />
-
-                    </LinearLayout>
-
-                </LinearLayout>
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -1163,54 +1164,56 @@
                             android:layout_alignBottom="@id/qtxt_g3135so"
                             android:text="@string/Q_g3135so" />
                     </RelativeLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <LinearLayout
-                        style="@style/vlinearlayout"
-                        android:layout_width="0dp"
-                        android:layout_weight="1">
-
-                        <TextView
-                            style="@style/textviewh"
-                            android:text="@string/g3135sod" />
-
-                        <com.edittextpicker.aliazaz.EditTextPicker
-                            android:id="@+id/g3135sod"
-                            style="@style/EditTextNum"
-                            android:gravity="center"
-                            android:hint="##"
-                            android:maxLength="2"
-                            app:maxValue="30"
-                            app:minValue="0"
-                            app:type="range" />
-
-                    </LinearLayout>
-
 
                     <LinearLayout
-                        style="@style/vlinearlayout"
-                        android:layout_width="0dp"
-                        android:layout_weight="1">
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
 
-                        <TextView
-                            style="@style/textviewh"
-                            android:text="@string/g3135som" />
+                        <LinearLayout
+                            style="@style/vlinearlayout"
+                            android:layout_width="0dp"
+                            android:layout_weight="1">
 
-                        <com.edittextpicker.aliazaz.EditTextPicker
-                            android:id="@+id/g3135som"
-                            style="@style/EditTextNum"
-                            android:gravity="center"
-                            android:hint="##"
-                            android:maxLength="2"
-                            app:maxValue="30"
-                            app:minValue="0"
-                            app:type="range" />
+                            <TextView
+                                style="@style/textviewh"
+                                android:text="@string/g3135sod" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/g3135sod"
+                                style="@style/EditTextNum"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:maxLength="2"
+                                app:maxValue="30"
+                                app:minValue="0"
+                                app:type="range" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            style="@style/vlinearlayout"
+                            android:layout_width="0dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/textviewh"
+                                android:text="@string/g3135som" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/g3135som"
+                                style="@style/EditTextNum"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:maxLength="2"
+                                app:maxValue="30"
+                                app:minValue="0"
+                                app:type="range" />
+
+                        </LinearLayout>
 
                     </LinearLayout>
-
-                </LinearLayout>
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -1358,55 +1361,55 @@
                             android:text="@string/Q_g3136so" />
                     </RelativeLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
                     <LinearLayout
-                        style="@style/vlinearlayout"
-                        android:layout_width="0dp"
-                        android:layout_weight="1">
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
 
-                        <TextView
-                            style="@style/textviewh"
-                            android:text="@string/g3136sod" />
+                        <LinearLayout
+                            style="@style/vlinearlayout"
+                            android:layout_width="0dp"
+                            android:layout_weight="1">
 
-                        <com.edittextpicker.aliazaz.EditTextPicker
-                            android:id="@+id/g3136sod"
-                            style="@style/EditTextNum"
-                            android:gravity="center"
-                            android:hint="##"
-                            android:maxLength="2"
-                            app:maxValue="30"
-                            app:minValue="0"
-                            app:type="range" />
+                            <TextView
+                                style="@style/textviewh"
+                                android:text="@string/g3136sod" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/g3136sod"
+                                style="@style/EditTextNum"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:maxLength="2"
+                                app:maxValue="30"
+                                app:minValue="0"
+                                app:type="range" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/vlinearlayout"
+                            android:layout_width="0dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/textviewh"
+                                android:text="@string/g3136som" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/g3136som"
+                                style="@style/EditTextNum"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:maxLength="2"
+                                app:maxValue="30"
+                                app:minValue="0"
+                                app:type="range" />
+
+                        </LinearLayout>
+
 
                     </LinearLayout>
-
-                    <LinearLayout
-                        style="@style/vlinearlayout"
-                        android:layout_width="0dp"
-                        android:layout_weight="1">
-
-                        <TextView
-                            style="@style/textviewh"
-                            android:text="@string/g3136som" />
-
-                        <com.edittextpicker.aliazaz.EditTextPicker
-                            android:id="@+id/g3136som"
-                            style="@style/EditTextNum"
-                            android:gravity="center"
-                            android:hint="##"
-                            android:maxLength="2"
-                            app:maxValue="30"
-                            app:minValue="0"
-                            app:type="range" />
-
-                    </LinearLayout>
-
-
-                </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -1552,55 +1555,56 @@
                             android:layout_alignBottom="@id/qtxt_g3137so"
                             android:text="@string/Q_g3137so" />
                     </RelativeLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
 
                     <LinearLayout
-                        style="@style/vlinearlayout"
-                        android:layout_width="0dp"
-                        android:layout_weight="1">
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
 
-                        <TextView
-                            style="@style/textviewh"
-                            android:text="@string/g3137sod" />
+                        <LinearLayout
+                            style="@style/vlinearlayout"
+                            android:layout_width="0dp"
+                            android:layout_weight="1">
 
-                        <com.edittextpicker.aliazaz.EditTextPicker
-                            android:id="@+id/g3137sod"
-                            style="@style/EditTextNum"
-                            android:gravity="center"
-                            android:hint="##"
-                            android:maxLength="2"
-                            app:maxValue="30"
-                            app:minValue="0"
-                            app:type="range" />
+                            <TextView
+                                style="@style/textviewh"
+                                android:text="@string/g3137sod" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/g3137sod"
+                                style="@style/EditTextNum"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:maxLength="2"
+                                app:maxValue="30"
+                                app:minValue="0"
+                                app:type="range" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/vlinearlayout"
+                            android:layout_width="0dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/textviewh"
+                                android:text="@string/g3137som" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/g3137som"
+                                style="@style/EditTextNum"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:maxLength="2"
+                                app:maxValue="30"
+                                app:minValue="0"
+                                app:type="range" />
+
+                        </LinearLayout>
+
 
                     </LinearLayout>
-
-                    <LinearLayout
-                        style="@style/vlinearlayout"
-                        android:layout_width="0dp"
-                        android:layout_weight="1">
-
-                        <TextView
-                            style="@style/textviewh"
-                            android:text="@string/g3137som" />
-
-                        <com.edittextpicker.aliazaz.EditTextPicker
-                            android:id="@+id/g3137som"
-                            style="@style/EditTextNum"
-                            android:gravity="center"
-                            android:hint="##"
-                            android:maxLength="2"
-                            app:maxValue="30"
-                            app:minValue="0"
-                            app:type="range" />
-
-                    </LinearLayout>
-
-
-                </LinearLayout>
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -1747,53 +1751,54 @@
                             android:layout_alignBottom="@id/qtxt_g3138so"
                             android:text="@string/Q_g3138so" />
                     </RelativeLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
 
                     <LinearLayout
-                        style="@style/vlinearlayout"
-                        android:layout_width="0dp"
-                        android:layout_weight="1">
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
 
-                        <TextView
-                            style="@style/textviewh"
-                            android:text="@string/g3138sod" />
+                        <LinearLayout
+                            style="@style/vlinearlayout"
+                            android:layout_width="0dp"
+                            android:layout_weight="1">
 
-                        <com.edittextpicker.aliazaz.EditTextPicker
-                            android:id="@+id/g3138sod"
-                            style="@style/EditTextNum"
-                            android:gravity="center"
-                            android:hint="##"
-                            android:maxLength="2"
-                            app:maxValue="30"
-                            app:minValue="0"
-                            app:type="range" />
+                            <TextView
+                                style="@style/textviewh"
+                                android:text="@string/g3138sod" />
 
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/g3138sod"
+                                style="@style/EditTextNum"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:maxLength="2"
+                                app:maxValue="30"
+                                app:minValue="0"
+                                app:type="range" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/vlinearlayout"
+                            android:layout_width="0dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/textviewh"
+                                android:text="@string/g3138som" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/g3138som"
+                                style="@style/EditTextNum"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:maxLength="2"
+                                app:maxValue="30"
+                                app:minValue="0"
+                                app:type="range" />
+
+                        </LinearLayout>
                     </LinearLayout>
-
-                    <LinearLayout
-                        style="@style/vlinearlayout"
-                        android:layout_width="0dp"
-                        android:layout_weight="1">
-
-                        <TextView
-                            style="@style/textviewh"
-                            android:text="@string/g3138som" />
-
-                        <com.edittextpicker.aliazaz.EditTextPicker
-                            android:id="@+id/g3138som"
-                            style="@style/EditTextNum"
-                            android:gravity="center"
-                            android:hint="##"
-                            android:maxLength="2"
-                            app:maxValue="30"
-                            app:minValue="0"
-                            app:type="range" />
-
-                    </LinearLayout>
-                </LinearLayout>
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -1940,53 +1945,55 @@
                             android:layout_alignBottom="@id/qtxt_g3139so"
                             android:text="@string/Q_g3139so" />
                     </RelativeLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
 
                     <LinearLayout
-                        style="@style/vlinearlayout"
-                        android:layout_width="0dp"
-                        android:layout_weight="1">
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
 
-                        <TextView
-                            style="@style/textviewh"
-                            android:text="@string/g3139sod" />
+                        <LinearLayout
+                            style="@style/vlinearlayout"
+                            android:layout_width="0dp"
+                            android:layout_weight="1">
 
-                        <com.edittextpicker.aliazaz.EditTextPicker
-                            android:id="@+id/g3139sod"
-                            style="@style/EditTextNum"
-                            android:gravity="center"
-                            android:hint="##"
-                            android:maxLength="2"
-                            app:maxValue="30"
-                            app:minValue="0"
-                            app:type="range" />
+                            <TextView
+                                style="@style/textviewh"
+                                android:text="@string/g3139sod" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/g3139sod"
+                                style="@style/EditTextNum"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:maxLength="2"
+                                app:maxValue="30"
+                                app:minValue="0"
+                                app:type="range" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/vlinearlayout"
+                            android:layout_width="0dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/textviewh"
+                                android:text="@string/g3139som" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/g3139som"
+                                style="@style/EditTextNum"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:maxLength="2"
+                                app:maxValue="30"
+                                app:minValue="0"
+                                app:type="range" />
+
+                        </LinearLayout>
 
                     </LinearLayout>
-                    <LinearLayout
-                        style="@style/vlinearlayout"
-                        android:layout_width="0dp"
-                        android:layout_weight="1">
-
-                        <TextView
-                            style="@style/textviewh"
-                            android:text="@string/g3139som" />
-
-                        <com.edittextpicker.aliazaz.EditTextPicker
-                            android:id="@+id/g3139som"
-                            style="@style/EditTextNum"
-                            android:gravity="center"
-                            android:hint="##"
-                            android:maxLength="2"
-                            app:maxValue="30"
-                            app:minValue="0"
-                            app:type="range" />
-
-                    </LinearLayout>
-
-                </LinearLayout>
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
