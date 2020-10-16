@@ -20,6 +20,9 @@ import edu.aku.hassannaqvi.smk_hfa_2020.contracts.FormsContract;
 import edu.aku.hassannaqvi.smk_hfa_2020.core.DatabaseHelper;
 import edu.aku.hassannaqvi.smk_hfa_2020.core.MainApp;
 import edu.aku.hassannaqvi.smk_hfa_2020.databinding.ActivitySectionH2Binding;
+import edu.aku.hassannaqvi.smk_hfa_2020.utils.JSONUtils;
+
+import static edu.aku.hassannaqvi.smk_hfa_2020.core.MainApp.fc;
 
 
 public class SectionH2Activity extends AppCompatActivity {
@@ -91,7 +94,14 @@ public class SectionH2Activity extends AppCompatActivity {
                 : bi.h0203bd.isChecked() ? "4"
                 : "-1");
 
-        MainApp.fc.setsH(String.valueOf(json));
+        try {
+            JSONObject json_merge = JSONUtils.mergeJSONObjects(new JSONObject(fc.getsH()), json);
+
+            fc.setsH(String.valueOf(json_merge));
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
 
     }
 
@@ -99,6 +109,5 @@ public class SectionH2Activity extends AppCompatActivity {
     private boolean formValidation() {
         return Validator.emptyCheckingContainer(this, bi.GrpName);
     }
-
 
 }

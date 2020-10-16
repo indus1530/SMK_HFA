@@ -130,7 +130,6 @@ public class SectionK4Activity extends AppCompatActivity {
 
         json.put("k00411", bi.k00411.getText().toString().trim().isEmpty() ? "-1" : bi.k00411.getText().toString());
 
-
         try {
             JSONObject json_merge = JSONUtils.mergeJSONObjects(new JSONObject(MainApp.fc.getsK()), json);
 

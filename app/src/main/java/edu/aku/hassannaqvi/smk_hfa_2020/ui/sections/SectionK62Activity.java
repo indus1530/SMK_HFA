@@ -155,7 +155,6 @@ public class SectionK62Activity extends AppCompatActivity {
 
         JSONObject json = new JSONObject();
 
-
         json.put("k0060101", bi.k0060101a.isChecked() ? "1"
                 : bi.k0060101b.isChecked() ? "2"
                 : bi.k0060101c.isChecked() ? "3"
@@ -275,7 +274,6 @@ public class SectionK62Activity extends AppCompatActivity {
                 : "-1");
         json.put("k0060192q", bi.k0060192q.getText().toString().trim().isEmpty() ? "-1" : bi.k0060192q.getText().toString());
 
-
         try {
             JSONObject json_merge = JSONUtils.mergeJSONObjects(new JSONObject(MainApp.fc.getsK()), json);
 
@@ -284,7 +282,6 @@ public class SectionK62Activity extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-
 
     }
 

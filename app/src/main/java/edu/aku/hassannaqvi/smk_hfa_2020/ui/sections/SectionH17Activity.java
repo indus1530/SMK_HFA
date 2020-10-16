@@ -48,7 +48,7 @@ public class SectionH17Activity extends AppCompatActivity {
         }
         if (UpdateDB()) {
             finish();
-            startActivity(new Intent(this, SectionH4Activity.class));
+            startActivity(new Intent(this, SectionH7Activity.class));
         } else {
             Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
         }
@@ -71,31 +71,25 @@ public class SectionH17Activity extends AppCompatActivity {
 
         JSONObject json = new JSONObject();
 
-
         json.put("h1701", bi.h1701a.isChecked() ? "1"
                 : bi.h1701b.isChecked() ? "2"
                 : "-1");
-
 
         json.put("h1702", bi.h1702a.isChecked() ? "1"
                 : bi.h1702b.isChecked() ? "2"
                 : "-1");
 
-
         json.put("h1703", bi.h1703a.isChecked() ? "1"
                 : bi.h1703b.isChecked() ? "2"
                 : "-1");
-
 
         json.put("h1704", bi.h1704a.isChecked() ? "1"
                 : bi.h1704b.isChecked() ? "2"
                 : "-1");
 
-
         json.put("h1705", bi.h1705a.isChecked() ? "1"
                 : bi.h1705b.isChecked() ? "2"
                 : "-1");
-
 
         try {
             JSONObject json_merge = JSONUtils.mergeJSONObjects(new JSONObject(fc.getsH()), json);

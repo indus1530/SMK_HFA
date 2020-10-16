@@ -37,9 +37,11 @@ public class SectionJ4Activity extends AppCompatActivity {
         setupSkips();
     }
 
+
     private void setupSkips() {
 
     }
+
 
     private boolean UpdateDB() {
         DatabaseHelper db = MainApp.appInfo.getDbHelper();
@@ -52,21 +54,21 @@ public class SectionJ4Activity extends AppCompatActivity {
         }
     }
 
+
     private void SaveDraft() throws JSONException {
 
         JSONObject json = new JSONObject();
 
-        json.put("j40", bi.j40a.isChecked() ? "1"
-                : bi.j40b.isChecked() ? "2"
-                :  "-1");
+        json.put("j40a", bi.j40a.getText().toString().trim().length() > 0 ? bi.j40a.getText().toString() : "-1");
+        json.put("j40b", bi.j40b.getText().toString().trim().length() > 0 ? bi.j40b.getText().toString() : "-1");
 
         json.put("j41", bi.j41a.isChecked() ? "1"
                 : bi.j41b.isChecked() ? "2"
-                :  "-1");
+                : "-1");
 
         json.put("j401", bi.j401a.isChecked() ? "1"
                 : bi.j401b.isChecked() ? "2"
-                :  "-1");
+                : "-1");
 
         json.put("j402", bi.j402a.isChecked() ? "1"
                 : bi.j402b.isChecked() ? "2"
@@ -104,6 +106,7 @@ public class SectionJ4Activity extends AppCompatActivity {
 
     }
 
+
     public void BtnContinue() {
         if (!formValidation()) return;
         try {
@@ -119,13 +122,16 @@ public class SectionJ4Activity extends AppCompatActivity {
         }
     }
 
+
     public void BtnEnd() {
         openSectionMainActivity(this, "J");
     }
 
+
     private boolean formValidation() {
         return Validator.emptyCheckingContainer(this, bi.GrpName);
     }
+
 
     public void showTooltip(@NotNull View view) {
         if (view.getId() != View.NO_ID) {

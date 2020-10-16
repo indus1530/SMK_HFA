@@ -339,42 +339,42 @@
 
                     </RelativeLayout>
 
-                    <RadioGroup
-                        android:id="@+id/h1605"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/llh1605check"
+                        style="@style/vlinearlayout"
+                        android:tag="0">
 
-                        <RadioButton
+                        <CheckBox
                             android:id="@+id/h1605a"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/h1605a" />
 
-                        <RadioButton
+                        <CheckBox
                             android:id="@+id/h1605b"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/h1605b" />
 
-                        <RadioButton
+                        <CheckBox
                             android:id="@+id/h1605c"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/h1605c" />
 
-                        <RadioButton
+                        <CheckBox
                             android:id="@+id/h1605d"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/h1605d" />
 
-                        <RadioButton
+                        <CheckBox
                             android:id="@+id/h1605e"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/h1605e" />
 
-                        <RadioButton
+                        <CheckBox
                             android:id="@+id/h1605x"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -388,7 +388,7 @@
                             android:text='@{h1605x.checked ? h1605xx.getText().toString() : ""}'
                             android:visibility='@{h1605x.checked ? View.VISIBLE : View.GONE}' />
 
-                    </RadioGroup>
+                    </LinearLayout>
 
                 </LinearLayout>
 

@@ -11,7 +11,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
 import com.edittextpicker.aliazaz.EditTextPicker;
-import com.validatorcrawler.aliazaz.Clear;
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.json.JSONException;
@@ -37,13 +36,6 @@ public class SectionF5Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_f5);
         bi.setCallback(this);
-        setupSkips();
-        setupTextWatchers();
-    }
-
-
-    private void setupTextWatchers() {
-        editTextImplementation(bi.f0501aaa0ayx, bi.f0501aaa0fyx);
     }
 
 
@@ -69,23 +61,6 @@ public class SectionF5Activity extends AppCompatActivity {
     }
 
 
-    private void setupSkips() {
-
-        bi.f0501.setOnCheckedChangeListener((radioGroup, i) -> {
-            if (i == bi.f0501b.getId()) {
-                Clear.clearAllFields(bi.fldGrpSecf501);
-            }
-        });
-
-        bi.f0501aaa0a.setOnCheckedChangeListener((radioGroup, i) -> {
-            if (i == bi.f0501aaa0an.getId()) {
-                Clear.clearAllFields(bi.fldGrpCVf0501aaa0f);
-            }
-        });
-
-    }
-
-
     private boolean UpdateDB() {
         DatabaseHelper db = MainApp.appInfo.getDbHelper();
         int updcount = db.updatesFormColumn(FormsContract.FormsTable.COLUMN_SF, fc.getsF());
@@ -105,17 +80,6 @@ public class SectionF5Activity extends AppCompatActivity {
         json.put("f0501", bi.f0501a.isChecked() ? "1"
                 : bi.f0501b.isChecked() ? "2"
                 : "-1");
-
-        json.put("f0501aaa0a", bi.f0501aaa0ay.isChecked() ? "1"
-                : bi.f0501aaa0an.isChecked() ? "2"
-                : "-1");
-        json.put("f0501aaa0ayx", bi.f0501aaa0ayx.getText().toString().trim().length() > 0 ? bi.f0501aaa0ayx.getText().toString() : "-1");
-
-        json.put("f0501aaa0f", bi.f0501aaa0fy.isChecked() ? "1"
-                : bi.f0501aaa0fn.isChecked() ? "2"
-                : "-1");
-        json.put("f0501aaa0fyx", bi.f0501aaa0fyx.getText().toString().trim().length() > 0 ? bi.f0501aaa0fyx.getText().toString() : "-1");
-
 
         try {
             JSONObject json_merge = JSONUtils.mergeJSONObjects(new JSONObject(MainApp.fc.getsF()), json);

@@ -91,6 +91,10 @@ public class SectionE31Activity extends AppCompatActivity {
                 : bi.e0302eb.isChecked() ? "2"
                 : "-1");
 
+        json.put("e0302f", bi.e0302fa.isChecked() ? "1"
+                : bi.e0302fb.isChecked() ? "2"
+                : "-1");
+
         json.put("e0303a", bi.e0303aa.isChecked() ? "1"
                 : bi.e0303ab.isChecked() ? "2"
                 : "-1");
@@ -145,6 +149,10 @@ public class SectionE31Activity extends AppCompatActivity {
 
         json.put("e0303n", bi.e0303na.isChecked() ? "1"
                 : bi.e0303nb.isChecked() ? "2"
+                : "-1");
+
+        json.put("e0303o", bi.e0303oa.isChecked() ? "1"
+                : bi.e0303ob.isChecked() ? "2"
                 : "-1");
 
         json.put("e0304a", bi.e0304aa.isChecked() ? "1"

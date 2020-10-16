@@ -11,15 +11,62 @@
             type="edu.aku.hassannaqvi.smk_hfa_2020.ui.sections.SectionH32Activity" />
     </data>
 
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-
         <LinearLayout
             android:id="@+id/GrpName"
             style="@style/vlinearlayout">
+
+            <!-- h3title  Title   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVh03"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/vlinearlayout">
+
+                    <TextView
+                        style="@style/textView3Head"
+                        android:text="@string/h3title" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- h31  Title   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVh31"
+                style="@style/cardView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/qtxt_h31"
+                        style="@style/sub"
+                        android:text="@string/h31" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- h31hint  Title   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVh31hint"
+                style="@style/cardView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/qtxt_h31hint"
+                        style="@style/sub"
+                        android:text="@string/h31hint" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
 
             <!-- h3114  Title   -->
@@ -41,7 +88,17 @@
                             android:id="@+id/qtxt_h3114"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_h3114"
                             android:text="@string/h3114" />
+
+                        <TextView
+                            android:id="@+id/q_h3114"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_h3114"
+                            android:layout_alignBottom="@id/qtxt_h3114"
+                            android:text="@string/Q_h3114" />
                     </RelativeLayout>
 
                     <LinearLayout
@@ -66,10 +123,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginBottom="12dp"
+                                android:gravity="center"
                                 android:hint="@string/h3114m1"
                                 android:inputType="number"
-                                app:mask="##"
-                                app:maxValue="100"
+                                android:maxLength="5"
+                                app:maxValue="50000"
+                                app:minValue="0"
                                 app:type="range" />
                         </LinearLayout>
 
@@ -90,10 +149,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginBottom="12dp"
+                                android:gravity="center"
                                 android:hint="@string/h3114m2"
                                 android:inputType="number"
-                                app:mask="##"
-                                app:maxValue="100"
+                                android:maxLength="5"
+                                app:maxValue="50000"
+                                app:minValue="0"
                                 app:type="range" />
                         </LinearLayout>
 
@@ -114,10 +175,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginBottom="12dp"
+                                android:gravity="center"
                                 android:hint="@string/h3114m3"
                                 android:inputType="number"
-                                app:mask="##"
-                                app:maxValue="100"
+                                android:maxLength="5"
+                                app:maxValue="50000"
+                                app:minValue="0"
                                 app:type="range" />
                         </LinearLayout>
                     </LinearLayout>
@@ -179,7 +242,6 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-
             <!-- h3115  Title   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVh3115"
@@ -199,7 +261,17 @@
                             android:id="@+id/qtxt_h3115"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_h3115"
                             android:text="@string/h3115" />
+
+                        <TextView
+                            android:id="@+id/q_h3115"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_h3115"
+                            android:layout_alignBottom="@id/qtxt_h3115"
+                            android:text="@string/Q_h3115" />
                     </RelativeLayout>
 
                     <LinearLayout
@@ -224,10 +296,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginBottom="12dp"
+                                android:gravity="center"
                                 android:hint="@string/h3115m1"
                                 android:inputType="number"
-                                app:mask="##"
-                                app:maxValue="100"
+                                android:maxLength="5"
+                                app:maxValue="50000"
+                                app:minValue="0"
                                 app:type="range" />
                         </LinearLayout>
 
@@ -248,10 +322,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginBottom="12dp"
+                                android:gravity="center"
                                 android:hint="@string/h3115m2"
                                 android:inputType="number"
-                                app:mask="##"
-                                app:maxValue="100"
+                                android:maxLength="5"
+                                app:maxValue="50000"
+                                app:minValue="0"
                                 app:type="range" />
                         </LinearLayout>
 
@@ -272,10 +348,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginBottom="12dp"
+                                android:gravity="center"
                                 android:hint="@string/h3115m3"
                                 android:inputType="number"
-                                app:mask="##"
-                                app:maxValue="100"
+                                android:maxLength="5"
+                                app:maxValue="50000"
+                                app:minValue="0"
                                 app:type="range" />
                         </LinearLayout>
                     </LinearLayout>
@@ -356,7 +434,17 @@
                             android:id="@+id/qtxt_h3116"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_h3116"
                             android:text="@string/h3116" />
+
+                        <TextView
+                            android:id="@+id/q_h3116"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_h3116"
+                            android:layout_alignBottom="@id/qtxt_h3116"
+                            android:text="@string/Q_h3116" />
                     </RelativeLayout>
 
                     <LinearLayout
@@ -381,10 +469,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginBottom="12dp"
+                                android:gravity="center"
                                 android:hint="@string/h3116m1"
                                 android:inputType="number"
-                                app:mask="##"
-                                app:maxValue="100"
+                                android:maxLength="5"
+                                app:maxValue="50000"
+                                app:minValue="0"
                                 app:type="range" />
                         </LinearLayout>
 
@@ -405,10 +495,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginBottom="12dp"
+                                android:gravity="center"
                                 android:hint="@string/h3116m2"
                                 android:inputType="number"
-                                app:mask="##"
-                                app:maxValue="100"
+                                android:maxLength="5"
+                                app:maxValue="50000"
+                                app:minValue="0"
                                 app:type="range" />
                         </LinearLayout>
 
@@ -429,10 +521,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginBottom="12dp"
+                                android:gravity="center"
                                 android:hint="@string/h3116m3"
                                 android:inputType="number"
-                                app:mask="##"
-                                app:maxValue="100"
+                                android:maxLength="5"
+                                app:maxValue="50000"
+                                app:minValue="0"
                                 app:type="range" />
                         </LinearLayout>
                     </LinearLayout>
@@ -493,6 +587,7 @@
                     </RadioGroup>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
             <!-- h3117  Title   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVh3117"
@@ -512,7 +607,17 @@
                             android:id="@+id/qtxt_h3117"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_h3117"
                             android:text="@string/h3117" />
+
+                        <TextView
+                            android:id="@+id/q_h3117"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_h3117"
+                            android:layout_alignBottom="@id/qtxt_h3117"
+                            android:text="@string/Q_h3117" />
                     </RelativeLayout>
 
                     <LinearLayout
@@ -537,10 +642,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginBottom="12dp"
+                                android:gravity="center"
                                 android:hint="@string/h3117m1"
                                 android:inputType="number"
-                                app:mask="##"
-                                app:maxValue="100"
+                                android:maxLength="5"
+                                app:maxValue="50000"
+                                app:minValue="0"
                                 app:type="range" />
                         </LinearLayout>
 
@@ -561,10 +668,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginBottom="12dp"
+                                android:gravity="center"
                                 android:hint="@string/h3117m2"
                                 android:inputType="number"
-                                app:mask="##"
-                                app:maxValue="100"
+                                android:maxLength="5"
+                                app:maxValue="50000"
+                                app:minValue="0"
                                 app:type="range" />
                         </LinearLayout>
 
@@ -585,10 +694,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginBottom="12dp"
+                                android:gravity="center"
                                 android:hint="@string/h3117m3"
                                 android:inputType="number"
-                                app:mask="##"
-                                app:maxValue="100"
+                                android:maxLength="5"
+                                app:maxValue="50000"
+                                app:minValue="0"
                                 app:type="range" />
                         </LinearLayout>
                     </LinearLayout>
@@ -666,7 +777,17 @@
                             android:id="@+id/qtxt_h3118"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_h3118"
                             android:text="@string/h3118" />
+
+                        <TextView
+                            android:id="@+id/q_h3118"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_h3118"
+                            android:layout_alignBottom="@id/qtxt_h3118"
+                            android:text="@string/Q_h3118" />
                     </RelativeLayout>
 
                     <LinearLayout
@@ -691,10 +812,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginBottom="12dp"
+                                android:gravity="center"
                                 android:hint="@string/h3118m1"
                                 android:inputType="number"
-                                app:mask="##"
-                                app:maxValue="100"
+                                android:maxLength="5"
+                                app:maxValue="50000"
+                                app:minValue="0"
                                 app:type="range" />
                         </LinearLayout>
 
@@ -715,10 +838,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginBottom="12dp"
+                                android:gravity="center"
                                 android:hint="@string/h3118m2"
                                 android:inputType="number"
-                                app:mask="##"
-                                app:maxValue="100"
+                                android:maxLength="5"
+                                app:maxValue="50000"
+                                app:minValue="0"
                                 app:type="range" />
                         </LinearLayout>
 
@@ -739,10 +864,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginBottom="12dp"
+                                android:gravity="center"
                                 android:hint="@string/h3118m3"
                                 android:inputType="number"
-                                app:mask="##"
-                                app:maxValue="100"
+                                android:maxLength="5"
+                                app:maxValue="50000"
+                                app:minValue="0"
                                 app:type="range" />
                         </LinearLayout>
                     </LinearLayout>
@@ -823,7 +950,17 @@
                             android:id="@+id/qtxt_h3119"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_h3119"
                             android:text="@string/h3119" />
+
+                        <TextView
+                            android:id="@+id/q_h3119"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_h3119"
+                            android:layout_alignBottom="@id/qtxt_h3119"
+                            android:text="@string/Q_h3119" />
                     </RelativeLayout>
 
                     <LinearLayout
@@ -848,10 +985,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginBottom="12dp"
+                                android:gravity="center"
                                 android:hint="@string/h3119m1"
                                 android:inputType="number"
-                                app:mask="##"
-                                app:maxValue="100"
+                                android:maxLength="5"
+                                app:maxValue="50000"
+                                app:minValue="0"
                                 app:type="range" />
                         </LinearLayout>
 
@@ -872,10 +1011,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginBottom="12dp"
+                                android:gravity="center"
                                 android:hint="@string/h3119m2"
                                 android:inputType="number"
-                                app:mask="##"
-                                app:maxValue="100"
+                                android:maxLength="5"
+                                app:maxValue="50000"
+                                app:minValue="0"
                                 app:type="range" />
                         </LinearLayout>
 
@@ -896,10 +1037,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginBottom="12dp"
+                                android:gravity="center"
                                 android:hint="@string/h3119m3"
                                 android:inputType="number"
-                                app:mask="##"
-                                app:maxValue="100"
+                                android:maxLength="5"
+                                app:maxValue="50000"
+                                app:minValue="0"
                                 app:type="range" />
                         </LinearLayout>
                     </LinearLayout>
@@ -980,7 +1123,17 @@
                             android:id="@+id/qtxt_h3120"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_h3120"
                             android:text="@string/h3120" />
+
+                        <TextView
+                            android:id="@+id/q_h3120"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_h3120"
+                            android:layout_alignBottom="@id/qtxt_h3120"
+                            android:text="@string/Q_h3120" />
                     </RelativeLayout>
 
                     <LinearLayout
@@ -1005,10 +1158,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginBottom="12dp"
+                                android:gravity="center"
                                 android:hint="@string/h3120m1"
                                 android:inputType="number"
-                                app:mask="##"
-                                app:maxValue="100"
+                                android:maxLength="5"
+                                app:maxValue="50000"
+                                app:minValue="0"
                                 app:type="range" />
                         </LinearLayout>
 
@@ -1029,10 +1184,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginBottom="12dp"
+                                android:gravity="center"
                                 android:hint="@string/h3120m2"
                                 android:inputType="number"
-                                app:mask="##"
-                                app:maxValue="100"
+                                android:maxLength="5"
+                                app:maxValue="50000"
+                                app:minValue="0"
                                 app:type="range" />
                         </LinearLayout>
 
@@ -1053,10 +1210,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginBottom="12dp"
+                                android:gravity="center"
                                 android:hint="@string/h3120m3"
                                 android:inputType="number"
-                                app:mask="##"
-                                app:maxValue="100"
+                                android:maxLength="5"
+                                app:maxValue="50000"
+                                app:minValue="0"
                                 app:type="range" />
                         </LinearLayout>
                     </LinearLayout>
@@ -1137,7 +1296,17 @@
                             android:id="@+id/qtxt_h3121"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_h3121"
                             android:text="@string/h3121" />
+
+                        <TextView
+                            android:id="@+id/q_h3121"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_h3121"
+                            android:layout_alignBottom="@id/qtxt_h3121"
+                            android:text="@string/Q_h3121" />
                     </RelativeLayout>
 
                     <LinearLayout
@@ -1162,10 +1331,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginBottom="12dp"
+                                android:gravity="center"
                                 android:hint="@string/h3121m1"
                                 android:inputType="number"
-                                app:mask="##"
-                                app:maxValue="100"
+                                android:maxLength="5"
+                                app:maxValue="50000"
+                                app:minValue="0"
                                 app:type="range" />
                         </LinearLayout>
 
@@ -1186,10 +1357,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginBottom="12dp"
+                                android:gravity="center"
                                 android:hint="@string/h3121m2"
                                 android:inputType="number"
-                                app:mask="##"
-                                app:maxValue="100"
+                                android:maxLength="5"
+                                app:maxValue="50000"
+                                app:minValue="0"
                                 app:type="range" />
                         </LinearLayout>
 
@@ -1210,10 +1383,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginBottom="12dp"
+                                android:gravity="center"
                                 android:hint="@string/h3121m3"
                                 android:inputType="number"
-                                app:mask="##"
-                                app:maxValue="100"
+                                android:maxLength="5"
+                                app:maxValue="50000"
+                                app:minValue="0"
                                 app:type="range" />
                         </LinearLayout>
                     </LinearLayout>
@@ -1294,7 +1469,17 @@
                             android:id="@+id/qtxt_h3122"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_h3122"
                             android:text="@string/h3122" />
+
+                        <TextView
+                            android:id="@+id/q_h3122"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_h3122"
+                            android:layout_alignBottom="@id/qtxt_h3122"
+                            android:text="@string/Q_h3122" />
                     </RelativeLayout>
 
                     <LinearLayout
@@ -1319,10 +1504,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginBottom="12dp"
+                                android:gravity="center"
                                 android:hint="@string/h3122m1"
                                 android:inputType="number"
-                                app:mask="##"
-                                app:maxValue="100"
+                                android:maxLength="5"
+                                app:maxValue="50000"
+                                app:minValue="0"
                                 app:type="range" />
                         </LinearLayout>
 
@@ -1343,10 +1530,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginBottom="12dp"
+                                android:gravity="center"
                                 android:hint="@string/h3122m2"
                                 android:inputType="number"
-                                app:mask="##"
-                                app:maxValue="100"
+                                android:maxLength="5"
+                                app:maxValue="50000"
+                                app:minValue="0"
                                 app:type="range" />
                         </LinearLayout>
 
@@ -1367,10 +1556,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginBottom="12dp"
+                                android:gravity="center"
                                 android:hint="@string/h3122m3"
                                 android:inputType="number"
-                                app:mask="##"
-                                app:maxValue="100"
+                                android:maxLength="5"
+                                app:maxValue="50000"
+                                app:minValue="0"
                                 app:type="range" />
                         </LinearLayout>
                     </LinearLayout>
@@ -1451,7 +1642,17 @@
                             android:id="@+id/qtxt_h3123"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_h3123"
                             android:text="@string/h3123" />
+
+                        <TextView
+                            android:id="@+id/q_h3123"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_h3123"
+                            android:layout_alignBottom="@id/qtxt_h3123"
+                            android:text="@string/Q_h3123" />
                     </RelativeLayout>
 
                     <LinearLayout
@@ -1476,10 +1677,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginBottom="12dp"
+                                android:gravity="center"
                                 android:hint="@string/h3123m1"
                                 android:inputType="number"
-                                app:mask="##"
-                                app:maxValue="100"
+                                android:maxLength="5"
+                                app:maxValue="50000"
+                                app:minValue="0"
                                 app:type="range" />
                         </LinearLayout>
 
@@ -1500,10 +1703,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginBottom="12dp"
+                                android:gravity="center"
                                 android:hint="@string/h3123m2"
                                 android:inputType="number"
-                                app:mask="##"
-                                app:maxValue="100"
+                                android:maxLength="5"
+                                app:maxValue="50000"
+                                app:minValue="0"
                                 app:type="range" />
                         </LinearLayout>
 
@@ -1524,10 +1729,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginBottom="12dp"
+                                android:gravity="center"
                                 android:hint="@string/h3123m3"
                                 android:inputType="number"
-                                app:mask="##"
-                                app:maxValue="100"
+                                android:maxLength="5"
+                                app:maxValue="50000"
+                                app:minValue="0"
                                 app:type="range" />
                         </LinearLayout>
                     </LinearLayout>
@@ -1608,7 +1815,17 @@
                             android:id="@+id/qtxt_h3124"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_h3124"
                             android:text="@string/h3124" />
+
+                        <TextView
+                            android:id="@+id/q_h3124"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_h3124"
+                            android:layout_alignBottom="@id/qtxt_h3124"
+                            android:text="@string/Q_h3124" />
                     </RelativeLayout>
 
                     <LinearLayout
@@ -1633,10 +1850,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginBottom="12dp"
+                                android:gravity="center"
                                 android:hint="@string/h3124m1"
                                 android:inputType="number"
-                                app:mask="##"
-                                app:maxValue="100"
+                                android:maxLength="5"
+                                app:maxValue="50000"
+                                app:minValue="0"
                                 app:type="range" />
                         </LinearLayout>
 
@@ -1657,10 +1876,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginBottom="12dp"
+                                android:gravity="center"
                                 android:hint="@string/h3124m2"
                                 android:inputType="number"
-                                app:mask="##"
-                                app:maxValue="100"
+                                android:maxLength="5"
+                                app:maxValue="50000"
+                                app:minValue="0"
                                 app:type="range" />
                         </LinearLayout>
 
@@ -1681,10 +1902,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginBottom="12dp"
+                                android:gravity="center"
                                 android:hint="@string/h3124m3"
                                 android:inputType="number"
-                                app:mask="##"
-                                app:maxValue="100"
+                                android:maxLength="5"
+                                app:maxValue="50000"
+                                app:minValue="0"
                                 app:type="range" />
                         </LinearLayout>
                     </LinearLayout>
@@ -1765,7 +1988,17 @@
                             android:id="@+id/qtxt_h3125"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_h3125"
                             android:text="@string/h3125" />
+
+                        <TextView
+                            android:id="@+id/q_h3125"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_h3125"
+                            android:layout_alignBottom="@id/qtxt_h3125"
+                            android:text="@string/Q_h3125" />
                     </RelativeLayout>
 
                     <LinearLayout
@@ -1790,10 +2023,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginBottom="12dp"
+                                android:gravity="center"
                                 android:hint="@string/h3125m1"
                                 android:inputType="number"
-                                app:mask="##"
-                                app:maxValue="100"
+                                android:maxLength="5"
+                                app:maxValue="50000"
+                                app:minValue="0"
                                 app:type="range" />
                         </LinearLayout>
 
@@ -1814,10 +2049,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginBottom="12dp"
+                                android:gravity="center"
                                 android:hint="@string/h3125m2"
                                 android:inputType="number"
-                                app:mask="##"
-                                app:maxValue="100"
+                                android:maxLength="5"
+                                app:maxValue="50000"
+                                app:minValue="0"
                                 app:type="range" />
                         </LinearLayout>
 
@@ -1838,10 +2075,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginBottom="12dp"
+                                android:gravity="center"
                                 android:hint="@string/h3125m3"
                                 android:inputType="number"
-                                app:mask="##"
-                                app:maxValue="100"
+                                android:maxLength="5"
+                                app:maxValue="50000"
+                                app:minValue="0"
                                 app:type="range" />
                         </LinearLayout>
                     </LinearLayout>
@@ -1922,7 +2161,17 @@
                             android:id="@+id/qtxt_h3126"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_h3126"
                             android:text="@string/h3126" />
+
+                        <TextView
+                            android:id="@+id/q_h3126"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_h3126"
+                            android:layout_alignBottom="@id/qtxt_h3126"
+                            android:text="@string/Q_h3126" />
                     </RelativeLayout>
 
                     <LinearLayout
@@ -1947,10 +2196,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginBottom="12dp"
+                                android:gravity="center"
                                 android:hint="@string/h3126m1"
                                 android:inputType="number"
-                                app:mask="##"
-                                app:maxValue="100"
+                                android:maxLength="5"
+                                app:maxValue="50000"
+                                app:minValue="0"
                                 app:type="range" />
                         </LinearLayout>
 
@@ -1971,10 +2222,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginBottom="12dp"
+                                android:gravity="center"
                                 android:hint="@string/h3126m2"
                                 android:inputType="number"
-                                app:mask="##"
-                                app:maxValue="100"
+                                android:maxLength="5"
+                                app:maxValue="50000"
+                                app:minValue="0"
                                 app:type="range" />
                         </LinearLayout>
 
@@ -1995,11 +2248,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginBottom="12dp"
+                                android:gravity="center"
                                 android:hint="@string/h3126m3"
                                 android:inputType="number"
-                                app:mask="##"
-                                app:maxValue="100"
-
+                                android:maxLength="5"
+                                app:maxValue="50000"
+                                app:minValue="0"
                                 app:type="range" />
                         </LinearLayout>
                     </LinearLayout>
@@ -2080,7 +2334,17 @@
                             android:id="@+id/qtxt_h3127"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_h3127"
                             android:text="@string/h3127" />
+
+                        <TextView
+                            android:id="@+id/q_h3127"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_h3127"
+                            android:layout_alignBottom="@id/qtxt_h3127"
+                            android:text="@string/Q_h3127" />
                     </RelativeLayout>
 
                     <LinearLayout
@@ -2105,10 +2369,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginBottom="12dp"
+                                android:gravity="center"
                                 android:hint="@string/h3127m1"
                                 android:inputType="number"
-                                app:mask="##"
-                                app:maxValue="100"
+                                android:maxLength="5"
+                                app:maxValue="50000"
+                                app:minValue="0"
                                 app:type="range" />
                         </LinearLayout>
 
@@ -2129,10 +2395,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginBottom="12dp"
+                                android:gravity="center"
                                 android:hint="@string/h3127m2"
                                 android:inputType="number"
-                                app:mask="##"
-                                app:maxValue="100"
+                                android:maxLength="5"
+                                app:maxValue="50000"
+                                app:minValue="0"
                                 app:type="range" />
                         </LinearLayout>
 
@@ -2153,10 +2421,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginBottom="12dp"
+                                android:gravity="center"
                                 android:hint="@string/h3127m3"
                                 android:inputType="number"
-                                app:mask="##"
-                                app:maxValue="100"
+                                android:maxLength="5"
+                                app:maxValue="50000"
+                                app:minValue="0"
                                 app:type="range" />
                         </LinearLayout>
                     </LinearLayout>

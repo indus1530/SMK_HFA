@@ -73,7 +73,11 @@ public class SectionD3Activity extends AppCompatActivity {
 
         json.put("d0304", bi.d0304a.isChecked() ? "1"
                 : bi.d0304b.isChecked() ? "2"
-                : bi.d0304c.isChecked() ? "3"
+                : "-1");
+
+        json.put("d0305", bi.d0305a.isChecked() ? "1"
+                : bi.d0305b.isChecked() ? "2"
+                : bi.d0305c.isChecked() ? "3"
                 : "-1");
 
         try {

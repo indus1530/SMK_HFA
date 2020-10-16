@@ -20,6 +20,7 @@ import edu.aku.hassannaqvi.smk_hfa_2020.contracts.FormsContract;
 import edu.aku.hassannaqvi.smk_hfa_2020.core.DatabaseHelper;
 import edu.aku.hassannaqvi.smk_hfa_2020.core.MainApp;
 import edu.aku.hassannaqvi.smk_hfa_2020.databinding.ActivitySectionE103Binding;
+import edu.aku.hassannaqvi.smk_hfa_2020.utils.JSONUtils;
 
 import static edu.aku.hassannaqvi.smk_hfa_2020.core.MainApp.fc;
 import static edu.aku.hassannaqvi.smk_hfa_2020.utils.UtilKt.openSectionMainActivity;
@@ -36,9 +37,11 @@ public class SectionE103Activity extends AppCompatActivity {
         setupSkips();
     }
 
+
     private void setupSkips() {
 
     }
+
 
     private boolean UpdateDB() {
         DatabaseHelper db = MainApp.appInfo.getDbHelper();
@@ -51,7 +54,9 @@ public class SectionE103Activity extends AppCompatActivity {
         }
     }
 
+
     private void SaveDraft() throws JSONException {
+
         JSONObject json = new JSONObject();
 
         json.put("e154aav", bi.e154aavy.isChecked() ? "1"
@@ -196,16 +201,27 @@ public class SectionE103Activity extends AppCompatActivity {
 
         json.put("e156gf", bi.e156gfy.isChecked() ? "1"
                 : bi.e156gfn.isChecked() ? "2"
-                :  "-1");
+                : "-1");
 
         json.put("e156hav", bi.e156havy.isChecked() ? "1"
                 : bi.e156havn.isChecked() ? "2"
-                :  "-1");
+                : "-1");
 
         json.put("e156hf", bi.e156hfy.isChecked() ? "1"
                 : bi.e156hfn.isChecked() ? "2"
-                :  "-1");
+                : "-1");
+
+        try {
+            JSONObject json_merge = JSONUtils.mergeJSONObjects(new JSONObject(fc.getsE()), json);
+
+            fc.setsE(String.valueOf(json_merge));
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
     }
+
 
     public void BtnContinue() {
         if (!formValidation()) return;
@@ -222,13 +238,16 @@ public class SectionE103Activity extends AppCompatActivity {
         }
     }
 
+
     public void BtnEnd() {
         openSectionMainActivity(this, "E");
     }
 
+
     private boolean formValidation() {
         return Validator.emptyCheckingContainer(this, bi.GrpName);
     }
+
 
     public void showTooltip(@NotNull View view) {
         if (view.getId() != View.NO_ID) {

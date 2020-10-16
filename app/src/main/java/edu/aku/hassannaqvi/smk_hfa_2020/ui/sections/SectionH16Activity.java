@@ -33,11 +33,11 @@ public class SectionH16Activity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_h16);
         bi.setCallback(this);
         setupSkips();
-
     }
 
 
     private void setupSkips() {
+
         bi.h1601.setOnCheckedChangeListener(((radioGroup, i) -> {
             if (i == bi.h1601a.getId() || i == bi.h1601b.getId()) {
                 Clear.clearAllFields(bi.fldGrpSech1601);
@@ -109,6 +109,15 @@ public class SectionH16Activity extends AppCompatActivity {
                 : bi.h1605e.isChecked() ? "5"
                 : bi.h1605x.isChecked() ? "96"
                 : "-1");
+        json.put("h1605xx", bi.h1605xx.getText().toString().trim().isEmpty() ? "-1" : bi.h1605xx.getText().toString());
+
+
+        json.put("h1605a", bi.h1605a.isChecked() ? "1" : "-1");
+        json.put("h1605b", bi.h1605b.isChecked() ? "2" : "-1");
+        json.put("h1605c", bi.h1605c.isChecked() ? "3" : "-1");
+        json.put("h1605d", bi.h1605d.isChecked() ? "4" : "-1");
+        json.put("h1605e", bi.h1605e.isChecked() ? "5" : "-1");
+        json.put("h1605x", bi.h1605x.isChecked() ? "6" : "-1");
         json.put("h1605xx", bi.h1605xx.getText().toString().trim().isEmpty() ? "-1" : bi.h1605xx.getText().toString());
 
         MainApp.fc.setsH(String.valueOf(json));
