@@ -115,7 +115,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            style="@style/sub"
+                            style="@style/textviewh"
                             android:text="@string/e12hint" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
