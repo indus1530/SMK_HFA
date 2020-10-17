@@ -101,8 +101,8 @@
                         style="@style/EditTextNum"
                         android:hint="@string/k0060201q"
                         android:maxLength="6"
-                        android:text='@{k0060201a.checked || k0060201b.checked ? k0060201q.getText().toString() : "" }'
-                        android:visibility='@{k0060201a.checked || k0060201b.checked ? View.VISIBLE : View.GONE }'
+                        android:text='@{k0060201b.checked || k0060201c.checked ? k0060201q.getText().toString() : "" }'
+                        android:visibility='@{k0060201b.checked || k0060201c.checked ? View.VISIBLE : View.GONE }'
                         app:maxValue="999999"
                         app:minValue="1"
                         app:type="range" />
@@ -110,7 +110,7 @@
                     <LinearLayout
                         android:id="@+id/llk0060202"
                         style="@style/vlinearlayout"
-                        android:visibility='@{k0060201a.checked || k0060201b.checked ? View.VISIBLE : View.GONE }'>
+                        android:visibility='@{k0060201b.checked || k0060201c.checked ? View.VISIBLE : View.GONE }'>
 
                         <TextView
                             style="@style/textviewh"
@@ -220,8 +220,8 @@
                         style="@style/EditTextNum"
                         android:hint="@string/k0060211q"
                         android:maxLength="6"
-                        android:text='@{k0060211a.checked || k0060211b.checked ? k0060211q.getText().toString() : "" }'
-                        android:visibility='@{k0060211a.checked || k0060211b.checked ? View.VISIBLE : View.GONE }'
+                        android:text='@{k0060211b.checked || k0060211c.checked ? k0060211q.getText().toString() : "" }'
+                        android:visibility='@{k0060211b.checked || k0060211c.checked ? View.VISIBLE : View.GONE }'
                         app:maxValue="999999"
                         app:minValue="1"
                         app:type="range" />
@@ -229,7 +229,7 @@
                     <LinearLayout
                         android:id="@+id/llk0060212"
                         style="@style/vlinearlayout"
-                        android:visibility='@{k0060211a.checked || k0060211b.checked ? View.VISIBLE : View.GONE }'>
+                        android:visibility='@{k0060211b.checked || k0060211c.checked ? View.VISIBLE : View.GONE }'>
 
                         <TextView
                             style="@style/textviewh"
@@ -339,8 +339,8 @@
                         style="@style/EditTextNum"
                         android:hint="@string/k0060221q"
                         android:maxLength="6"
-                        android:text='@{k0060221a.checked || k0060221b.checked ? k0060221q.getText().toString() : "" }'
-                        android:visibility='@{k0060221a.checked || k0060221b.checked ? View.VISIBLE : View.GONE }'
+                        android:text='@{k0060221b.checked || k0060221c.checked ? k0060221q.getText().toString() : "" }'
+                        android:visibility='@{k0060221b.checked || k0060221c.checked ? View.VISIBLE : View.GONE }'
                         app:maxValue="999999"
                         app:minValue="1"
                         app:type="range" />
@@ -348,7 +348,7 @@
                     <LinearLayout
                         android:id="@+id/llk0060222"
                         style="@style/vlinearlayout"
-                        android:visibility='@{k0060221a.checked || k0060221b.checked ? View.VISIBLE : View.GONE }'>
+                        android:visibility='@{k0060221b.checked || k0060221c.checked ? View.VISIBLE : View.GONE }'>
 
                         <TextView
                             style="@style/textviewh"
@@ -458,8 +458,8 @@
                         style="@style/EditTextNum"
                         android:hint="@string/k0060231q"
                         android:maxLength="6"
-                        android:text='@{k0060231a.checked || k0060231b.checked ? k0060231q.getText().toString() : "" }'
-                        android:visibility='@{k0060231a.checked || k0060231b.checked ? View.VISIBLE : View.GONE }'
+                        android:text='@{k0060231b.checked || k0060231c.checked ? k0060231q.getText().toString() : "" }'
+                        android:visibility='@{k0060231b.checked || k0060231c.checked ? View.VISIBLE : View.GONE }'
                         app:maxValue="999999"
                         app:minValue="1"
                         app:type="range" />
@@ -467,7 +467,7 @@
                     <LinearLayout
                         android:id="@+id/llk0060232"
                         style="@style/vlinearlayout"
-                        android:visibility='@{k0060231a.checked || k0060231b.checked ? View.VISIBLE : View.GONE }'>
+                        android:visibility='@{k0060231b.checked || k0060231c.checked ? View.VISIBLE : View.GONE }'>
 
                         <TextView
                             style="@style/textviewh"
@@ -577,8 +577,8 @@
                         style="@style/EditTextNum"
                         android:hint="@string/k0060241q"
                         android:maxLength="6"
-                        android:text='@{k0060241a.checked || k0060241b.checked ? k0060241q.getText().toString() : "" }'
-                        android:visibility='@{k0060241a.checked || k0060241b.checked ? View.VISIBLE : View.GONE }'
+                        android:text='@{k0060241b.checked || k0060241c.checked ? k0060241q.getText().toString() : "" }'
+                        android:visibility='@{k0060241b.checked || k0060241c.checked ? View.VISIBLE : View.GONE }'
                         app:maxValue="999999"
                         app:minValue="1"
                         app:type="range" />
@@ -586,7 +586,7 @@
                     <LinearLayout
                         android:id="@+id/llk0060242"
                         style="@style/vlinearlayout"
-                        android:visibility='@{k0060241a.checked || k0060241b.checked ? View.VISIBLE : View.GONE }'>
+                        android:visibility='@{k0060241b.checked || k0060241c.checked ? View.VISIBLE : View.GONE }'>
 
                         <TextView
                             style="@style/textviewh"
@@ -696,8 +696,8 @@
                         style="@style/EditTextNum"
                         android:hint="@string/k0060251q"
                         android:maxLength="6"
-                        android:text='@{k0060251a.checked || k0060251b.checked ? k0060251q.getText().toString() : "" }'
-                        android:visibility='@{k0060251a.checked || k0060251b.checked ? View.VISIBLE : View.GONE }'
+                        android:text='@{k0060251b.checked || k0060251c.checked ? k0060251q.getText().toString() : "" }'
+                        android:visibility='@{k0060251b.checked || k0060251c.checked ? View.VISIBLE : View.GONE }'
                         app:maxValue="999999"
                         app:minValue="1"
                         app:type="range" />
@@ -705,7 +705,7 @@
                     <LinearLayout
                         android:id="@+id/llk0060252"
                         style="@style/vlinearlayout"
-                        android:visibility='@{k0060251a.checked || k0060251b.checked ? View.VISIBLE : View.GONE }'>
+                        android:visibility='@{k0060251b.checked || k0060251c.checked ? View.VISIBLE : View.GONE }'>
 
                         <TextView
                             style="@style/textviewh"
@@ -815,8 +815,8 @@
                         style="@style/EditTextNum"
                         android:hint="@string/k0060261q"
                         android:maxLength="6"
-                        android:text='@{k0060261a.checked || k0060261b.checked ? k0060261q.getText().toString() : "" }'
-                        android:visibility='@{k0060261a.checked || k0060261b.checked ? View.VISIBLE : View.GONE }'
+                        android:text='@{k0060261b.checked || k0060261c.checked ? k0060261q.getText().toString() : "" }'
+                        android:visibility='@{k0060261b.checked || k0060261c.checked ? View.VISIBLE : View.GONE }'
                         app:maxValue="999999"
                         app:minValue="1"
                         app:type="range" />
@@ -824,7 +824,7 @@
                     <LinearLayout
                         android:id="@+id/llk0060262"
                         style="@style/vlinearlayout"
-                        android:visibility='@{k0060261a.checked || k0060261b.checked ? View.VISIBLE : View.GONE }'>
+                        android:visibility='@{k0060261b.checked || k0060261c.checked ? View.VISIBLE : View.GONE }'>
 
                         <TextView
                             style="@style/textviewh"
@@ -934,8 +934,8 @@
                         style="@style/EditTextNum"
                         android:hint="@string/k0060271q"
                         android:maxLength="6"
-                        android:text='@{k0060271a.checked || k0060271b.checked ? k0060271q.getText().toString() : "" }'
-                        android:visibility='@{k0060271a.checked || k0060271b.checked ? View.VISIBLE : View.GONE }'
+                        android:text='@{k0060271b.checked || k0060271c.checked ? k0060271q.getText().toString() : "" }'
+                        android:visibility='@{k0060271b.checked || k0060271c.checked ? View.VISIBLE : View.GONE }'
                         app:maxValue="999999"
                         app:minValue="1"
                         app:type="range" />
@@ -943,7 +943,7 @@
                     <LinearLayout
                         android:id="@+id/llk0060272"
                         style="@style/vlinearlayout"
-                        android:visibility='@{k0060271a.checked || k0060271b.checked ? View.VISIBLE : View.GONE }'>
+                        android:visibility='@{k0060271b.checked || k0060271c.checked ? View.VISIBLE : View.GONE }'>
 
                         <TextView
                             style="@style/textviewh"
@@ -1053,8 +1053,8 @@
                         style="@style/EditTextNum"
                         android:hint="@string/k0060281q"
                         android:maxLength="6"
-                        android:text='@{k0060281a.checked || k0060281b.checked ? k0060281q.getText().toString() : "" }'
-                        android:visibility='@{k0060281a.checked || k0060281b.checked ? View.VISIBLE : View.GONE }'
+                        android:text='@{k0060281b.checked || k0060281c.checked ? k0060281q.getText().toString() : "" }'
+                        android:visibility='@{k0060281b.checked || k0060281c.checked ? View.VISIBLE : View.GONE }'
                         app:maxValue="999999"
                         app:minValue="1"
                         app:type="range" />
@@ -1062,7 +1062,7 @@
                     <LinearLayout
                         android:id="@+id/llk0060282"
                         style="@style/vlinearlayout"
-                        android:visibility='@{k0060281a.checked || k0060281b.checked ? View.VISIBLE : View.GONE }'>
+                        android:visibility='@{k0060281b.checked || k0060281c.checked ? View.VISIBLE : View.GONE }'>
 
                         <TextView
                             style="@style/textviewh"

@@ -2057,7 +2057,7 @@
     <string name="g0106x"> Other (specify) </string>
 
     <string name="g0107"> How are your commodity deliver from the main supplier to this facility ? </string>
-    <string name="g0107a">Supplier delivers to facility </string>
+    <string name="g0107a">Main Supplier delivers to facility </string>
     <string name="g0107b">Facility must arrange delivery to Facility </string>
     <string name="g0107c"> Local vendor deliver to facility </string>
     <string name="g0107x">Other (specify)</string>
@@ -4399,9 +4399,9 @@
 
     <string name="k006"> SECTION K6: \nMedical Supplies &amp; Equipment </string>
     <string name="k00611"> Infrared Thermometer </string>
-    <string name="k00611a"> Yes, Available Before Covid </string>
-    <string name="k00611b"> Yes, Available During Pandemic </string>
-    <string name="k00611c"> Not Available </string>
+    <string name="k00611a"> Not Available </string>
+    <string name="k00611b"> Yes, Available Before Covid </string>
+    <string name="k00611c"> Yes, Available During Pandemic </string>
     <string name="k00611q"> Quantity </string>
     <string name="k00612"> Functional </string>
     <string name="k00612a"> Yes </string>
@@ -4409,9 +4409,9 @@
     <string name="k00612q"> Quantity </string>
 
     <string name="k00621"> Pulse Oximeter - Fingertip </string>
-    <string name="k00621a"> Yes, Available Before Covid </string>
-    <string name="k00621b"> Yes, Available During Pandemic </string>
-    <string name="k00621c"> Not Available </string>
+    <string name="k00621a"> Not Available </string>
+    <string name="k00621b"> Yes, Available Before Covid </string>
+    <string name="k00621c"> Yes, Available During Pandemic </string>
     <string name="k00621q"> Quantity </string>
     <string name="k00622"> Functional </string>
     <string name="k00622a"> Yes </string>
@@ -4419,9 +4419,9 @@
     <string name="k00622q"> Quantity </string>
 
     <string name="k00631"> Patient monitor, multi parametric, NIBP, SpO2, TEMP, respiratory rate (RR) with sensors and cables, (without EKG) </string>
-    <string name="k00631a"> Yes, Available Before Covid </string>
-    <string name="k00631b"> Yes, Available During Pandemic </string>
-    <string name="k00631c"> Not Available </string>
+    <string name="k00631a"> Not Available </string>
+    <string name="k00631b"> Yes, Available Before Covid </string>
+    <string name="k00631c"> Yes, Available During Pandemic </string>
     <string name="k00631q"> Quantity </string>
     <string name="k00632"> Functional </string>
     <string name="k00632a"> Yes </string>
@@ -4429,9 +4429,9 @@
     <string name="k00632q"> Quantity </string>
 
     <string name="k00641"> Concentrator O2, 10 L, with accessories </string>
-    <string name="k00641a"> Yes, Available Before Covid </string>
-    <string name="k00641b"> Yes, Available During Pandemic </string>
-    <string name="k00641c"> Not Available </string>
+    <string name="k00641a"> Not Available </string>
+    <string name="k00641b"> Yes, Available Before Covid </string>
+    <string name="k00641c"> Yes, Available During Pandemic </string>
     <string name="k00641q"> Quantity </string>
     <string name="k00642"> Functional </string>
     <string name="k00642a"> Yes </string>
@@ -4439,9 +4439,9 @@
     <string name="k00642q"> Quantity </string>
 
     <string name="k00651"> Medical gas cylinder, portable, for oxygen, fitted with a valve and a pressure and flow regulator </string>
-    <string name="k00651a"> Yes, Available Before Covid </string>
-    <string name="k00651b"> Yes, Available During Pandemic </string>
-    <string name="k00651c"> Not Available </string>
+    <string name="k00651a"> Not Available </string>
+    <string name="k00651b"> Yes, Available Before Covid </string>
+    <string name="k00651c"> Yes, Available During Pandemic </string>
     <string name="k00651q"> Quantity </string>
     <string name="k00652"> Functional </string>
     <string name="k00652a"> Yes </string>
@@ -4449,9 +4449,9 @@
     <string name="k00652q"> Quantity </string>
 
     <string name="k00661"> Laryngoscope, FO, diameter 28 mm, with blades </string>
-    <string name="k00661a"> Yes, Available Before Covid </string>
-    <string name="k00661b"> Yes, Available During Pandemic </string>
-    <string name="k00661c"> Not Available </string>
+    <string name="k00661a"> Not Available </string>
+    <string name="k00661b"> Yes, Available Before Covid </string>
+    <string name="k00661c"> Yes, Available During Pandemic </string>
     <string name="k00661q"> Quantity </string>
     <string name="k00662"> Functional </string>
     <string name="k00662a"> Yes </string>
@@ -4459,9 +4459,9 @@
     <string name="k00662q"> Quantity </string>
 
     <string name="k00671"> Videolaryngoscope, with blades and accessories </string>
-    <string name="k00671a"> Yes, Available Before Covid </string>
-    <string name="k00671b"> Yes, Available During Pandemic </string>
-    <string name="k00671c"> Not Available </string>
+    <string name="k00671a"> Not Available </string>
+    <string name="k00671b"> Yes, Available Before Covid </string>
+    <string name="k00671c"> Yes, Available During Pandemic </string>
     <string name="k00671q"> Quantity </string>
     <string name="k00672"> Functional </string>
     <string name="k00672a"> Yes </string>
@@ -4469,9 +4469,9 @@
     <string name="k00672q"> Quantity </string>
 
     <string name="k00681"> Patient ventilator, intensive care, for adult and pediatric, with breathing circuits and patient interface </string>
-    <string name="k00681a"> Yes, Available Before Covid </string>
-    <string name="k00681b"> Yes, Available During Pandemic </string>
-    <string name="k00681c"> Not Available </string>
+    <string name="k00681a"> Not Available </string>
+    <string name="k00681b"> Yes, Available Before Covid </string>
+    <string name="k00681c"> Yes, Available During Pandemic </string>
     <string name="k00681q"> Quantity </string>
     <string name="k00682"> Functional </string>
     <string name="k00682a"> Yes </string>
@@ -4479,9 +4479,9 @@
     <string name="k00682q"> Quantity </string>
 
     <string name="k00691"> CPAP, with tubing and patient interfaces for adult and Pediatrics, with accessories </string>
-    <string name="k00691a"> Yes, Available Before Covid </string>
-    <string name="k00691b"> Yes, Available During Pandemic </string>
-    <string name="k00691c"> Not Available </string>
+    <string name="k00691a"> Not Available </string>
+    <string name="k00691b"> Yes, Available Before Covid </string>
+    <string name="k00691c"> Yes, Available During Pandemic </string>
     <string name="k00691q"> Quantity </string>
     <string name="k00692"> Functional </string>
     <string name="k00692a"> Yes </string>
@@ -4489,9 +4489,9 @@
     <string name="k00692q"> Quantity </string>
 
     <string name="k0060101"> BiPAP, with tubing and patient interfaces for adult and Pediatrics, with accessories </string>
-    <string name="k0060101a"> Yes, Available Before Covid </string>
-    <string name="k0060101b"> Yes, Available During Pandemic </string>
-    <string name="k0060101c"> Not Available </string>
+    <string name="k0060101a"> Not Available </string>
+    <string name="k0060101b"> Yes, Available Before Covid </string>
+    <string name="k0060101c"> Yes, Available During Pandemic </string>
     <string name="k0060101q"> Quantity </string>
     <string name="k0060102"> Functional </string>
     <string name="k0060102a"> Yes </string>
@@ -4499,9 +4499,9 @@
     <string name="k0060102q"> Quantity </string>
 
     <string name="k0060111"> Blood Gas Analyser, portable, with cartridges and control solutions </string>
-    <string name="k0060111a"> Yes, Available Before Covid </string>
-    <string name="k0060111b"> Yes, Available During Pandemic </string>
-    <string name="k0060111c"> Not Available </string>
+    <string name="k0060111a"> Not Available </string>
+    <string name="k0060111b"> Yes, Available Before Covid </string>
+    <string name="k0060111c"> Yes, Available During Pandemic </string>
     <string name="k0060111q"> Quantity </string>
     <string name="k0060112"> Functional </string>
     <string name="k0060112a"> Yes </string>
@@ -4509,9 +4509,9 @@
     <string name="k0060112q"> Quantity </string>
 
     <string name="k0060121"> Ultrasound, portable, w/linear and phased array cardiac transducer (5.0–7.5 MHz), w/trolley </string>
-    <string name="k0060121a"> Yes, Available Before Covid </string>
-    <string name="k0060121b"> Yes, Available During Pandemic </string>
-    <string name="k0060121c"> Not Available </string>
+    <string name="k0060121a"> Not Available </string>
+    <string name="k0060121b"> Yes, Available Before Covid </string>
+    <string name="k0060121c"> Yes, Available During Pandemic </string>
     <string name="k0060121q"> Quantity </string>
     <string name="k0060122"> Functional </string>
     <string name="k0060122a"> Yes </string>
@@ -4519,9 +4519,9 @@
     <string name="k0060122q"> Quantity </string>
 
     <string name="k0060131"> Electrocardiograph, portable, with accessories </string>
-    <string name="k0060131a"> Yes, Available Before Covid </string>
-    <string name="k0060131b"> Yes, Available During Pandemic </string>
-    <string name="k0060131c"> Not Available </string>
+    <string name="k0060131a"> Not Available </string>
+    <string name="k0060131b"> Yes, Available Before Covid </string>
+    <string name="k0060131c"> Yes, Available During Pandemic </string>
     <string name="k0060131q"> Quantity </string>
     <string name="k0060132"> Functional </string>
     <string name="k0060132a"> Yes </string>
@@ -4529,9 +4529,9 @@
     <string name="k0060132q"> Quantity </string>
 
     <string name="k0060141"> Suction pump, electrical, with accessories </string>
-    <string name="k0060141a"> Yes, Available Before Covid </string>
-    <string name="k0060141b"> Yes, Available During Pandemic </string>
-    <string name="k0060141c"> Not Available </string>
+    <string name="k0060141a"> Not Available </string>
+    <string name="k0060141b"> Yes, Available Before Covid </string>
+    <string name="k0060141c"> Yes, Available During Pandemic </string>
     <string name="k0060141q"> Quantity </string>
     <string name="k0060142"> Functional </string>
     <string name="k0060142a"> Yes </string>
@@ -4539,9 +4539,9 @@
     <string name="k0060142q"> Quantity </string>
 
     <string name="k0060151"> Autoclave, 40–60L, with accessories </string>
-    <string name="k0060151a"> Yes, Available Before Covid </string>
-    <string name="k0060151b"> Yes, Available During Pandemic </string>
-    <string name="k0060151c"> Not Available </string>
+    <string name="k0060151a"> Not Available </string>
+    <string name="k0060151b"> Yes, Available Before Covid </string>
+    <string name="k0060151c"> Yes, Available During Pandemic </string>
     <string name="k0060151q"> Quantity </string>
     <string name="k0060152"> Functional </string>
     <string name="k0060152a"> Yes </string>
@@ -4549,9 +4549,9 @@
     <string name="k0060152q"> Quantity </string>
 
     <string name="k0060161"> Bubble humidifier </string>
-    <string name="k0060161a"> Yes, Available Before Covid </string>
-    <string name="k0060161b"> Yes, Available During Pandemic </string>
-    <string name="k0060161c"> Not Available </string>
+    <string name="k0060161a"> Not Available </string>
+    <string name="k0060161b"> Yes, Available Before Covid </string>
+    <string name="k0060161c"> Yes, Available During Pandemic </string>
     <string name="k0060161q"> Quantity </string>
     <string name="k0060162"> Functional </string>
     <string name="k0060162a"> Yes </string>
@@ -4559,9 +4559,9 @@
     <string name="k0060162q"> Quantity </string>
 
     <string name="k0060171"> Connector, biconical, symmetric, ext. diam. 7-11 mm </string>
-    <string name="k0060171a"> Yes, Available Before Covid </string>
-    <string name="k0060171b"> Yes, Available During Pandemic </string>
-    <string name="k0060171c"> Not Available </string>
+    <string name="k0060171a"> Not Available </string>
+    <string name="k0060171b"> Yes, Available Before Covid </string>
+    <string name="k0060171c"> Yes, Available During Pandemic </string>
     <string name="k0060171q"> Quantity </string>
     <string name="k0060172"> Functional </string>
     <string name="k0060172a"> Yes </string>
@@ -4569,9 +4569,9 @@
     <string name="k0060172q"> Quantity </string>
 
     <string name="k0060181"> Tubing, medical gases, int. diam. 5mm </string>
-    <string name="k0060181a"> Yes, Available Before Covid </string>
-    <string name="k0060181b"> Yes, Available During Pandemic </string>
-    <string name="k0060181c"> Not Available </string>
+    <string name="k0060181a"> Not Available </string>
+    <string name="k0060181b"> Yes, Available Before Covid </string>
+    <string name="k0060181c"> Yes, Available During Pandemic </string>
     <string name="k0060181q"> Quantity </string>
     <string name="k0060182"> Functional </string>
     <string name="k0060182a"> Yes </string>
@@ -4579,9 +4579,9 @@
     <string name="k0060182q"> Quantity </string>
 
     <string name="k0060191"> Flow splitter, 5 flowmeters 0–2 L/min, for Pediatrics use </string>
-    <string name="k0060191a"> Yes, Available Before Covid </string>
-    <string name="k0060191b"> Yes, Available During Pandemic </string>
-    <string name="k0060191c"> Not Available </string>
+    <string name="k0060191a"> Not Available </string>
+    <string name="k0060191b"> Yes, Available Before Covid </string>
+    <string name="k0060191c"> Yes, Available During Pandemic </string>
     <string name="k0060191q"> Quantity </string>
     <string name="k0060192"> Functional </string>
     <string name="k0060192a"> Yes </string>
@@ -4589,9 +4589,9 @@
     <string name="k0060192q"> Quantity </string>
 
     <string name="k0060201"> Flow meter, Thorpe tube, for oxygen 0–15 L/min </string>
-    <string name="k0060201a"> Yes, Available Before Covid </string>
-    <string name="k0060201b"> Yes, Available During Pandemic </string>
-    <string name="k0060201c"> Not Available </string>
+    <string name="k0060201a"> Not Available </string>
+    <string name="k0060201b"> Yes, Available Before Covid </string>
+    <string name="k0060201c"> Yes, Available During Pandemic </string>
     <string name="k0060201q"> Quantity </string>
     <string name="k0060202"> Functional </string>
     <string name="k0060202a"> Yes </string>
@@ -4599,9 +4599,9 @@
     <string name="k0060202q"> Quantity </string>
 
     <string name="k0060211"> Medical / surgical mask </string>
-    <string name="k0060211a"> Yes, Available Before Covid </string>
-    <string name="k0060211b"> Yes, Available During Pandemic </string>
-    <string name="k0060211c"> Not Available </string>
+    <string name="k0060211a"> Not Available </string>
+    <string name="k0060211b"> Yes, Available Before Covid </string>
+    <string name="k0060211c"> Yes, Available During Pandemic </string>
     <string name="k0060211q"> Quantity </string>
     <string name="k0060212"> Functional </string>
     <string name="k0060212a"> Yes </string>
@@ -4609,9 +4609,9 @@
     <string name="k0060212q"> Quantity </string>
 
     <string name="k0060221"> Respirator </string>
-    <string name="k0060221a"> Yes, Available Before Covid </string>
-    <string name="k0060221b"> Yes, Available During Pandemic </string>
-    <string name="k0060221c"> Not Available </string>
+    <string name="k0060221a"> Not Available </string>
+    <string name="k0060221b"> Yes, Available Before Covid </string>
+    <string name="k0060221c"> Yes, Available During Pandemic </string>
     <string name="k0060221q"> Quantity </string>
     <string name="k0060222"> Functional </string>
     <string name="k0060222a"> Yes </string>
@@ -4619,9 +4619,9 @@
     <string name="k0060222q"> Quantity </string>
 
     <string name="k0060231"> Face shield, single use </string>
-    <string name="k0060231a"> Yes, Available Before Covid </string>
-    <string name="k0060231b"> Yes, Available During Pandemic </string>
-    <string name="k0060231c"> Not Available </string>
+    <string name="k0060231a"> Not Available </string>
+    <string name="k0060231b"> Yes, Available Before Covid </string>
+    <string name="k0060231c"> Yes, Available During Pandemic </string>
     <string name="k0060231q"> Quantity </string>
     <string name="k0060232"> Functional </string>
     <string name="k0060232a"> Yes </string>
@@ -4629,9 +4629,9 @@
     <string name="k0060232q"> Quantity </string>
 
     <string name="k0060241"> Protective goggles, wraparound, soft frame, indirect vent </string>
-    <string name="k0060241a"> Yes, Available Before Covid </string>
-    <string name="k0060241b"> Yes, Available During Pandemic </string>
-    <string name="k0060241c"> Not Available </string>
+    <string name="k0060241a"> Not Available </string>
+    <string name="k0060241b"> Yes, Available Before Covid </string>
+    <string name="k0060241c"> Yes, Available During Pandemic </string>
     <string name="k0060241q"> Quantity </string>
     <string name="k0060242"> Functional </string>
     <string name="k0060242a"> Yes </string>
@@ -4639,9 +4639,9 @@
     <string name="k0060242q"> Quantity </string>
 
     <string name="k0060251"> Surgical gowns / isolation gowns, non-sterile </string>
-    <string name="k0060251a"> Yes, Available Before Covid </string>
-    <string name="k0060251b"> Yes, Available During Pandemic </string>
-    <string name="k0060251c"> Not Available </string>
+    <string name="k0060251a"> Not Available </string>
+    <string name="k0060251b"> Yes, Available Before Covid </string>
+    <string name="k0060251c"> Yes, Available During Pandemic </string>
     <string name="k0060251q"> Quantity </string>
     <string name="k0060252"> Functional </string>
     <string name="k0060252a"> Yes </string>
@@ -4649,9 +4649,9 @@
     <string name="k0060252q"> Quantity </string>
 
     <string name="k0060261"> Apron, plastic, single use </string>
-    <string name="k0060261a"> Yes, Available Before Covid </string>
-    <string name="k0060261b"> Yes, Available During Pandemic </string>
-    <string name="k0060261c"> Not Available </string>
+    <string name="k0060261a"> Not Available </string>
+    <string name="k0060261b"> Yes, Available Before Covid </string>
+    <string name="k0060261c"> Yes, Available During Pandemic </string>
     <string name="k0060261q"> Quantity </string>
     <string name="k0060262"> Functional </string>
     <string name="k0060262a"> Yes </string>
@@ -4659,9 +4659,9 @@
     <string name="k0060262q"> Quantity </string>
 
     <string name="k0060271"> Gloves, examination, nitrile, powder-free, large, medium, small, non-sterile, single use </string>
-    <string name="k0060271a"> Yes, Available Before Covid </string>
-    <string name="k0060271b"> Yes, Available During Pandemic </string>
-    <string name="k0060271c"> Not Available </string>
+    <string name="k0060271a"> Not Available </string>
+    <string name="k0060271b"> Yes, Available Before Covid </string>
+    <string name="k0060271c"> Yes, Available During Pandemic </string>
     <string name="k0060271q"> Quantity </string>
     <string name="k0060272"> Functional </string>
     <string name="k0060272a"> Yes </string>
@@ -4669,9 +4669,9 @@
     <string name="k0060272q"> Quantity </string>
 
     <string name="k0060281"> ICU Beds </string>
-    <string name="k0060281a"> Yes, Available Before Covid </string>
-    <string name="k0060281b"> Yes, Available During Pandemic </string>
-    <string name="k0060281c"> Not Available </string>
+    <string name="k0060281a"> Not Available </string>
+    <string name="k0060281b"> Yes, Available Before Covid </string>
+    <string name="k0060281c"> Yes, Available During Pandemic </string>
     <string name="k0060281q"> Quantity </string>
     <string name="k0060282"> Functional </string>
     <string name="k0060282a"> Yes </string>

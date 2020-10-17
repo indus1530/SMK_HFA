@@ -116,6 +116,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginTop="12dp"
+                                android:gravity="center"
                                 android:text="@string/h3114m1" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -130,6 +131,7 @@
                                 app:maxValue="50000"
                                 app:minValue="0"
                                 app:type="range" />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -142,6 +144,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginTop="12dp"
+                                android:gravity="center"
                                 android:text="@string/h3114m2" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -156,6 +159,7 @@
                                 app:maxValue="50000"
                                 app:minValue="0"
                                 app:type="range" />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -168,6 +172,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginTop="12dp"
+                                android:gravity="center"
                                 android:text="@string/h3114m3" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -182,9 +187,13 @@
                                 app:maxValue="50000"
                                 app:minValue="0"
                                 app:type="range" />
+
                         </LinearLayout>
+
                     </LinearLayout>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- h3114q1  Radio   -->
@@ -242,6 +251,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+
             <!-- h3115  Title   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVh3115"
@@ -289,6 +299,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginTop="12dp"
+                                android:gravity="center"
                                 android:text="@string/h3115m1" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -303,6 +314,7 @@
                                 app:maxValue="50000"
                                 app:minValue="0"
                                 app:type="range" />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -315,6 +327,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginTop="12dp"
+                                android:gravity="center"
                                 android:text="@string/h3115m2" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -329,6 +342,7 @@
                                 app:maxValue="50000"
                                 app:minValue="0"
                                 app:type="range" />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -341,6 +355,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginTop="12dp"
+                                android:gravity="center"
                                 android:text="@string/h3115m3" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -355,9 +370,13 @@
                                 app:maxValue="50000"
                                 app:minValue="0"
                                 app:type="range" />
+
                         </LinearLayout>
+
                     </LinearLayout>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- h3115q1  Radio   -->
@@ -415,6 +434,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+
             <!-- h3116  Title   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVh3116"
@@ -462,6 +482,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginTop="12dp"
+                                android:gravity="center"
                                 android:text="@string/h3116m1" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -476,6 +497,7 @@
                                 app:maxValue="50000"
                                 app:minValue="0"
                                 app:type="range" />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -488,6 +510,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginTop="12dp"
+                                android:gravity="center"
                                 android:text="@string/h3116m2" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -502,6 +525,7 @@
                                 app:maxValue="50000"
                                 app:minValue="0"
                                 app:type="range" />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -514,6 +538,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginTop="12dp"
+                                android:gravity="center"
                                 android:text="@string/h3116m3" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -528,9 +553,13 @@
                                 app:maxValue="50000"
                                 app:minValue="0"
                                 app:type="range" />
+
                         </LinearLayout>
+
                     </LinearLayout>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- h3116q1  Radio   -->
@@ -588,6 +617,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+
             <!-- h3117  Title   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVh3117"
@@ -635,6 +665,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginTop="12dp"
+                                android:gravity="center"
                                 android:text="@string/h3117m1" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -649,6 +680,7 @@
                                 app:maxValue="50000"
                                 app:minValue="0"
                                 app:type="range" />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -661,6 +693,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginTop="12dp"
+                                android:gravity="center"
                                 android:text="@string/h3117m2" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -675,6 +708,7 @@
                                 app:maxValue="50000"
                                 app:minValue="0"
                                 app:type="range" />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -687,6 +721,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginTop="12dp"
+                                android:gravity="center"
                                 android:text="@string/h3117m3" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -701,9 +736,13 @@
                                 app:maxValue="50000"
                                 app:minValue="0"
                                 app:type="range" />
+
                         </LinearLayout>
+
                     </LinearLayout>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- h3117q1  Radio   -->
@@ -725,6 +764,7 @@
                             android:id="@+id/qtxt_h3117q1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_h3117q1"
                             android:text="@string/h3117q1" />
 
                         <TextView
@@ -732,7 +772,10 @@
                             style="@style/quesNum"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_h3117q1"
+                            android:layout_alignBottom="@id/qtxt_h3117q1"
                             android:text="@string/Q_h3117q1" />
+
                     </RelativeLayout>
 
                     <RadioGroup
@@ -757,6 +800,7 @@
                     </RadioGroup>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
 
             <!-- h3118  Title   -->
             <androidx.cardview.widget.CardView
@@ -805,6 +849,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginTop="12dp"
+                                android:gravity="center"
                                 android:text="@string/h3118m1" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -819,6 +864,7 @@
                                 app:maxValue="50000"
                                 app:minValue="0"
                                 app:type="range" />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -831,6 +877,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginTop="12dp"
+                                android:gravity="center"
                                 android:text="@string/h3118m2" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -845,6 +892,7 @@
                                 app:maxValue="50000"
                                 app:minValue="0"
                                 app:type="range" />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -857,6 +905,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginTop="12dp"
+                                android:gravity="center"
                                 android:text="@string/h3118m3" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -871,9 +920,13 @@
                                 app:maxValue="50000"
                                 app:minValue="0"
                                 app:type="range" />
+
                         </LinearLayout>
+
                     </LinearLayout>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- h3118q1  Radio   -->
@@ -931,6 +984,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+
             <!-- h3119  Title   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVh3119"
@@ -978,6 +1032,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginTop="12dp"
+                                android:gravity="center"
                                 android:text="@string/h3119m1" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -992,6 +1047,7 @@
                                 app:maxValue="50000"
                                 app:minValue="0"
                                 app:type="range" />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -1004,6 +1060,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginTop="12dp"
+                                android:gravity="center"
                                 android:text="@string/h3119m2" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -1018,6 +1075,7 @@
                                 app:maxValue="50000"
                                 app:minValue="0"
                                 app:type="range" />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -1030,6 +1088,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginTop="12dp"
+                                android:gravity="center"
                                 android:text="@string/h3119m3" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -1044,9 +1103,13 @@
                                 app:maxValue="50000"
                                 app:minValue="0"
                                 app:type="range" />
+
                         </LinearLayout>
+
                     </LinearLayout>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- h3119q1  Radio   -->
@@ -1104,6 +1167,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+
             <!-- h3120  Title   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVh3120"
@@ -1151,6 +1215,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginTop="12dp"
+                                android:gravity="center"
                                 android:text="@string/h3120m1" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -1165,6 +1230,7 @@
                                 app:maxValue="50000"
                                 app:minValue="0"
                                 app:type="range" />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -1177,6 +1243,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginTop="12dp"
+                                android:gravity="center"
                                 android:text="@string/h3120m2" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -1191,6 +1258,7 @@
                                 app:maxValue="50000"
                                 app:minValue="0"
                                 app:type="range" />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -1203,6 +1271,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginTop="12dp"
+                                android:gravity="center"
                                 android:text="@string/h3120m3" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -1217,9 +1286,13 @@
                                 app:maxValue="50000"
                                 app:minValue="0"
                                 app:type="range" />
+
                         </LinearLayout>
+
                     </LinearLayout>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- h3120q1  Radio   -->
@@ -1277,6 +1350,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+
             <!-- h3121  Title   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVh3121"
@@ -1324,6 +1398,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginTop="12dp"
+                                android:gravity="center"
                                 android:text="@string/h3121m1" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -1338,6 +1413,7 @@
                                 app:maxValue="50000"
                                 app:minValue="0"
                                 app:type="range" />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -1350,6 +1426,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginTop="12dp"
+                                android:gravity="center"
                                 android:text="@string/h3121m2" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -1364,6 +1441,7 @@
                                 app:maxValue="50000"
                                 app:minValue="0"
                                 app:type="range" />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -1376,6 +1454,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginTop="12dp"
+                                android:gravity="center"
                                 android:text="@string/h3121m3" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -1390,9 +1469,13 @@
                                 app:maxValue="50000"
                                 app:minValue="0"
                                 app:type="range" />
+
                         </LinearLayout>
+
                     </LinearLayout>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- h3121q1  Radio   -->
@@ -1450,6 +1533,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+
             <!-- h3122  Title   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVh3122"
@@ -1497,6 +1581,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginTop="12dp"
+                                android:gravity="center"
                                 android:text="@string/h3122m1" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -1511,6 +1596,7 @@
                                 app:maxValue="50000"
                                 app:minValue="0"
                                 app:type="range" />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -1523,6 +1609,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginTop="12dp"
+                                android:gravity="center"
                                 android:text="@string/h3122m2" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -1537,6 +1624,7 @@
                                 app:maxValue="50000"
                                 app:minValue="0"
                                 app:type="range" />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -1549,6 +1637,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginTop="12dp"
+                                android:gravity="center"
                                 android:text="@string/h3122m3" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -1563,9 +1652,13 @@
                                 app:maxValue="50000"
                                 app:minValue="0"
                                 app:type="range" />
+
                         </LinearLayout>
+
                     </LinearLayout>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- h3122q1  Radio   -->
@@ -1623,6 +1716,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+
             <!-- h3123  Title   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVh3123"
@@ -1670,6 +1764,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginTop="12dp"
+                                android:gravity="center"
                                 android:text="@string/h3123m1" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -1684,6 +1779,7 @@
                                 app:maxValue="50000"
                                 app:minValue="0"
                                 app:type="range" />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -1696,6 +1792,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginTop="12dp"
+                                android:gravity="center"
                                 android:text="@string/h3123m2" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -1710,6 +1807,7 @@
                                 app:maxValue="50000"
                                 app:minValue="0"
                                 app:type="range" />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -1722,6 +1820,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginTop="12dp"
+                                android:gravity="center"
                                 android:text="@string/h3123m3" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -1736,9 +1835,13 @@
                                 app:maxValue="50000"
                                 app:minValue="0"
                                 app:type="range" />
+
                         </LinearLayout>
+
                     </LinearLayout>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- h3123q1  Radio   -->
@@ -1796,6 +1899,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+
             <!-- h3124  Title   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVh3124"
@@ -1843,6 +1947,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginTop="12dp"
+                                android:gravity="center"
                                 android:text="@string/h3124m1" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -1857,6 +1962,7 @@
                                 app:maxValue="50000"
                                 app:minValue="0"
                                 app:type="range" />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -1869,6 +1975,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginTop="12dp"
+                                android:gravity="center"
                                 android:text="@string/h3124m2" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -1883,6 +1990,7 @@
                                 app:maxValue="50000"
                                 app:minValue="0"
                                 app:type="range" />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -1895,6 +2003,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginTop="12dp"
+                                android:gravity="center"
                                 android:text="@string/h3124m3" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -1909,9 +2018,13 @@
                                 app:maxValue="50000"
                                 app:minValue="0"
                                 app:type="range" />
+
                         </LinearLayout>
+
                     </LinearLayout>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- h3124q1  Radio   -->
@@ -1969,6 +2082,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+
             <!-- h3125  Title   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVh3125"
@@ -2016,6 +2130,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginTop="12dp"
+                                android:gravity="center"
                                 android:text="@string/h3125m1" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -2030,6 +2145,7 @@
                                 app:maxValue="50000"
                                 app:minValue="0"
                                 app:type="range" />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -2042,6 +2158,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginTop="12dp"
+                                android:gravity="center"
                                 android:text="@string/h3125m2" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -2056,6 +2173,7 @@
                                 app:maxValue="50000"
                                 app:minValue="0"
                                 app:type="range" />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -2068,6 +2186,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginTop="12dp"
+                                android:gravity="center"
                                 android:text="@string/h3125m3" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -2082,9 +2201,13 @@
                                 app:maxValue="50000"
                                 app:minValue="0"
                                 app:type="range" />
+
                         </LinearLayout>
+
                     </LinearLayout>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- h3125q1  Radio   -->
@@ -2142,6 +2265,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+
             <!-- h3126  Title   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVh3126"
@@ -2189,6 +2313,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginTop="12dp"
+                                android:gravity="center"
                                 android:text="@string/h3126m1" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -2203,6 +2328,7 @@
                                 app:maxValue="50000"
                                 app:minValue="0"
                                 app:type="range" />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -2215,6 +2341,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginTop="12dp"
+                                android:gravity="center"
                                 android:text="@string/h3126m2" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -2229,6 +2356,7 @@
                                 app:maxValue="50000"
                                 app:minValue="0"
                                 app:type="range" />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -2241,6 +2369,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginTop="12dp"
+                                android:gravity="center"
                                 android:text="@string/h3126m3" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -2255,9 +2384,13 @@
                                 app:maxValue="50000"
                                 app:minValue="0"
                                 app:type="range" />
+
                         </LinearLayout>
+
                     </LinearLayout>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- h3126q1  Radio   -->
@@ -2315,6 +2448,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+
             <!-- h3127  Title   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVh3127"
@@ -2362,6 +2496,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginTop="12dp"
+                                android:gravity="center"
                                 android:text="@string/h3127m1" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -2376,6 +2511,7 @@
                                 app:maxValue="50000"
                                 app:minValue="0"
                                 app:type="range" />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -2388,6 +2524,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginTop="12dp"
+                                android:gravity="center"
                                 android:text="@string/h3127m2" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -2402,6 +2539,7 @@
                                 app:maxValue="50000"
                                 app:minValue="0"
                                 app:type="range" />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -2414,6 +2552,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:layout_marginTop="12dp"
+                                android:gravity="center"
                                 android:text="@string/h3127m3" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -2428,9 +2567,13 @@
                                 app:maxValue="50000"
                                 app:minValue="0"
                                 app:type="range" />
+
                         </LinearLayout>
+
                     </LinearLayout>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- h3127q1  Radio   -->
@@ -2509,6 +2652,7 @@
 
             </LinearLayout>
             <!--EndButton LinearLayout-->
+
 
         </LinearLayout>
 
