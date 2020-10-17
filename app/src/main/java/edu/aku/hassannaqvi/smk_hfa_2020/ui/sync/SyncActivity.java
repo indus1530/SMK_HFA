@@ -27,6 +27,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 import edu.aku.hassannaqvi.smk_hfa_2020.CONSTANTS;
 import edu.aku.hassannaqvi.smk_hfa_2020.R;
@@ -61,7 +62,7 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
     List<SyncModel> uploadlist;
     Boolean listActivityCreated;
     Boolean uploadlistActivityCreated;
-    String dtToday = new SimpleDateFormat("dd-MM-yy HH:mm").format(new Date().getTime());
+    String dtToday = new SimpleDateFormat("dd-MM-yy HH:mm", Locale.getDefault()).format(new Date().getTime());
     private boolean sync_flag;
 
     @Override
