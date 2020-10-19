@@ -41,7 +41,6 @@ public class SectionD5Activity extends AppCompatActivity {
         bi.setCallback(this);
         setupTextWatchers();
         setupSkips();
-
     }
 
 
@@ -275,6 +274,5 @@ public class SectionD5Activity extends AppCompatActivity {
 
         }
     }
-
 
 }

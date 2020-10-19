@@ -34,12 +34,6 @@ public class SectionE103Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_e103);
         bi.setCallback(this);
-        setupSkips();
-    }
-
-
-    private void setupSkips() {
-
     }
 
 

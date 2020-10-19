@@ -206,4 +206,5 @@ public class SectionC1Activity extends AppCompatActivity {
             startActivity(new Intent(this, SectionMainActivity.class));
         }
     }
+
 }

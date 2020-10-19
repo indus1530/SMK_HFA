@@ -35,7 +35,6 @@ public class SectionJ1Activity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_j1);
         bi.setCallback(this);
         setupSkips();
-
     }
 
 

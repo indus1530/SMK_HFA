@@ -49,7 +49,7 @@
     <string name="days"> Days </string>
     <string name="months"> Months </string>
     <string name="years"> Years </string>
-    <string name="day"> Day </string>
+    <string name="date"> Date </string>
     <string name="month"> Month </string>
     <string name="time"> Time </string>
     <string name="year"> Year </string>

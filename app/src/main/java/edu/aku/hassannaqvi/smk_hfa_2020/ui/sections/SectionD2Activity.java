@@ -36,7 +36,6 @@ public class SectionD2Activity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_d2);
         bi.setCallback(this);
         setupSkips();
-
     }
 
 
@@ -141,6 +140,5 @@ public class SectionD2Activity extends AppCompatActivity {
 
         }
     }
-
 
 }

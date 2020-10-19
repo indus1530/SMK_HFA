@@ -3,9 +3,7 @@
     <data>
 
         <import type="android.view.View" />
-        <!--<variable
-            name="form"
-            type="edu.aku.hassannaqvi.sk.models.Form" />-->
+
         <variable
             name="callback"
             type="edu.aku.hassannaqvi.smk_hfa_2020.ui.sections.SectionJ3Activity" />
@@ -20,6 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
 
             <!-- j3title  Title   -->
             <androidx.cardview.widget.CardView
@@ -894,6 +893,7 @@
 
             </androidx.cardview.widget.CardView>
 
+
             <!--EndButton LinearLayout-->
             <LinearLayout
                 style="@style/hlinearlayout"
@@ -914,6 +914,7 @@
 
             </LinearLayout>
             <!--EndButton LinearLayout-->
+
 
         </LinearLayout>
 

@@ -34,35 +34,7 @@ public class SectionJ3Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_j3);
         bi.setCallback(this);
-        setupSkips();
-
     }
-
-
-    private void setupSkips() {
-
-    }
-
-
-   /* public void radioGroup(RadioGroup grp) {
-
-        grp.setOnCheckedChangeListener(((radioGroup, i) -> {
-            if (bi.j0301ab.isChecked() || bi.j0301bb.isChecked() || bi.j0301cb.isChecked()
-                    || bi.j0301db.isChecked() || bi.j0301eb.isChecked() || bi.j0301fb.isChecked()
-                    || bi.j0301gb.isChecked() || bi.j0301hb.isChecked() || bi.j0301ib.isChecked()
-                    || bi.j0301jb.isChecked() || bi.j0301kb.isChecked() || bi.j0301lb.isChecked()
-                    || bi.j0301mb.isChecked() || bi.j0301nb.isChecked() || bi.j0301ob.isChecked()
-                    || bi.j0301pb.isChecked() || bi.j0301qb.isChecked() || bi.j0301rb.isChecked()
-                    || bi.j0301sb.isChecked() || bi.j0301tb.isChecked() || bi.j0301ub.isChecked()
-                    || bi.j0301vb.isChecked()) {
-                Clear.clearAllFields(bi.fldGrpCVj0301w);
-                bi.fldGrpCVj0301w.setVisibility(View.VISIBLE);
-            } else {
-                Clear.clearAllFields(bi.fldGrpCVj0301w);
-                bi.fldGrpCVj0301w.setVisibility(View.GONE);
-            }
-        }));
-    }*/
 
 
     public void BtnContinue() {

@@ -11,11 +11,9 @@
             type="edu.aku.hassannaqvi.smk_hfa_2020.ui.sections.SectionAActivity" />
     </data>
 
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
 
         <LinearLayout
             android:id="@+id/GrpName"
@@ -61,7 +59,7 @@
 
                             <TextView
                                 style="@style/textviewh"
-                                android:text="@string/day" />
+                                android:text="@string/date" />
 
                             <!--<com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/a03d"
@@ -78,7 +76,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
                                 android:gravity="center"
-                                android:hint="@string/day"
+                                android:hint="@string/date"
                                 app:dateFormat="dd-MM-yy"
                                 app:maxDate="CR_DATE" />
 
@@ -413,6 +411,7 @@
 
             </LinearLayout>
             <!--EndButton LinearLayout-->
+
 
         </LinearLayout>
 

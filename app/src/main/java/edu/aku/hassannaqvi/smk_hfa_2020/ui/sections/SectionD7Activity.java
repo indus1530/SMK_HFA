@@ -35,7 +35,6 @@ public class SectionD7Activity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_d7);
         bi.setCallback(this);
         setupSkips();
-
     }
 
 
@@ -171,6 +170,5 @@ public class SectionD7Activity extends AppCompatActivity {
 
         }
     }
-
 
 }

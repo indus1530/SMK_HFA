@@ -36,11 +36,12 @@ public class SectionD1Activity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_d1);
         bi.setCallback(this);
         setupSkips();
-
     }
+
 
     private void setupSkips() {
     }
+
 
     private boolean UpdateDB() {
         DatabaseHelper db = MainApp.appInfo.getDbHelper();
@@ -114,6 +115,5 @@ public class SectionD1Activity extends AppCompatActivity {
 
         }
     }
-
 
 }

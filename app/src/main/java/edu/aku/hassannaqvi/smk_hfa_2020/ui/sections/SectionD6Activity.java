@@ -141,5 +141,4 @@ public class SectionD6Activity extends AppCompatActivity {
         Toast.makeText(this, "Back Press Not Allowed", Toast.LENGTH_SHORT).show();
     }
 
-
 }

@@ -34,12 +34,6 @@ public class SectionJ4Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_j4);
         bi.setCallback(this);
-        setupSkips();
-    }
-
-
-    private void setupSkips() {
-
     }
 
 

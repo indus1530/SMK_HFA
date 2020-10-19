@@ -34,7 +34,6 @@ public class SectionD4Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_d4);
         bi.setCallback(this);
-
     }
 
 
@@ -160,6 +159,5 @@ public class SectionD4Activity extends AppCompatActivity {
 
         }
     }
-
 
 }

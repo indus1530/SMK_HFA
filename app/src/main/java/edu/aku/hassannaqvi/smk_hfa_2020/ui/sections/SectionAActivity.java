@@ -59,12 +59,14 @@ public class SectionAActivity extends AppCompatActivity {
         initializeHF();
     }
 
+
     private void initializingComponents() {
         // Databinding Edit Mode (only in first activity for every contract)
         fc = new FormsContract();
         db = MainApp.appInfo.getDbHelper();
         populateSpinner(this);
     }
+
 
     private void initializeHF() {
         //For HF
@@ -80,6 +82,7 @@ public class SectionAActivity extends AppCompatActivity {
         };
         hfMap = new HashMap<>();
     }
+
 
     public void populateSpinner(final Context context) {
         // Spinner Drop down elements
@@ -206,6 +209,7 @@ public class SectionAActivity extends AppCompatActivity {
 
     }
 
+
     public void BtnContinue() {
         if (!formValidation()) return;
         SaveDraft();
@@ -214,6 +218,7 @@ public class SectionAActivity extends AppCompatActivity {
             startActivity(new Intent(this, SectionMainActivity.class));
         }
     }
+
 
     private boolean UpdateDB() {
 
@@ -231,6 +236,7 @@ public class SectionAActivity extends AppCompatActivity {
         }
 
     }
+
 
     private void SaveDraft() {
 

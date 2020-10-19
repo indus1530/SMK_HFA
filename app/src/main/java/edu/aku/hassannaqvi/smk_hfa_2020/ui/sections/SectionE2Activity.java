@@ -186,5 +186,4 @@ public class SectionE2Activity extends AppCompatActivity {
         }
     }
 
-
 }

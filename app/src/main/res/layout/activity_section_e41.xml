@@ -1,12 +1,9 @@
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
 
     <data>
 
         <import type="android.view.View" />
-        <!--<variable
-            name="form"
-            type="edu.aku.hassannaqvi.sk.models.Form" />-->
+
         <variable
             name="callback"
             type="edu.aku.hassannaqvi.smk_hfa_2020.ui.sections.SectionE41Activity" />
@@ -22,7 +19,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- e4title  Title   -->
+
             <!-- e04  Section Title   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVe04"
@@ -74,21 +71,27 @@
                     <RadioGroup
                         android:id="@+id/e41"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/e41a"
-                            android:layout_width="match_parent"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:text="@string/e41a" />
 
                         <RadioButton
                             android:id="@+id/e41b"
-                            android:layout_width="match_parent"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:text="@string/e41b" />
+
                     </RadioGroup>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- e42hint  Title   -->
@@ -103,10 +106,11 @@
 
                     <TextView
                         android:id="@+id/qtxt_e42hint"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/sub"
                         android:text="@string/e42hint" />
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- e42  Radio   -->
@@ -144,21 +148,27 @@
                     <RadioGroup
                         android:id="@+id/e42"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/e42a"
-                            android:layout_width="match_parent"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:text="@string/e42a" />
 
                         <RadioButton
                             android:id="@+id/e42b"
-                            android:layout_width="match_parent"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:text="@string/e42b" />
+
                     </RadioGroup>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- e43  Title   -->
@@ -173,10 +183,11 @@
 
                     <TextView
                         android:id="@+id/qtxt_e43"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/sub"
                         android:text="@string/e43" />
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- e4hint  Title   -->
@@ -191,10 +202,11 @@
 
                     <TextView
                         android:id="@+id/qtxt_e4hint"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/sub"
                         android:text="@string/e4hint" />
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- e43a  Radio   -->
@@ -935,34 +947,31 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+
             <!--EndButton LinearLayout-->
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/hlinearlayout"
                 android:layout_gravity="end"
-                android:layout_marginTop="24dp"
-                android:orientation="horizontal">
+                android:layout_marginTop="18dp">
 
                 <Button
                     android:id="@+id/btn_End"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="12dp"
-                    android:background="@color/red_overlay"
+                    style="@style/btnEnd"
                     android:onClick="@{() -> callback.BtnEnd()}"
-                    android:text="Cancel"
-                    android:textColor="@color/white" />
+                    android:text="End" />
 
                 <Button
                     android:id="@+id/btn_Continue"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="12dp"
-                    android:background="@color/green_overlay"
+                    style="@style/btnNext"
                     android:onClick="@{() -> callback.BtnContinue()}"
-                    android:text="Save"
-                    android:textColor="@color/white" />
+                    android:text="Save" />
+
             </LinearLayout>
+            <!--EndButton LinearLayout-->
+
+
         </LinearLayout>
+
     </ScrollView>
+
 </layout>
