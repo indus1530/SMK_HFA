@@ -43,7 +43,7 @@ public class SectionK1Activity extends AppCompatActivity {
     private void setupSkips() {
 
         bi.k0011.setOnCheckedChangeListener(((radioGroup, i) -> {
-            Clear.clearAllFields(bi.llk0001);
+            Clear.clearAllFields(bi.fldGrpCVk00111);
         }));
 
     }
