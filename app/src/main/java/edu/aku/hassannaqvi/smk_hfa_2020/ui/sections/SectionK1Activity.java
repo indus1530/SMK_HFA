@@ -46,6 +46,10 @@ public class SectionK1Activity extends AppCompatActivity {
             Clear.clearAllFields(bi.fldGrpCVk00111);
         }));
 
+        bi.k0001b.setOnCheckedChangeListener(((radioGroup, i) -> {
+            Clear.clearAllFields(bi.llgrpseck01);
+        }));
+
     }
 
 
@@ -58,7 +62,7 @@ public class SectionK1Activity extends AppCompatActivity {
         }
         if (UpdateDB()) {
             finish();
-            startActivity(new Intent(this, SectionK2Activity.class));
+            startActivity(new Intent(this, bi.k0001b.isChecked() ? SectionK7Activity.class : SectionK2Activity.class));
         }
     }
 
