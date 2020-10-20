@@ -44,10 +44,6 @@ public class SectionE6Activity extends AppCompatActivity {
             }
         }));
 
-        bi.e0606.setOnCheckedChangeListener(((radioGroup, i) -> {
-            Clear.clearAllFields(bi.fldGrpSece606);
-        }));
-
     }
 
 
