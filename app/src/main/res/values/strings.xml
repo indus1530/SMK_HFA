@@ -2732,10 +2732,10 @@
     <string name="h0101cb">YEAR</string>
 
     <string name="h02"> SECTION 02: \nHuman Resources For Data Assessment </string>
-    <string name="h0201">Is there a designated person to enter data/compile reports from the different units in the same health facility? Please Write name and designation of all persons.</string>
+    <string name="h0201">Is there a designated person to enter data/compile reports from the different units in the same health facility?</string>
     <string name="h0201a">Yes</string>
     <string name="h0201b">No</string>
-    <string name="h0202">Is there a designated person to review the quality of compiled data prior to submission to the next level, e.g., to districts, to regional offices, to the central DHIS, etc.? Please Write name and designation of all persons.</string>
+    <string name="h0202">Is there a designated person to review the quality of compiled data prior to submission to the next level, e.g., to districts, to regional offices, to the central DHIS, etc.?</string>
     <string name="h0202a">Yes</string>
     <string name="h0202b">Partly (the data are reviewed but no one is designated with the responsibility)</string>
     <string name="h0202c">Not at all</string>
@@ -3141,7 +3141,7 @@
     <string name="h0902a">Maternal health care</string>
     <string name="h0902aa">Yes, observed</string>
     <string name="h0902ab">No</string>
-    <string name="h0902b">Neonate and child health care (other than EPI)</string>
+    <string name="h0902b">Long-term Contraceptive Coverage </string>
     <string name="h0902ba">Yes, observed</string>
     <string name="h0902bb">No</string>
     <string name="h0902c">Top causes of morbidity and mortality</string>

@@ -36,13 +36,12 @@ public class SectionH12Activity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_h12);
         bi.setCallback(this);
         setupSkips();
-
     }
 
 
     private void setupSkips() {
 
-        bi.h1201.setOnCheckedChangeListener(((radioGroup, i) -> {
+        bi.h1202b.setOnCheckedChangeListener(((radioGroup, i) -> {
             Clear.clearAllFields(bi.fldGrpSech1201);
         }));
 
