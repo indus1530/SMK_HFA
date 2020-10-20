@@ -37,7 +37,6 @@ public class SectionK61Activity extends AppCompatActivity {
         bi.setCallback(this);
         setupSkips();
         setupTextWatchers();
-
     }
 
 
@@ -288,6 +287,5 @@ public class SectionK61Activity extends AppCompatActivity {
     public void onBackPressed() {
         Toast.makeText(this, "Back Press Not Allowed", Toast.LENGTH_SHORT).show();
     }
-
 
 }
