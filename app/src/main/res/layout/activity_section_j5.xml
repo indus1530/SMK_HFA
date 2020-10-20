@@ -35,6 +35,7 @@
 
             </androidx.cardview.widget.CardView>
 
+
             <!-- j5  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVj5"
@@ -110,6 +111,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+
             <!-- j500a  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVj500a"
@@ -165,6 +167,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+
             <!-- j501hint  Title   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVj501hint"
@@ -181,6 +184,7 @@
                         android:text="@string/j501hint" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
 
             <!-- j501  Radio   -->
             <androidx.cardview.widget.CardView
@@ -237,6 +241,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+
             <!-- j502  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVj502"
@@ -291,6 +296,7 @@
                     </RadioGroup>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
 
             <!-- j503  Radio   -->
             <androidx.cardview.widget.CardView
@@ -347,6 +353,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+
             <!-- j504  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVj504"
@@ -402,6 +409,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+
             <!-- j505  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVj505"
@@ -456,6 +464,7 @@
                     </RadioGroup>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
 
             <!-- j506  CheckBox   -->
             <androidx.cardview.widget.CardView

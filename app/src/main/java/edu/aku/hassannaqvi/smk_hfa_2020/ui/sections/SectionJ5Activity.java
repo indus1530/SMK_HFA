@@ -3,12 +3,14 @@ package edu.aku.hassannaqvi.smk_hfa_2020.ui.sections;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import com.validatorcrawler.aliazaz.Clear;
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.jetbrains.annotations.NotNull;
@@ -35,6 +37,31 @@ public class SectionJ5Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_j5);
         bi.setCallback(this);
+        setupSkips();
+    }
+
+    private void setupSkips() {
+        radioGroup(bi.j500a);
+        radioGroup(bi.j501);
+        radioGroup(bi.j502);
+        radioGroup(bi.j503);
+        radioGroup(bi.j504);
+        radioGroup(bi.j505);
+    }
+
+
+    public void radioGroup(RadioGroup grp) {
+
+        grp.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (bi.j500ab.isChecked() || bi.j501b.isChecked() || bi.j502b.isChecked()
+                    || bi.j503b.isChecked() || bi.j504b.isChecked() || bi.j505b.isChecked()) {
+                Clear.clearAllFields(bi.fldGrpCVj506);
+                bi.fldGrpCVj506.setVisibility(View.VISIBLE);
+            } else {
+                Clear.clearAllFields(bi.fldGrpCVj506);
+                bi.fldGrpCVj506.setVisibility(View.GONE);
+            }
+        }));
     }
 
 

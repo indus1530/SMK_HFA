@@ -3,12 +3,14 @@ package edu.aku.hassannaqvi.smk_hfa_2020.ui.sections;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import com.validatorcrawler.aliazaz.Clear;
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.jetbrains.annotations.NotNull;
@@ -34,6 +36,39 @@ public class SectionJ3Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_j3);
         bi.setCallback(this);
+        setupSkips();
+    }
+
+    private void setupSkips() {
+        radioGroup(bi.j31);
+        radioGroup(bi.j32);
+        radioGroup(bi.j33);
+        radioGroup(bi.j34);
+        radioGroup(bi.j35);
+        radioGroup(bi.j36a);
+        radioGroup(bi.j36b);
+        radioGroup(bi.j36c);
+        radioGroup(bi.j36d);
+        radioGroup(bi.j36e);
+        radioGroup(bi.j36f);
+        radioGroup(bi.j36g);
+    }
+
+
+    public void radioGroup(RadioGroup grp) {
+
+        grp.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (bi.j31b.isChecked() || bi.j32b.isChecked() || bi.j33b.isChecked()
+                    || bi.j34b.isChecked() || bi.j35b.isChecked() || bi.j36ab.isChecked()
+                    || bi.j36bb.isChecked() || bi.j36cb.isChecked() || bi.j36db.isChecked()
+                    || bi.j36eb.isChecked() || bi.j36fb.isChecked() || bi.j36gb.isChecked() || bi.j36hb.isChecked()) {
+                Clear.clearAllFields(bi.fldGrpCVj37);
+                bi.fldGrpCVj37.setVisibility(View.VISIBLE);
+            } else {
+                Clear.clearAllFields(bi.fldGrpCVj37);
+                bi.fldGrpCVj37.setVisibility(View.GONE);
+            }
+        }));
     }
 
 

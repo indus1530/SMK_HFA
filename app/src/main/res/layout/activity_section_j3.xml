@@ -35,6 +35,7 @@
 
             </androidx.cardview.widget.CardView>
 
+
             <!-- j31  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVj31"
@@ -92,6 +93,7 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+
 
             <!-- j32  Radio   -->
             <androidx.cardview.widget.CardView
@@ -151,6 +153,7 @@
 
             </androidx.cardview.widget.CardView>
 
+
             <!-- j33  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVj33"
@@ -208,6 +211,7 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+
 
             <!-- j34  Radio   -->
             <androidx.cardview.widget.CardView
@@ -267,6 +271,7 @@
 
             </androidx.cardview.widget.CardView>
 
+
             <!-- j35  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVj35"
@@ -325,6 +330,7 @@
 
             </androidx.cardview.widget.CardView>
 
+
             <!-- j36  Title   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVj36"
@@ -341,6 +347,7 @@
                         android:text="@string/j36" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
 
             <!-- j36a  Radio   -->
             <androidx.cardview.widget.CardView
@@ -400,6 +407,7 @@
 
             </androidx.cardview.widget.CardView>
 
+
             <!-- j36b  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVj36b"
@@ -457,6 +465,7 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+
 
             <!-- j36c  Radio   -->
             <androidx.cardview.widget.CardView
@@ -516,6 +525,7 @@
 
             </androidx.cardview.widget.CardView>
 
+
             <!-- j36d  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVj36d"
@@ -573,6 +583,7 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+
 
             <!-- j36e  Radio   -->
             <androidx.cardview.widget.CardView
@@ -632,6 +643,7 @@
 
             </androidx.cardview.widget.CardView>
 
+
             <!-- j36f  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVj36f"
@@ -689,6 +701,7 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+
 
             <!-- j36g  Radio   -->
             <androidx.cardview.widget.CardView
@@ -748,6 +761,7 @@
 
             </androidx.cardview.widget.CardView>
 
+
             <!-- j36h  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVj36h"
@@ -805,6 +819,7 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+
 
             <!-- j37  CheckBox   -->
             <androidx.cardview.widget.CardView

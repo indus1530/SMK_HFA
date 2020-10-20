@@ -36,6 +36,7 @@
 
             </androidx.cardview.widget.CardView>
 
+
             <!-- j40  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVj40"
@@ -112,6 +113,7 @@
 
             </androidx.cardview.widget.CardView>
 
+
             <!-- j41  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVj41"
@@ -167,6 +169,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+
             <!-- j4010  Title   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVj4010"
@@ -183,6 +186,7 @@
                         android:text="@string/j4010" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
 
             <!-- j401  Radio   -->
             <androidx.cardview.widget.CardView
@@ -239,6 +243,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+
             <!-- j402  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVj402"
@@ -293,6 +298,7 @@
                     </RadioGroup>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
 
             <!-- j403  Radio   -->
             <androidx.cardview.widget.CardView
@@ -349,6 +355,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+
             <!-- j404  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVj404"
@@ -403,6 +410,7 @@
                     </RadioGroup>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
 
             <!-- j405  Radio   -->
             <androidx.cardview.widget.CardView
@@ -459,6 +467,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+
             <!-- j406  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVj406"
@@ -513,6 +522,7 @@
                     </RadioGroup>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
 
             <!-- j407  CheckBox   -->
             <androidx.cardview.widget.CardView
