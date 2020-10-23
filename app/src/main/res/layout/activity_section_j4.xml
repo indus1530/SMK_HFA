@@ -586,7 +586,15 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/j407d" />
+
+                        <CheckBox
+                            android:id="@+id/j407x"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/j407x" />
+
                     </LinearLayout>
+
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 

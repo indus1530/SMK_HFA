@@ -167,7 +167,7 @@ public class SectionE41Activity extends AppCompatActivity {
         }
         if (UpdateDB()) {
             finish();
-            startActivity(new Intent(this, SectionE42Activity.class));
+            startActivity(new Intent(this, bi.e41b.isChecked() ? SectionE5Activity.class : SectionE42Activity.class));
         }
     }
 

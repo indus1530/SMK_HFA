@@ -1504,6 +1504,7 @@
     <string name="e0601">Does this facility offer blood transfusion services?</string>
     <string name="e0601a">Yes</string>
     <string name="e0601b">No</string>
+    <string name="e0600">Ask to be shown the location in the facility where blood is collected, processed, tested, stored, or handled prior to transfusion. Find the person most knowledgeable about blood transfusion services in the facility. Introduce yourself, explain the purpose of the survey and ask the following questions.</string>
     <string name="e0602">Does this facility obtain blood from a national or regional blood center?</string>
     <string name="e0602a">Yes</string>
     <string name="e0602b">No</string>
@@ -4079,6 +4080,7 @@
     <string name="j407b">Increased workload / Shortage of time</string>
     <string name="j407c">No separate space is available for counseling / maintaining confidentiality</string>
     <string name="j407d">Partition curtains are not available</string>
+    <string name="j407x">Other</string>
 
     <string name="j5title">SECTION J5: \nReferral and Linkages</string>
     <string name="j5">Please enter the Name and Designation of HCP to whom you observe for this section.</string>
@@ -4109,6 +4111,7 @@
     <string name="j506c">Referral box is not available for “refer in” patients / clients.</string>
     <string name="j506d">Community visit facility by themselves, LHW not refer them</string>
     <string name="j506e">No register available to record refer out patient record</string>
+    <string name="j506x">Other</string>
 
 
     <string name="j08"> SECTION 08: \nCommunication, Respect and Confidentiality </string>

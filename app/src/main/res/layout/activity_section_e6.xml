@@ -97,6 +97,21 @@
                 style="@style/vlinearlayout"
                 android:visibility='@{e0601b.checked ? View.GONE : View.VISIBLE}'>
 
+                <!-- e0600  SUB TextView   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVe0600"
+                    style="@style/cardView">
+
+                    <LinearLayout style="@style/vlinearlayout">
+
+                        <TextView
+                            style="@style/sub"
+                            android:text="@string/e0600" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
 
                 <!-- e0602  Radio   -->
                 <androidx.cardview.widget.CardView

@@ -96,7 +96,8 @@
                 style="@style/vlinearlayout"
                 android:visibility='@{k0001b.checked ? View.GONE : View.VISIBLE}'>
 
-                <!-- k001  Title   -->
+
+            <!-- k001  Title   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVk001"
                     style="@style/cardView">
