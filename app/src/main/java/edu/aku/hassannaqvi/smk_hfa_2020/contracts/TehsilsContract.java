@@ -69,9 +69,9 @@ public class TehsilsContract {
     public static abstract class singleTehsil implements BaseColumns {
 
         public static final String TABLE_NAME = "tehsils";
-        public static final String COLUMN_TEHSIL_CODE = "tehsil_code";
-        public static final String COLUMN_TEHSIL_NAME = "tehsil_name";
-        public static final String COLUMN_DISTRICT_CODE = "district_code";
+        public static final String COLUMN_TEHSIL_CODE = "tehsil_id";
+        public static final String COLUMN_TEHSIL_NAME = "tehsil";
+        public static final String COLUMN_DISTRICT_CODE = "dist_id";
 
         public static final String _URI = "tehsils.php";
     }

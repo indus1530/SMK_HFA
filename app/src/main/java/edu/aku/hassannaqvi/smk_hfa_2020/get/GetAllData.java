@@ -11,6 +11,7 @@ import org.json.JSONObject;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
+import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -40,9 +41,9 @@ public class GetAllData extends AsyncTask<String, String, String> {
     private List<SyncModel> list;
     private int position;
     private String TAG = "";
-    private Context mContext;
+    private final Context mContext;
     private ProgressDialog pd;
-    private String syncClass;
+    private final String syncClass;
 
 
     public GetAllData(Context context, String syncClass) {
@@ -127,32 +128,39 @@ public class GetAllData extends AsyncTask<String, String, String> {
     protected String doInBackground(String... args) {
 
         StringBuilder result = new StringBuilder();
+        String tableName = "";
 
         URL url = null;
         try {
             switch (syncClass) {
                 case "User":
-                    url = new URL(MainApp._HOST_URL + UsersContract.singleUser._URI);
+                    url = new URL(MainApp._HOST_URL + MainApp._SERVER_GET_URL);
+                    tableName = UsersContract.singleUser.TABLE_NAME;
                     position = 0;
                     break;
                 case "VersionApp":
-                    url = new URL(MainApp._UPDATE_URL + VersionAppContract.VersionAppTable._URI);
+                    url = new URL(MainApp._UPDATE_URL + MainApp._SERVER_GET_URL);
+                    tableName = VersionAppContract.VersionAppTable.TABLE_NAME;
                     position = 1;
                     break;
                 case "Districts":
-                    url = new URL(MainApp._HOST_URL + DistrictContract.singleDistrict._URI);
+                    url = new URL(MainApp._HOST_URL + MainApp._SERVER_GET_URL);
+                    tableName = DistrictContract.singleDistrict.TABLE_NAME;
                     position = 2;
                     break;
                 case "Tehsils":
-                    url = new URL(MainApp._HOST_URL + TehsilsContract.singleTehsil._URI);
+                    url = new URL(MainApp._HOST_URL + MainApp._SERVER_GET_URL);
+                    tableName = MainApp._HOST_URL + TehsilsContract.singleTehsil.TABLE_NAME;
                     position = 3;
                     break;
                 case "UCs":
-                    url = new URL(MainApp._HOST_URL + UCsContract.singleUCs._URI);
+                    url = new URL(MainApp._HOST_URL + MainApp._SERVER_GET_URL);
+                    tableName = MainApp._HOST_URL + UCsContract.singleUCs.TABLE_NAME;
                     position = 4;
                     break;
                 case "HealthFacilities":
-                    url = new URL(MainApp._HOST_URL + HFContract.singleHF._URI);
+                    url = new URL(MainApp._HOST_URL + MainApp._SERVER_GET_URL);
+                    tableName = MainApp._HOST_URL + HFContract.singleHF.TABLE_NAME;
                     position = 5;
                     break;
             }
@@ -160,6 +168,34 @@ public class GetAllData extends AsyncTask<String, String, String> {
             urlConnection = (HttpURLConnection) url.openConnection();
             urlConnection.setReadTimeout(100000 /* milliseconds */);
             urlConnection.setConnectTimeout(150000 /* milliseconds */);
+            switch (syncClass) {
+                case "User":
+                case "Districts":
+                case "Tehsils":
+                case "UCs":
+                case "HealthFacilities":
+                    urlConnection.setRequestMethod("POST");
+                    urlConnection.setDoOutput(true);
+                    urlConnection.setDoInput(true);
+                    urlConnection.setRequestProperty("Content-Type", "application/json");
+                    urlConnection.setRequestProperty("charset", "utf-8");
+                    urlConnection.setUseCaches(false);
+
+                    // Starts the query
+                    urlConnection.connect();
+                    DataOutputStream wr = new DataOutputStream(urlConnection.getOutputStream());
+                    JSONObject json = new JSONObject();
+                    try {
+                        json.put("table", tableName);
+                    } catch (JSONException e1) {
+                        e1.printStackTrace();
+                    }
+                    Log.d(TAG, "downloadUrl: " + json.toString());
+                    wr.writeBytes(json.toString());
+                    wr.flush();
+                    wr.close();
+                    break;
+            }
 
             Log.d(TAG, "doInBackground: " + urlConnection.getResponseCode());
             publishProgress(syncClass);

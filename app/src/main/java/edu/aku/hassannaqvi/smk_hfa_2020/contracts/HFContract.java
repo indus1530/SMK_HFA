@@ -85,10 +85,10 @@ public class HFContract {
     public static abstract class singleHF implements BaseColumns {
         public static final String _ID = "_id";
         public static final String TABLE_NAME = "healthfacilities";
-        public static final String COLUMN_TEHSIL_CODE = "tehsil_code";
+        public static final String COLUMN_TEHSIL_CODE = "tehsil_id";
         public static final String COLUMN_HF_TYPE = "hf_type";
         public static final String COLUMN_HF_NAME = "hf_name";
-        public static final String COLUMN_HF_CODE = "hf_uen_code";
+        public static final String COLUMN_HF_CODE = "hfcode";
 
         public static final String _URI = "healthfacilities.php";
     }

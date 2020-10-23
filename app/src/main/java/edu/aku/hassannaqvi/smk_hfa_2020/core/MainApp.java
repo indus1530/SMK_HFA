@@ -47,6 +47,7 @@ public class MainApp extends Application {
     public static final String _HOST_URL = "http://" + MainApp._IP + "/smk_hfa/api/"; // .TEST server
 
     public static final String _SERVER_URL = "sync.php";
+    public static final String _SERVER_GET_URL = "getData.php";
 
     public static final String _UPDATE_URL = "https://" + MainApp._IP + "/smk_hfa/app/";
 

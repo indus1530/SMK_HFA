@@ -72,9 +72,9 @@ public class UCsContract {
     public static abstract class singleUCs implements BaseColumns {
         public static final String _ID = "_id";
         public static final String TABLE_NAME = "ucs";
-        public static final String COLUMN_UC_CODE = "uc_code";
+        public static final String COLUMN_UC_CODE = "uc_id";
         public static final String COLUMN_UC_NAME = "uc_name";
-        public static final String COLUMN_TEHSIL_CODE = "tehsil_code";
+        public static final String COLUMN_TEHSIL_CODE = "tehsil_id";
 
         public static final String _URI = "ucs.php";
     }
