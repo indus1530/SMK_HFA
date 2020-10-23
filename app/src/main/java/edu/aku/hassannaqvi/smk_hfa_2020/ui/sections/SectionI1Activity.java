@@ -15,6 +15,7 @@ import org.json.JSONObject;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Locale;
 
 import edu.aku.hassannaqvi.smk_hfa_2020.CONSTANTS;
 import edu.aku.hassannaqvi.smk_hfa_2020.R;
@@ -198,8 +199,8 @@ public class SectionI1Activity extends AppCompatActivity implements EndSectionAc
                 : bi.i0101b.isChecked() ? "2"
                 : "-1");
 
-        json.put("i0102a", new SimpleDateFormat("dd-MM-yyyy").format(new Date().getTime()));
-        json.put("i0102b", new SimpleDateFormat("HH:mm").format(new Date().getTime()));
+        json.put("i0102a", new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date().getTime()));
+        json.put("i0102b", new SimpleDateFormat("HH:mm", Locale.getDefault()).format(new Date().getTime()));
 
         json.put("i0103", bi.i0103a.isChecked() ? "1"
                 : bi.i0103b.isChecked() ? "2"
@@ -362,6 +363,5 @@ public class SectionI1Activity extends AppCompatActivity implements EndSectionAc
             Toast.makeText(getApplicationContext(), "Back Press Not Allowed", Toast.LENGTH_LONG).show();
         } else super.onBackPressed();
     }
-
 
 }

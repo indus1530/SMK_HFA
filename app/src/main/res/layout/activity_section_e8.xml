@@ -3,9 +3,7 @@
     <data>
 
         <import type="android.view.View" />
-        <!--<variable
-            name="form"
-            type="edu.aku.hassannaqvi.sk.models.Form" />-->
+
         <variable
             name="callback"
             type="edu.aku.hassannaqvi.smk_hfa_2020.ui.sections.SectionE8Activity" />
@@ -33,11 +31,13 @@
 
                     <TextView
                         android:id="@+id/qtxt_e08"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/textView3Head"
                         android:text="@string/e08" />
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
+
 
             <!-- e0801  Radio   -->
             <androidx.cardview.widget.CardView
@@ -96,6 +96,7 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+
 
             <!-- e0802  Radio   -->
             <androidx.cardview.widget.CardView
@@ -156,6 +157,7 @@
             </androidx.cardview.widget.CardView>
 
             <!-- e0803  Radio   -->
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVe0803"
                 style="@style/cardView">
@@ -212,6 +214,7 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+
 
             <!-- e0804  Radio   -->
             <androidx.cardview.widget.CardView
@@ -271,6 +274,7 @@
 
             </androidx.cardview.widget.CardView>
 
+
             <!-- e0805  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVe0805"
@@ -328,6 +332,7 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+
 
             <!-- e0806  Radio   -->
             <androidx.cardview.widget.CardView
@@ -387,6 +392,7 @@
 
             </androidx.cardview.widget.CardView>
 
+
             <!-- e0807  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVe0807"
@@ -444,6 +450,7 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+
 
             <!-- e0808  Radio   -->
             <androidx.cardview.widget.CardView
@@ -503,6 +510,7 @@
 
             </androidx.cardview.widget.CardView>
 
+
             <!-- e0809  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVe0809"
@@ -560,6 +568,7 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+
 
             <!-- e0810  Radio   -->
             <androidx.cardview.widget.CardView
@@ -619,6 +628,7 @@
 
             </androidx.cardview.widget.CardView>
 
+
             <!-- e0811  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVe0811"
@@ -676,6 +686,7 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+
 
             <!-- e0812  Radio   -->
             <androidx.cardview.widget.CardView
@@ -735,6 +746,7 @@
 
             </androidx.cardview.widget.CardView>
 
+
             <!-- e0813  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVe0813"
@@ -792,6 +804,7 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+
 
             <!-- e0814  Radio   -->
             <androidx.cardview.widget.CardView
@@ -851,34 +864,28 @@
 
             </androidx.cardview.widget.CardView>
 
+
             <!--EndButton LinearLayout-->
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/hlinearlayout"
                 android:layout_gravity="end"
-                android:layout_marginTop="24dp"
-                android:orientation="horizontal">
+                android:layout_marginTop="18dp">
 
                 <Button
                     android:id="@+id/btn_End"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="12dp"
-                    android:background="@color/red_overlay"
+                    style="@style/btnEnd"
                     android:onClick="@{() -> callback.BtnEnd()}"
-                    android:text="Cancel"
-                    android:textColor="@color/white" />
+                    android:text="End" />
 
                 <Button
                     android:id="@+id/btn_Continue"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="12dp"
-                    android:background="@color/green_overlay"
+                    style="@style/btnNext"
                     android:onClick="@{() -> callback.BtnContinue()}"
-                    android:text="Save"
-                    android:textColor="@color/white" />
+                    android:text="Save" />
+
             </LinearLayout>
+            <!--EndButton LinearLayout-->
+
 
         </LinearLayout>
 

@@ -9,7 +9,6 @@
             type="edu.aku.hassannaqvi.smk_hfa_2020.ui.sections.SectionD1Activity" />
     </data>
 
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">

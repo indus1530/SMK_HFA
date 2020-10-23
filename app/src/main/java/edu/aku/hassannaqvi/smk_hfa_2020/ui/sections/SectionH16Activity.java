@@ -16,6 +16,10 @@ import org.jetbrains.annotations.NotNull;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+
 import edu.aku.hassannaqvi.smk_hfa_2020.R;
 import edu.aku.hassannaqvi.smk_hfa_2020.contracts.FormsContract;
 import edu.aku.hassannaqvi.smk_hfa_2020.core.DatabaseHelper;
@@ -58,8 +62,6 @@ public class SectionH16Activity extends AppCompatActivity {
         if (UpdateDB()) {
             finish();
             startActivity(new Intent(this, SectionMainActivity.class));
-        } else {
-            Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -79,6 +81,9 @@ public class SectionH16Activity extends AppCompatActivity {
     private void SaveDraft() throws JSONException {
 
         JSONObject json = new JSONObject();
+
+        json.put("HDate", new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date().getTime()));
+        json.put("HTime", new SimpleDateFormat("HH:mm", Locale.getDefault()).format(new Date().getTime()));
 
         json.put("h1601", bi.h1601a.isChecked() ? "1"
                 : bi.h1601b.isChecked() ? "2"
@@ -153,4 +158,5 @@ public class SectionH16Activity extends AppCompatActivity {
 
         }
     }
+
 }

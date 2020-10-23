@@ -3,9 +3,7 @@
     <data>
 
         <import type="android.view.View" />
-        <!--<variable
-            name="form"
-            type="edu.aku.hassannaqvi.sk.models.Form" />-->
+
         <variable
             name="callback"
             type="edu.aku.hassannaqvi.smk_hfa_2020.ui.sections.SectionJ4Activity" />
@@ -22,6 +20,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+
             <!-- j4  Title   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/cvj02"
@@ -36,6 +35,7 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+
 
             <!-- j40  Radio   -->
             <androidx.cardview.widget.CardView
@@ -113,6 +113,7 @@
 
             </androidx.cardview.widget.CardView>
 
+
             <!-- j41  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVj41"
@@ -168,6 +169,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+
             <!-- j4010  Title   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVj4010"
@@ -184,6 +186,7 @@
                         android:text="@string/j4010" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
 
             <!-- j401  Radio   -->
             <androidx.cardview.widget.CardView
@@ -240,6 +243,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+
             <!-- j402  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVj402"
@@ -294,6 +298,7 @@
                     </RadioGroup>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
 
             <!-- j403  Radio   -->
             <androidx.cardview.widget.CardView
@@ -350,6 +355,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+
             <!-- j404  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVj404"
@@ -404,6 +410,7 @@
                     </RadioGroup>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
 
             <!-- j405  Radio   -->
             <androidx.cardview.widget.CardView
@@ -460,6 +467,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+
             <!-- j406  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVj406"
@@ -514,6 +522,7 @@
                     </RadioGroup>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
 
             <!-- j407  CheckBox   -->
             <androidx.cardview.widget.CardView
@@ -577,9 +586,18 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/j407d" />
+
+                        <CheckBox
+                            android:id="@+id/j407x"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/j407x" />
+
                     </LinearLayout>
+
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
 
             <!--EndButton LinearLayout-->
             <LinearLayout
@@ -601,6 +619,7 @@
 
             </LinearLayout>
             <!--EndButton LinearLayout-->
+
 
         </LinearLayout>
 

@@ -3,12 +3,14 @@ package edu.aku.hassannaqvi.smk_hfa_2020.ui.sections;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import com.validatorcrawler.aliazaz.Clear;
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.jetbrains.annotations.NotNull;
@@ -37,9 +39,29 @@ public class SectionJ4Activity extends AppCompatActivity {
         setupSkips();
     }
 
-
     private void setupSkips() {
+        radioGroup(bi.j41);
+        radioGroup(bi.j401);
+        radioGroup(bi.j402);
+        radioGroup(bi.j403);
+        radioGroup(bi.j404);
+        radioGroup(bi.j405);
+        radioGroup(bi.j406);
+    }
 
+
+    public void radioGroup(RadioGroup grp) {
+
+        grp.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (bi.j41b.isChecked() || bi.j401b.isChecked() || bi.j402b.isChecked()
+                    || bi.j403b.isChecked() || bi.j404b.isChecked() || bi.j405b.isChecked() || bi.j406b.isChecked()) {
+                Clear.clearAllFields(bi.fldGrpCVj407);
+                bi.fldGrpCVj407.setVisibility(View.VISIBLE);
+            } else {
+                Clear.clearAllFields(bi.fldGrpCVj407);
+                bi.fldGrpCVj407.setVisibility(View.GONE);
+            }
+        }));
     }
 
 
@@ -72,15 +94,15 @@ public class SectionJ4Activity extends AppCompatActivity {
 
         json.put("j402", bi.j402a.isChecked() ? "1"
                 : bi.j402b.isChecked() ? "2"
-                :  "-1");
+                : "-1");
 
         json.put("j403", bi.j403a.isChecked() ? "1"
                 : bi.j403b.isChecked() ? "2"
-                :  "-1");
+                : "-1");
 
         json.put("j404", bi.j404a.isChecked() ? "1"
                 : bi.j404b.isChecked() ? "2"
-                :  "-1");
+                : "-1");
 
         json.put("j405", bi.j405a.isChecked() ? "1"
                 : bi.j405b.isChecked() ? "2"
@@ -117,8 +139,6 @@ public class SectionJ4Activity extends AppCompatActivity {
         if (UpdateDB()) {
             finish();
             startActivity(new Intent(this, SectionJ5Activity.class));
-        } else {
-            Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
         }
     }
 

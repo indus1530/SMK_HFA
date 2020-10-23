@@ -34,7 +34,6 @@ public class SectionD4Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_d4);
         bi.setCallback(this);
-
     }
 
 
@@ -124,8 +123,6 @@ public class SectionD4Activity extends AppCompatActivity {
         if (UpdateDB()) {
             finish();
             startActivity(new Intent(this, SectionD5Activity.class));
-        } else {
-            Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -162,6 +159,5 @@ public class SectionD4Activity extends AppCompatActivity {
 
         }
     }
-
 
 }

@@ -41,6 +41,7 @@ public class SectionE42Activity extends AppCompatActivity {
 
 
     private void setupSkips() {
+
         bi.e47d.setOnCheckedChangeListener(((radioGroup, i) -> {
             if (i == bi.e47dc.getId()) {
                 Clear.clearAllFields(bi.fldGrpe447d);
@@ -233,8 +234,6 @@ public class SectionE42Activity extends AppCompatActivity {
         if (UpdateDB()) {
             finish();
             startActivity(new Intent(this, SectionE5Activity.class));
-        } else {
-            Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -273,6 +272,5 @@ public class SectionE42Activity extends AppCompatActivity {
 
         }
     }
-
 
 }

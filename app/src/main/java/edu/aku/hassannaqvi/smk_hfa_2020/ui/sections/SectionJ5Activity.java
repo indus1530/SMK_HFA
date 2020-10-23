@@ -3,12 +3,14 @@ package edu.aku.hassannaqvi.smk_hfa_2020.ui.sections;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import com.validatorcrawler.aliazaz.Clear;
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.jetbrains.annotations.NotNull;
@@ -39,8 +41,29 @@ public class SectionJ5Activity extends AppCompatActivity {
     }
 
     private void setupSkips() {
-
+        radioGroup(bi.j500a);
+        radioGroup(bi.j501);
+        radioGroup(bi.j502);
+        radioGroup(bi.j503);
+        radioGroup(bi.j504);
+        radioGroup(bi.j505);
     }
+
+
+    public void radioGroup(RadioGroup grp) {
+
+        grp.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (bi.j500ab.isChecked() || bi.j501b.isChecked() || bi.j502b.isChecked()
+                    || bi.j503b.isChecked() || bi.j504b.isChecked() || bi.j505b.isChecked()) {
+                Clear.clearAllFields(bi.fldGrpCVj506);
+                bi.fldGrpCVj506.setVisibility(View.VISIBLE);
+            } else {
+                Clear.clearAllFields(bi.fldGrpCVj506);
+                bi.fldGrpCVj506.setVisibility(View.GONE);
+            }
+        }));
+    }
+
 
     private boolean UpdateDB() {
         DatabaseHelper db = MainApp.appInfo.getDbHelper();
@@ -52,6 +75,7 @@ public class SectionJ5Activity extends AppCompatActivity {
             return false;
         }
     }
+
 
     private void SaveDraft() throws JSONException {
 
@@ -101,6 +125,7 @@ public class SectionJ5Activity extends AppCompatActivity {
 
     }
 
+
     public void BtnContinue() {
         if (!formValidation()) return;
         try {
@@ -111,18 +136,19 @@ public class SectionJ5Activity extends AppCompatActivity {
         if (UpdateDB()) {
             finish();
             startActivity(new Intent(this, SectionMainActivity.class));
-        } else {
-            Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
         }
     }
+
 
     public void BtnEnd() {
         openSectionMainActivity(this, "J");
     }
 
+
     private boolean formValidation() {
         return Validator.emptyCheckingContainer(this, bi.GrpName);
     }
+
 
     public void showTooltip(@NotNull View view) {
         if (view.getId() != View.NO_ID) {

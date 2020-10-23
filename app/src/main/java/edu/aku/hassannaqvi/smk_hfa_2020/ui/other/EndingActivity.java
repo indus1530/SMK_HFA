@@ -11,6 +11,7 @@ import com.validatorcrawler.aliazaz.Validator;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Locale;
 
 import edu.aku.hassannaqvi.smk_hfa_2020.R;
 import edu.aku.hassannaqvi.smk_hfa_2020.contracts.FormsContract;
@@ -89,7 +90,7 @@ public class EndingActivity extends AppCompatActivity {
                     : "0");
 
             MainApp.fc.setIstatus88x(bi.istatus96x.getText().toString());
-            MainApp.fc.setEndingdatetime(new SimpleDateFormat("dd-MM-yy HH:mm").format(new Date().getTime()));
+            MainApp.fc.setEndingdatetime(new SimpleDateFormat("dd-MM-yy HH:mm", Locale.getDefault()).format(new Date().getTime()));
         }
     }
 

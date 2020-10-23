@@ -11,7 +11,6 @@
             type="edu.aku.hassannaqvi.smk_hfa_2020.ui.sections.SectionBActivity" />
     </data>
 
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -490,25 +489,22 @@
                     <RadioGroup
                         android:id="@+id/a20"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/a20a"
-                            android:layout_width="match_parent"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:text="@string/a20a" />
 
                         <RadioButton
                             android:id="@+id/a20b"
-                            android:layout_width="match_parent"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:text="@string/a20b" />
-
-                        <RadioButton
-                            android:id="@+id/a20c"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/a20c" />
 
                     </RadioGroup>
 

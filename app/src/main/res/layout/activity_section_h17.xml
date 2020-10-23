@@ -10,11 +10,9 @@
             type="edu.aku.hassannaqvi.smk_hfa_2020.ui.sections.SectionH17Activity" />
     </data>
 
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
 
         <LinearLayout
             android:id="@+id/GrpName"
@@ -154,7 +152,8 @@
             <!-- h1703  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVh1703"
-                style="@style/cardView">
+                style="@style/cardView"
+                android:visibility='@{h1702b.checked ? View.GONE : View.VISIBLE}'>
 
                 <LinearLayout style="@style/vlinearlayout">
 

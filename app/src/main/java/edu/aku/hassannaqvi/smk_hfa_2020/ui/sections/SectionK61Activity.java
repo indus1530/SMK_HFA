@@ -37,7 +37,6 @@ public class SectionK61Activity extends AppCompatActivity {
         bi.setCallback(this);
         setupSkips();
         setupTextWatchers();
-
     }
 
 
@@ -135,8 +134,6 @@ public class SectionK61Activity extends AppCompatActivity {
         if (UpdateDB()) {
             finish();
             startActivity(new Intent(this, SectionK62Activity.class));
-        } else {
-            Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -290,6 +287,5 @@ public class SectionK61Activity extends AppCompatActivity {
     public void onBackPressed() {
         Toast.makeText(this, "Back Press Not Allowed", Toast.LENGTH_SHORT).show();
     }
-
 
 }

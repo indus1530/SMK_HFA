@@ -18,6 +18,7 @@ import org.json.JSONObject;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Locale;
 
 import edu.aku.hassannaqvi.smk_hfa_2020.R;
 import edu.aku.hassannaqvi.smk_hfa_2020.contracts.FormsContract;
@@ -35,14 +36,17 @@ public class SectionK1Activity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_k1);
         bi.setCallback(this);
         setupSkips();
-
     }
 
 
     private void setupSkips() {
 
         bi.k0011.setOnCheckedChangeListener(((radioGroup, i) -> {
-            Clear.clearAllFields(bi.llk0001);
+            Clear.clearAllFields(bi.fldGrpCVk00111);
+        }));
+
+        bi.k0001b.setOnCheckedChangeListener(((radioGroup, i) -> {
+            Clear.clearAllFields(bi.llgrpseck01);
         }));
 
     }
@@ -58,8 +62,6 @@ public class SectionK1Activity extends AppCompatActivity {
         if (UpdateDB()) {
             finish();
             startActivity(new Intent(this, bi.k0001b.isChecked() ? SectionK7Activity.class : SectionK2Activity.class));
-        } else {
-            Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -80,8 +82,8 @@ public class SectionK1Activity extends AppCompatActivity {
 
         JSONObject json = new JSONObject();
 
-        json.put("KDate", new SimpleDateFormat("dd-MM-yyyy").format(new Date().getTime()));
-        json.put("KTime", new SimpleDateFormat("HH:mm").format(new Date().getTime()));
+        json.put("KDate", new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date().getTime()));
+        json.put("KTime", new SimpleDateFormat("HH:mm", Locale.getDefault()).format(new Date().getTime()));
 
         json.put("k0001", bi.k0001a.isChecked() ? "1"
                 : bi.k0001b.isChecked() ? "2"
@@ -185,4 +187,5 @@ public class SectionK1Activity extends AppCompatActivity {
 
         }
     }
+
 }

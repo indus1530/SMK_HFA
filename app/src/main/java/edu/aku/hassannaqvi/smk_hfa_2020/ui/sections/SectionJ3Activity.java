@@ -3,12 +3,14 @@ package edu.aku.hassannaqvi.smk_hfa_2020.ui.sections;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import com.validatorcrawler.aliazaz.Clear;
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.jetbrains.annotations.NotNull;
@@ -35,55 +37,51 @@ public class SectionJ3Activity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_j3);
         bi.setCallback(this);
         setupSkips();
-
     }
-
 
     private void setupSkips() {
-
+        radioGroup(bi.j31);
+        radioGroup(bi.j32);
+        radioGroup(bi.j33);
+        radioGroup(bi.j34);
+        radioGroup(bi.j35);
+        radioGroup(bi.j36a);
+        radioGroup(bi.j36b);
+        radioGroup(bi.j36c);
+        radioGroup(bi.j36d);
+        radioGroup(bi.j36e);
+        radioGroup(bi.j36f);
+        radioGroup(bi.j36g);
     }
 
 
-   /* public void radioGroup(RadioGroup grp) {
+    public void radioGroup(RadioGroup grp) {
 
         grp.setOnCheckedChangeListener(((radioGroup, i) -> {
-            if (bi.j0301ab.isChecked() || bi.j0301bb.isChecked() || bi.j0301cb.isChecked()
-                    || bi.j0301db.isChecked() || bi.j0301eb.isChecked() || bi.j0301fb.isChecked()
-                    || bi.j0301gb.isChecked() || bi.j0301hb.isChecked() || bi.j0301ib.isChecked()
-                    || bi.j0301jb.isChecked() || bi.j0301kb.isChecked() || bi.j0301lb.isChecked()
-                    || bi.j0301mb.isChecked() || bi.j0301nb.isChecked() || bi.j0301ob.isChecked()
-                    || bi.j0301pb.isChecked() || bi.j0301qb.isChecked() || bi.j0301rb.isChecked()
-                    || bi.j0301sb.isChecked() || bi.j0301tb.isChecked() || bi.j0301ub.isChecked()
-                    || bi.j0301vb.isChecked()) {
-                Clear.clearAllFields(bi.fldGrpCVj0301w);
-                bi.fldGrpCVj0301w.setVisibility(View.VISIBLE);
+            if (bi.j31b.isChecked() || bi.j32b.isChecked() || bi.j33b.isChecked()
+                    || bi.j34b.isChecked() || bi.j35b.isChecked() || bi.j36ab.isChecked()
+                    || bi.j36bb.isChecked() || bi.j36cb.isChecked() || bi.j36db.isChecked()
+                    || bi.j36eb.isChecked() || bi.j36fb.isChecked() || bi.j36gb.isChecked() || bi.j36hb.isChecked()) {
+                Clear.clearAllFields(bi.fldGrpCVj37);
+                bi.fldGrpCVj37.setVisibility(View.VISIBLE);
             } else {
-                Clear.clearAllFields(bi.fldGrpCVj0301w);
-                bi.fldGrpCVj0301w.setVisibility(View.GONE);
+                Clear.clearAllFields(bi.fldGrpCVj37);
+                bi.fldGrpCVj37.setVisibility(View.GONE);
             }
         }));
-    }*/
+    }
 
 
     public void BtnContinue() {
         if (!formValidation()) return;
         try {
             SaveDraft();
-        } catch (Exception e) {
+        } catch (JSONException e) {
             e.printStackTrace();
         }
         if (UpdateDB()) {
             finish();
-            Intent intent;
-
-            if (MainApp.fc.getA10().equals("2") && !MainApp.fc.getDistrictType().equals("1")) {
-                intent = new Intent(this, SectionJ5Activity.class);
-            } else {
-                intent = new Intent(this, SectionJ4Activity.class);
-            }
-            startActivity(intent);
-        } else {
-            Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(this, SectionJ4Activity.class));
         }
     }
 

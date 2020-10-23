@@ -41,7 +41,6 @@ public class SectionD5Activity extends AppCompatActivity {
         bi.setCallback(this);
         setupTextWatchers();
         setupSkips();
-
     }
 
 
@@ -198,6 +197,18 @@ public class SectionD5Activity extends AppCompatActivity {
                 : bi.d0503hb.isChecked() ? "2"
                 : "-1");
 
+        json.put("d0503i", bi.d0503ia.isChecked() ? "1"
+                : bi.d0503ib.isChecked() ? "2"
+                : "-1");
+
+        json.put("d0503j", bi.d0503ja.isChecked() ? "1"
+                : bi.d0503jb.isChecked() ? "2"
+                : "-1");
+
+        json.put("d0503k", bi.d0503ka.isChecked() ? "1"
+                : bi.d0503kb.isChecked() ? "2"
+                : "-1");
+
         try {
             JSONObject json_merge = JSONUtils.mergeJSONObjects(new JSONObject(fc.getsD()), json);
 
@@ -225,8 +236,6 @@ public class SectionD5Activity extends AppCompatActivity {
         if (UpdateDB()) {
             finish();
             startActivity(new Intent(this, SectionD6Activity.class));
-        } else {
-            Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -265,6 +274,5 @@ public class SectionD5Activity extends AppCompatActivity {
 
         }
     }
-
 
 }

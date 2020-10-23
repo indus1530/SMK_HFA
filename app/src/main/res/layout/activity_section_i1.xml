@@ -11,11 +11,9 @@
             type="edu.aku.hassannaqvi.smk_hfa_2020.ui.sections.SectionI1Activity" />
     </data>
 
-
     <LinearLayout
         style="@style/linearlayout_view_wt_bound"
         android:orientation="vertical">
-
 
         <TextView
             style="@style/textView3Head"
@@ -38,7 +36,6 @@
                 android:text="COUNT" />
 
         </LinearLayout>
-
 
         <ScrollView
             android:layout_width="match_parent"

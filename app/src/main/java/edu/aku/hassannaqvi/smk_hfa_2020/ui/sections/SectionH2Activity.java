@@ -12,9 +12,6 @@ import com.validatorcrawler.aliazaz.Validator;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 import edu.aku.hassannaqvi.smk_hfa_2020.R;
 import edu.aku.hassannaqvi.smk_hfa_2020.contracts.FormsContract;
 import edu.aku.hassannaqvi.smk_hfa_2020.core.DatabaseHelper;
@@ -48,8 +45,6 @@ public class SectionH2Activity extends AppCompatActivity {
         if (UpdateDB()) {
             finish();
             startActivity(new Intent(this, SectionH31Activity.class));
-        } else {
-            Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -69,9 +64,6 @@ public class SectionH2Activity extends AppCompatActivity {
     private void SaveDraft() throws JSONException {
 
         JSONObject json = new JSONObject();
-
-        json.put("HDate", new SimpleDateFormat("dd-MM-yyyy").format(new Date().getTime()));
-        json.put("HTime", new SimpleDateFormat("HH:mm").format(new Date().getTime()));
 
         json.put("h0201", bi.h0201a.isChecked() ? "1"
                 : bi.h0201b.isChecked() ? "2"

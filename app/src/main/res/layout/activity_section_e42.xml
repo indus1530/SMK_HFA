@@ -635,8 +635,7 @@
 
                     <TextView
                         android:id="@+id/qtxt_e46hint"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/sub"
                         android:text="@string/e46hint" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -687,8 +686,7 @@
 
                     <TextView
                         android:id="@+id/qtxt_e47hint"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/sub"
                         android:text="@string/e47hint" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -945,8 +943,7 @@
 
                         <TextView
                             android:id="@+id/qtxt_e47dhint"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/sub"
                             android:text="@string/e47dhint" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -987,7 +984,7 @@
                             android:id="@+id/e48"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="@string/e48"
+                            android:hint="##"
                             android:inputType="number"
                             android:maxLength="2"
                             app:maxValue="20"
@@ -1063,8 +1060,7 @@
 
                     <TextView
                         android:id="@+id/qtxt_e410hint"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/sub"
                         android:text="@string/e410hint" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -1313,8 +1309,7 @@
 
                     <TextView
                         android:id="@+id/qtxt_e410dhint"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/sub"
                         android:text="@string/e410dhint" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -1600,21 +1595,27 @@
                     <RadioGroup
                         android:id="@+id/e413"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/e413a"
-                            android:layout_width="match_parent"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:text="@string/e413a" />
 
                         <RadioButton
                             android:id="@+id/e413b"
-                            android:layout_width="match_parent"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:text="@string/e413b" />
+
                     </RadioGroup>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- e414  Radio   -->
@@ -1713,36 +1714,41 @@
                             android:text="@string/Q_e415" />
                     </RelativeLayout>
 
+                    <TextView
+                        style="@style/textviewh"
+                        android:text="@string/e415hint" />
+
                     <RadioGroup
                         android:id="@+id/e415"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="12dp"
-                            android:text="@string/e415hint" />
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/e415a"
-                            android:layout_width="match_parent"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:text="@string/e415a" />
 
                         <RadioButton
                             android:id="@+id/e415b"
-                            android:layout_width="match_parent"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:text="@string/e415b" />
 
                         <RadioButton
                             android:id="@+id/e415c"
-                            android:layout_width="match_parent"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:text="@string/e415c" />
+
                     </RadioGroup>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- e416  Radio   -->
@@ -1777,16 +1783,14 @@
                             android:text="@string/Q_e416" />
                     </RelativeLayout>
 
+                    <TextView
+                        style="@style/textviewh"
+                        android:text="@string/e416hint" />
+
                     <RadioGroup
                         android:id="@+id/e416"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="12dp"
-                            android:text="@string/e416hint" />
 
                         <RadioButton
                             android:id="@+id/e416a"
@@ -1811,8 +1815,11 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/e416d" />
+
                     </RadioGroup>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!--EndButton LinearLayout-->

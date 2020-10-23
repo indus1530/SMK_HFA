@@ -23,7 +23,7 @@ import edu.aku.hassannaqvi.smk_hfa_2020.ui.sections.SectionE101Activity;
 import edu.aku.hassannaqvi.smk_hfa_2020.ui.sections.SectionF1Activity;
 import edu.aku.hassannaqvi.smk_hfa_2020.ui.sections.SectionG1Activity;
 import edu.aku.hassannaqvi.smk_hfa_2020.ui.sections.SectionH16Activity;
-import edu.aku.hassannaqvi.smk_hfa_2020.ui.sections.SectionH2Activity;
+import edu.aku.hassannaqvi.smk_hfa_2020.ui.sections.SectionH1Activity;
 import edu.aku.hassannaqvi.smk_hfa_2020.ui.sections.SectionI1Activity;
 import edu.aku.hassannaqvi.smk_hfa_2020.ui.sections.SectionJ1Activity;
 import edu.aku.hassannaqvi.smk_hfa_2020.ui.sections.SectionK1Activity;
@@ -188,7 +188,7 @@ public class SectionMainActivity extends AppCompatActivity {
                     oF = new Intent(this, SectionG1Activity.class);
                     break;
                 case R.id.form07:
-                    oF = new Intent(this, fc.getA10().equals("2") ? SectionH16Activity.class : SectionH2Activity.class);
+                    oF = new Intent(this, fc.getA10().equals("2") ? SectionH16Activity.class : SectionH1Activity.class);
                     break;
                 case R.id.form08:
                     countI = 0;

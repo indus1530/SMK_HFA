@@ -9,6 +9,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import com.validatorcrawler.aliazaz.Clear;
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.jetbrains.annotations.NotNull;
@@ -37,8 +38,13 @@ public class SectionE41Activity extends AppCompatActivity {
         setupSkips();
     }
 
-
     private void setupSkips() {
+
+        bi.e41.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i == bi.e41b.getId()) {
+                Clear.clearAllFields(bi.llgrpsec01);
+            }
+        }));
 
     }
 
@@ -161,9 +167,7 @@ public class SectionE41Activity extends AppCompatActivity {
         }
         if (UpdateDB()) {
             finish();
-            startActivity(new Intent(this, SectionE42Activity.class));
-        } else {
-            Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(this, bi.e41b.isChecked() ? SectionE5Activity.class : SectionE42Activity.class));
         }
     }
 
@@ -202,6 +206,5 @@ public class SectionE41Activity extends AppCompatActivity {
 
         }
     }
-
 
 }

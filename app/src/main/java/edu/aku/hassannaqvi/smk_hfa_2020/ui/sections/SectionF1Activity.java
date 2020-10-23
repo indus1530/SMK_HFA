@@ -19,6 +19,7 @@ import org.json.JSONObject;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Locale;
 
 import edu.aku.hassannaqvi.smk_hfa_2020.R;
 import edu.aku.hassannaqvi.smk_hfa_2020.contracts.FormsContract;
@@ -109,8 +110,8 @@ public class SectionF1Activity extends AppCompatActivity {
 
         JSONObject json = new JSONObject();
 
-        json.put("FDate", new SimpleDateFormat("dd-MM-yyyy").format(new Date().getTime()));
-        json.put("FTime", new SimpleDateFormat("HH:mm").format(new Date().getTime()));
+        json.put("FDate", new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date().getTime()));
+        json.put("FTime", new SimpleDateFormat("HH:mm", Locale.getDefault()).format(new Date().getTime()));
 
         json.put("f0100", bi.f0100a.isChecked() ? "1"
                 : bi.f0100b.isChecked() ? "2"
@@ -198,8 +199,7 @@ public class SectionF1Activity extends AppCompatActivity {
         if (UpdateDB()) {
             finish();
             startActivity(new Intent(this, SectionF2Activity.class));
-        } else {
-            Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
         }
     }
+
 }
