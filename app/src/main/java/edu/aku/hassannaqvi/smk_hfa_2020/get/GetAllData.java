@@ -150,17 +150,17 @@ public class GetAllData extends AsyncTask<String, String, String> {
                     break;
                 case "Tehsils":
                     url = new URL(MainApp._HOST_URL + MainApp._SERVER_GET_URL);
-                    tableName = MainApp._HOST_URL + TehsilsContract.singleTehsil.TABLE_NAME;
+                    tableName = TehsilsContract.singleTehsil.TABLE_NAME;
                     position = 3;
                     break;
                 case "UCs":
                     url = new URL(MainApp._HOST_URL + MainApp._SERVER_GET_URL);
-                    tableName = MainApp._HOST_URL + UCsContract.singleUCs.TABLE_NAME;
+                    tableName = UCsContract.singleUCs.TABLE_NAME;
                     position = 4;
                     break;
                 case "HealthFacilities":
                     url = new URL(MainApp._HOST_URL + MainApp._SERVER_GET_URL);
-                    tableName = MainApp._HOST_URL + HFContract.singleHF.TABLE_NAME;
+                    tableName = HFContract.singleHF.TABLE_NAME;
                     position = 5;
                     break;
             }
