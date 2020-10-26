@@ -121,6 +121,7 @@ public final class CreateTable {
             + UsersContract.singleUser._ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
             + UsersContract.singleUser.ROW_USERNAME + " TEXT,"
             + UsersContract.singleUser.ROW_PASSWORD + " TEXT"
+            + UsersContract.singleUser.DIST_ID + " TEXT"
             + " );";
 
 

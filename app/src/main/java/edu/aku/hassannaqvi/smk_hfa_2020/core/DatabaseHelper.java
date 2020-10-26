@@ -96,6 +96,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
                 values.put(UsersContract.singleUser.ROW_USERNAME, user.getUserName());
                 values.put(UsersContract.singleUser.ROW_PASSWORD, user.getPassword());
+                values.put(UsersContract.singleUser.DIST_ID, user.getDIST_ID());
                 db.insert(UsersContract.singleUser.TABLE_NAME, null, values);
             }
 
