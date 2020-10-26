@@ -79,14 +79,6 @@ public class SectionE5Activity extends AppCompatActivity {
                 : bi.e0502cb.isChecked() ? "2"
                 : "-1");
 
-        json.put("e0502d", bi.e0502da.isChecked() ? "1"
-                : bi.e0502db.isChecked() ? "2"
-                : "-1");
-
-        json.put("e0502e", bi.e0502ea.isChecked() ? "1"
-                : bi.e0502eb.isChecked() ? "2"
-                : "-1");
-
         json.put("e0502f", bi.e0502fa.isChecked() ? "1"
                 : bi.e0502fb.isChecked() ? "2"
                 : "-1");
