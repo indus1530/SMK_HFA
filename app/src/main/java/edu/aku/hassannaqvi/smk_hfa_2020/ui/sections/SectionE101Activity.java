@@ -81,45 +81,45 @@ public class SectionE101Activity extends AppCompatActivity {
                 : bi.e11b.isChecked() ? "2"
                 : "-1");
 
-        json.put("e12a2a", bi.e12aa.isChecked() ? "1"
+        json.put("e12a", bi.e12aa.isChecked() ? "1"
                 : bi.e12ab.isChecked() ? "2"
                 : "-1");
 
-        json.put("e12b2b", bi.e12ba.isChecked() ? "1"
+        json.put("e12b", bi.e12ba.isChecked() ? "1"
                 : bi.e12bb.isChecked() ? "2"
-                :  "-1");
+                : "-1");
 
-        json.put("e12c2c", bi.e12ca.isChecked() ? "1"
+        json.put("e12c", bi.e12ca.isChecked() ? "1"
                 : bi.e12cb.isChecked() ? "2"
-                :  "-1");
+                : "-1");
 
-        json.put("e12d2d", bi.e12da.isChecked() ? "1"
+        json.put("e12d", bi.e12da.isChecked() ? "1"
                 : bi.e12db.isChecked() ? "2"
-                :  "-1");
+                : "-1");
 
-        json.put("e12e2e", bi.e12ea.isChecked() ? "1"
+        json.put("e12e", bi.e12ea.isChecked() ? "1"
                 : bi.e12eb.isChecked() ? "2"
-                :  "-1");
+                : "-1");
 
-        json.put("e12f2f", bi.e12fa.isChecked() ? "1"
+        json.put("e12f", bi.e12fa.isChecked() ? "1"
                 : bi.e12fb.isChecked() ? "2"
-                :  "-1");
+                : "-1");
 
-        json.put("e12g2g", bi.e12ga.isChecked() ? "1"
+        json.put("e12g", bi.e12ga.isChecked() ? "1"
                 : bi.e12gb.isChecked() ? "2"
-                :  "-1");
+                : "-1");
 
-        json.put("e12h2h", bi.e12ha.isChecked() ? "1"
+        json.put("e12h", bi.e12ha.isChecked() ? "1"
                 : bi.e12hb.isChecked() ? "2"
-                :  "-1");
+                : "-1");
 
-        json.put("e12i2i", bi.e12ia.isChecked() ? "1"
+        json.put("e12i", bi.e12ia.isChecked() ? "1"
                 : bi.e12ib.isChecked() ? "2"
-                :  "-1");
+                : "-1");
 
-        json.put("e12j2j", bi.e12ja.isChecked() ? "1"
+        json.put("e12j", bi.e12ja.isChecked() ? "1"
                 : bi.e12jb.isChecked() ? "2"
-                :  "-1");
+                : "-1");
 
         json.put("e13a", bi.e13aa.isChecked() ? "1"
                 : bi.e13ab.isChecked() ? "2"

@@ -117,7 +117,8 @@
             <!-- e154af  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVe154af"
-                style="@style/cardView">
+                style="@style/cardView"
+                android:visibility='@{e154aavn.checked? View.GONE : View.VISIBLE}'>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -233,7 +234,8 @@
             <!-- e154bf  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVe154bf"
-                style="@style/cardView">
+                style="@style/cardView"
+                android:visibility='@{e154bavn.checked? View.GONE : View.VISIBLE}'>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -349,7 +351,8 @@
             <!-- e154cf  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVe154cf"
-                style="@style/cardView">
+                style="@style/cardView"
+                android:visibility='@{e154cavn.checked? View.GONE : View.VISIBLE}'>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -470,7 +473,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:visibility='@{e154davn.checked? View.GONE : View.VISIBLE}'>
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -581,7 +585,8 @@
             <!-- e154ef  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVe154ef"
-                style="@style/cardView">
+                style="@style/cardView"
+                android:visibility='@{e154eavn.checked? View.GONE : View.VISIBLE}'>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -697,7 +702,8 @@
             <!-- e154ff  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVe154ff"
-                style="@style/cardView">
+                style="@style/cardView"
+                android:visibility='@{e154favn.checked? View.GONE : View.VISIBLE}'>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -813,7 +819,8 @@
             <!-- e154gf  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVe154gf"
-                style="@style/cardView">
+                style="@style/cardView"
+                android:visibility='@{e154gavn.checked? View.GONE : View.VISIBLE}'>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -946,7 +953,8 @@
             <!-- e155af  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVe155af"
-                style="@style/cardView">
+                style="@style/cardView"
+                android:visibility='@{e155aavn.checked? View.GONE : View.VISIBLE}'>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -1062,7 +1070,8 @@
             <!-- e155bf  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVe155bf"
-                style="@style/cardView">
+                style="@style/cardView"
+                android:visibility='@{e155bavn.checked? View.GONE : View.VISIBLE}'>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -1178,7 +1187,8 @@
             <!-- e155cf  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVe155cf"
-                style="@style/cardView">
+                style="@style/cardView"
+                android:visibility='@{e155cavn.checked? View.GONE : View.VISIBLE}'>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -1294,7 +1304,8 @@
             <!-- e155df  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVe155df"
-                style="@style/cardView">
+                style="@style/cardView"
+                android:visibility='@{e155davn.checked? View.GONE : View.VISIBLE}'>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -1427,7 +1438,8 @@
             <!-- e156af  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVe156af"
-                style="@style/cardView">
+                style="@style/cardView"
+                android:visibility='@{e156aavn.checked? View.GONE : View.VISIBLE}'>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -1543,7 +1555,8 @@
             <!-- e156bf  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVe156bf"
-                style="@style/cardView">
+                style="@style/cardView"
+                android:visibility='@{e156bavn.checked? View.GONE : View.VISIBLE}'>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -1659,7 +1672,8 @@
             <!-- e156cf  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVe156cf"
-                style="@style/cardView">
+                style="@style/cardView"
+                android:visibility='@{e156cavn.checked? View.GONE : View.VISIBLE}'>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -1775,7 +1789,8 @@
             <!-- e156df  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVe156df"
-                style="@style/cardView">
+                style="@style/cardView"
+                android:visibility='@{e156davn.checked? View.GONE : View.VISIBLE}'>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -1891,7 +1906,8 @@
             <!-- e156ef  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVe156ef"
-                style="@style/cardView">
+                style="@style/cardView"
+                android:visibility='@{e156eavn.checked? View.GONE : View.VISIBLE}'>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -2007,7 +2023,8 @@
             <!-- e156ff  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVe156ff"
-                style="@style/cardView">
+                style="@style/cardView"
+                android:visibility='@{e156favn.checked? View.GONE : View.VISIBLE}'>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -2123,7 +2140,8 @@
             <!-- e156gf  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVe156gf"
-                style="@style/cardView">
+                style="@style/cardView"
+                android:visibility='@{e156gavn.checked? View.GONE : View.VISIBLE}'>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -2239,7 +2257,8 @@
             <!-- e156hf  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVe156hf"
-                style="@style/cardView">
+                style="@style/cardView"
+                android:visibility='@{e156havn.checked? View.GONE : View.VISIBLE}'>
 
                 <LinearLayout
                     android:layout_width="match_parent"

@@ -1025,24 +1025,39 @@
                                 android:text="@string/Q_e49" />
                         </RelativeLayout>
 
-                        <RadioButton
-                            android:id="@+id/e49a"
+                        <RadioGroup
+                            android:id="@+id/e49"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/e49a" />
+                            android:orientation="horizontal">
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="12dp"
-                            android:text="@string/e49x" />
+                            <RadioButton
+                                android:id="@+id/e49a"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/e49a" />
+
+                            <RadioButton
+                                android:id="@+id/e49x"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/e49x" />
+
+                        </RadioGroup>
 
                         <EditText
-                            android:id="@+id/e49x"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:hint="@string/e49x" />
+                            android:id="@+id/e49xx"
+                            style="@style/EditTextAlpha"
+                            android:hint="@string/specify"
+                            android:maxLength="20"
+                            android:tag="e49x"
+                            android:text='@{e49x.checked ? e49xx.getText().toString() : "" }'
+                            android:visibility='@{e49x.checked ? View.VISIBLE : View.GONE }' />
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
 
             </LinearLayout>

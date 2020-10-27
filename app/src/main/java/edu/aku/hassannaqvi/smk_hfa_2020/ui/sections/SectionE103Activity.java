@@ -9,6 +9,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import com.validatorcrawler.aliazaz.Clear;
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.jetbrains.annotations.NotNull;
@@ -34,6 +35,126 @@ public class SectionE103Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_e103);
         bi.setCallback(this);
+        setupSkips();
+    }
+
+
+    private void setupSkips() {
+
+        bi.e154aav.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i == bi.e154aavn.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVe154af);
+            }
+        }));
+
+        bi.e154bav.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i == bi.e154bavn.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVe154bf);
+            }
+        }));
+
+        bi.e154cav.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i == bi.e154cavn.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVe154cf);
+            }
+        }));
+
+        bi.e154dav.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i == bi.e154davn.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVe154df);
+            }
+        }));
+
+        bi.e154eav.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i == bi.e154eavn.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVe154ef);
+            }
+        }));
+
+        bi.e154fav.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i == bi.e154favn.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVe154ff);
+            }
+        }));
+
+        bi.e154gav.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i == bi.e154gavn.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVe154gf);
+            }
+        }));
+
+        bi.e155aav.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i == bi.e155aavn.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVe155af);
+            }
+        }));
+
+        bi.e155bav.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i == bi.e155bavn.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVe155bf);
+            }
+        }));
+
+        bi.e155cav.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i == bi.e155cavn.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVe155cf);
+            }
+        }));
+
+        bi.e155dav.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i == bi.e155davn.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVe155df);
+            }
+        }));
+
+        bi.e156aav.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i == bi.e156aavn.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVe156af);
+            }
+        }));
+
+        bi.e156bav.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i == bi.e156bavn.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVe156bf);
+            }
+        }));
+
+        bi.e156cav.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i == bi.e156cavn.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVe156cf);
+            }
+        }));
+
+        bi.e156dav.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i == bi.e156davn.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVe156df);
+            }
+        }));
+
+        bi.e156eav.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i == bi.e156eavn.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVe156ef);
+            }
+        }));
+
+        bi.e156fav.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i == bi.e156favn.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVe156ff);
+            }
+        }));
+
+        bi.e156gav.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i == bi.e156gavn.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVe156gf);
+            }
+        }));
+
+        bi.e156hav.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i == bi.e156havn.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVe156hf);
+            }
+        }));
+
     }
 
 
