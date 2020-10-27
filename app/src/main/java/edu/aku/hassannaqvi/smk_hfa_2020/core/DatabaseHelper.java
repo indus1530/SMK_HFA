@@ -224,6 +224,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         String whereClause = null;
         String[] whereArgs = null;
+
+        if (MainApp.DIST_ID != null) {
+            whereClause = DistrictContract.singleDistrict.COLUMN_DISTRICT_CODE + "=?";
+            whereArgs = new String[]{MainApp.DIST_ID};
+        }
+
         String groupBy = null;
         String having = null;
 
@@ -572,7 +578,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         if (mCursor != null) {
 
             if (mCursor.moveToFirst()) {
-                MainApp.DIST_ID = mCursor.getString(mCursor.getColumnIndex(UsersContract.singleUser.DIST_ID));
+//                MainApp.DIST_ID = mCursor.getString(mCursor.getColumnIndex(UsersContract.singleUser.DIST_ID));
             }
             return mCursor.getCount() > 0;
         }
