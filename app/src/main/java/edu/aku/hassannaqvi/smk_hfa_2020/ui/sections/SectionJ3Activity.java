@@ -52,6 +52,7 @@ public class SectionJ3Activity extends AppCompatActivity {
         radioGroup(bi.j36e);
         radioGroup(bi.j36f);
         radioGroup(bi.j36g);
+        radioGroup(bi.j36h);
     }
 
 
@@ -161,6 +162,7 @@ public class SectionJ3Activity extends AppCompatActivity {
         json.put("j37e", bi.j37e.isChecked() ? "5" : "-1");
         json.put("j37f", bi.j37f.isChecked() ? "6" : "-1");
         json.put("j37x", bi.j37x.isChecked() ? "96" : "-1");
+        json.put("j37xx", bi.j37xx.getText().toString().trim().length() > 0 ? bi.j37xx.getText().toString() : "-1");
 
         try {
             JSONObject json_merge = JSONUtils.mergeJSONObjects(new JSONObject(fc.getsJ()), json);
