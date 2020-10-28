@@ -116,6 +116,8 @@ public class SectionJ4Activity extends AppCompatActivity {
         json.put("j407b", bi.j407b.isChecked() ? "2" : "-1");
         json.put("j407c", bi.j407c.isChecked() ? "3" : "-1");
         json.put("j407d", bi.j407d.isChecked() ? "4" : "-1");
+        json.put("j407x", bi.j407x.isChecked() ? "96" : "-1");
+        json.put("j407xx", bi.j407xx.getText().toString().trim().length() > 0 ? bi.j407xx.getText().toString() : "-1");
 
         try {
             JSONObject json_merge = JSONUtils.mergeJSONObjects(new JSONObject(fc.getsJ()), json);

@@ -541,6 +541,14 @@
                             android:layout_height="wrap_content"
                             android:text="@string/j506x" />
 
+                        <EditText
+                            android:id="@+id/j506xx"
+                            style="@style/EditTextAlpha"
+                            android:hint="@string/specify"
+                            android:tag="j506x"
+                            android:text='@{j506x.checked ? j506xx.getText().toString() : ""}'
+                            android:visibility='@{j506x.checked ? View.VISIBLE : View.GONE}' />
+
                     </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>

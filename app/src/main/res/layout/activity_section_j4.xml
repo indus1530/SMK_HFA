@@ -593,6 +593,14 @@
                             android:layout_height="wrap_content"
                             android:text="@string/j407x" />
 
+                        <EditText
+                            android:id="@+id/j407xx"
+                            style="@style/EditTextAlpha"
+                            android:hint="@string/specify"
+                            android:tag="j407x"
+                            android:text='@{j407x.checked ? j407xx.getText().toString() : ""}'
+                            android:visibility='@{j407x.checked ? View.VISIBLE : View.GONE}' />
+
                     </LinearLayout>
 
                 </LinearLayout>
