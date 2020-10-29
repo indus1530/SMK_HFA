@@ -139,8 +139,7 @@ public class GetAllData extends AsyncTask<String, String, String> {
                     position = 0;
                     break;
                 case "VersionApp":
-                    url = new URL(MainApp._UPDATE_URL + MainApp._SERVER_GET_URL);
-                    tableName = VersionAppContract.VersionAppTable.TABLE_NAME;
+                    url = new URL(MainApp._UPDATE_URL + VersionAppContract.VersionAppTable._URI);
                     position = 1;
                     break;
                 case "Districts":
