@@ -3,8 +3,8 @@ package edu.aku.hassannaqvi.smk_hfa_2020.ui.sections;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
-import android.text.TextUtils;
 import android.text.TextWatcher;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -46,7 +46,7 @@ public class SectionK3Activity extends AppCompatActivity {
         }));
 
 
-        bi.k0035.addTextChangedListener(new TextWatcher() {
+/*        bi.k0035.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
             }
@@ -55,14 +55,40 @@ public class SectionK3Activity extends AppCompatActivity {
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
                 if (TextUtils.isEmpty(bi.k0035.getText()))
                     return;
-                bi.k0036.setMaxvalue(Integer.parseInt(bi.k0035.getText().toString()));
-                bi.k0037d.setMaxvalue(Integer.parseInt(bi.k0035.getText().toString()));
+//                bi.k0036.setMaxvalue(Integer.parseInt(bi.k0035.getText().toString()));
+//                bi.k0037d.setMaxvalue(Integer.parseInt(bi.k0035.getText().toString()));
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+            }
+        });*/
+
+        TextWatcher textWatcher = (new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                Clear.clearAllFields(bi.cvk0037);
+                bi.cvk0037.setVisibility(View.VISIBLE);
+                if (!bi.k0035.isEmptyTextBox() || !bi.k0036.isEmptyTextBox()) return;
+                int k0035 = Integer.parseInt(bi.k0035.getText().toString());
+                int k0036 = Integer.parseInt(bi.k0036.getText().toString());
+                if (k0035 + k0036 == 0)
+                    bi.cvk0037.setVisibility(View.GONE);
+                else
+                    bi.k0037d.setMaxvalue(k0035 + k0036);
             }
 
             @Override
             public void afterTextChanged(Editable editable) {
             }
         });
+
+        bi.k0035.addTextChangedListener(textWatcher);
+        bi.k0036.addTextChangedListener(textWatcher);
 
     }
 
