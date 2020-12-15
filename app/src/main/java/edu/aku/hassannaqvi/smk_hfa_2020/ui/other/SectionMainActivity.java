@@ -1,5 +1,6 @@
 package edu.aku.hassannaqvi.smk_hfa_2020.ui.other;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -8,14 +9,19 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import com.google.android.material.badge.BadgeDrawable;
+
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.util.Locale;
 
 import edu.aku.hassannaqvi.smk_hfa_2020.R;
 import edu.aku.hassannaqvi.smk_hfa_2020.contracts.FormsContract;
 import edu.aku.hassannaqvi.smk_hfa_2020.core.DatabaseHelper;
 import edu.aku.hassannaqvi.smk_hfa_2020.core.MainApp;
 import edu.aku.hassannaqvi.smk_hfa_2020.databinding.ActivitySectionMainBinding;
+import edu.aku.hassannaqvi.smk_hfa_2020.ui.sections.SectionAActivity;
 import edu.aku.hassannaqvi.smk_hfa_2020.ui.sections.SectionBActivity;
 import edu.aku.hassannaqvi.smk_hfa_2020.ui.sections.SectionC1Activity;
 import edu.aku.hassannaqvi.smk_hfa_2020.ui.sections.SectionD1Activity;
@@ -32,16 +38,16 @@ import edu.aku.hassannaqvi.smk_hfa_2020.utils.JSONUtils;
 import static edu.aku.hassannaqvi.smk_hfa_2020.core.MainApp.fc;
 
 public class SectionMainActivity extends AppCompatActivity {
-    public static int countC2 = 0, countI = 0;
+    public static int countC2 = 0;
     ActivitySectionMainBinding bi;
     boolean flag = false;
 
+    @SuppressLint("RestrictedApi")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_main);
         bi.setCallback(this);
-
 
         if (countC2 != 0 && !flag) {
 
@@ -63,7 +69,6 @@ public class SectionMainActivity extends AppCompatActivity {
             db.updatesFormColumn(FormsContract.FormsTable.COLUMN_SC, MainApp.fc.getsC());
             Toast.makeText(this, "countC2: 0" + countC2, Toast.LENGTH_SHORT).show();
         }
-
 
         if (fc.getsB() != null) {
             bi.form01.setEnabled(false);
@@ -101,7 +106,14 @@ public class SectionMainActivity extends AppCompatActivity {
             bi.form07.setBackgroundResource(R.color.dullWhite);
         }
 
-        if (fc.getsI() != null) {
+        BadgeDrawable badgeDrawable = BadgeDrawable.create(this);
+        badgeDrawable.setNumber(SectionAActivity.countI);
+        bi.fldGrpForm08.setForeground(badgeDrawable);
+        bi.fldGrpForm08.addOnLayoutChangeListener((v, left, top, right, bottom, oldLeft, oldTop, oldRight, oldBottom) -> {
+//            BadgeUtils.attachBadgeDrawable(badgeDrawable, bi.form08Lbl, bi.fldGrpForm08);
+            badgeDrawable.updateBadgeCoordinates(bi.form08Lbl, bi.fldGrpForm08);
+        });
+        if (flagSelectionForSecI()) {
             bi.form08.setEnabled(false);
             bi.form08.setBackgroundResource(R.color.dullWhite);
         }
@@ -116,6 +128,8 @@ public class SectionMainActivity extends AppCompatActivity {
             bi.form10.setBackgroundResource(R.color.dullWhite);
         }
 
+        bi.form08.setText(bi.form08.getText().toString().concat(String.format(Locale.ENGLISH, " [ Conducted %d interviews ]", SectionAActivity.countI)));
+        bi.lblMainMenu.setText((fc.getA10().equals("1") ? "Public" : "Private").concat(" Health Facility Modules"));
 
     }
 
@@ -191,11 +205,10 @@ public class SectionMainActivity extends AppCompatActivity {
                     oF = new Intent(this, fc.getA10().equals("2") ? SectionH16Activity.class : SectionH1Activity.class);
                     break;
                 case R.id.form08:
-                    countI = 0;
                     oF = new Intent(this, SectionI1Activity.class);
                     break;
                 case R.id.form09:
-                        oF = new Intent(this, SectionJ1Activity.class);
+                    oF = new Intent(this, SectionJ1Activity.class);
                     break;
                 case R.id.form10:
                     oF = new Intent(this, SectionK1Activity.class);
@@ -213,4 +226,9 @@ public class SectionMainActivity extends AppCompatActivity {
         Toast.makeText(this, "Back Press Not Allowed", Toast.LENGTH_SHORT).show();
     }
 
+    private Boolean flagSelectionForSecI() {
+        if (MainApp.fc.getA10().equals("1") && SectionAActivity.countI == 4)
+            return true;
+        else return MainApp.fc.getA10().equals("2") && SectionAActivity.countI == 2;
+    }
 }

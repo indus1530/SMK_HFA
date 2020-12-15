@@ -19,7 +19,7 @@ import edu.aku.hassannaqvi.smk_hfa_2020.contracts.PatientsContract;
 import edu.aku.hassannaqvi.smk_hfa_2020.core.DatabaseHelper;
 import edu.aku.hassannaqvi.smk_hfa_2020.core.MainApp;
 import edu.aku.hassannaqvi.smk_hfa_2020.databinding.ActivityEndingBinding;
-import edu.aku.hassannaqvi.smk_hfa_2020.ui.sections.SectionI1Activity;
+import edu.aku.hassannaqvi.smk_hfa_2020.ui.sections.SectionAActivity;
 
 import static edu.aku.hassannaqvi.smk_hfa_2020.CONSTANTS.SECTION_MAIN_CHECK_FOR_END;
 
@@ -66,12 +66,13 @@ public class EndingActivity extends AppCompatActivity {
     }
 
     private Class<?> routingSelectionForChildEnding() {
-        if (MainApp.fc.getA10().equals("1") && SectionMainActivity.countI == 6)
+        /*if (MainApp.fc.getA10().equals("1") && SectionMainActivity.countI == 6)
             return SectionMainActivity.class;
         else if (MainApp.fc.getA10().equals("2") && SectionMainActivity.countI == 3)
             return SectionMainActivity.class;
         else
-            return SectionI1Activity.class;
+            return SectionI1Activity.class;*/
+        return SectionMainActivity.class;
     }
 
 
@@ -82,7 +83,7 @@ public class EndingActivity extends AppCompatActivity {
                     : bi.istatusb.isChecked() ? "2"
                     : bi.istatus96.isChecked() ? "96"
                     : "0");
-            MainApp.fc.setsI(String.valueOf(SectionMainActivity.countI));
+            MainApp.fc.setsI(String.valueOf(SectionAActivity.countI));
         } else {
             MainApp.fc.setIstatus(bi.istatusa.isChecked() ? "1"
                     : bi.istatusb.isChecked() ? "2"

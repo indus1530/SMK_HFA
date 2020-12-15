@@ -35,7 +35,8 @@
             android:theme="@style/AppTheme" />
         <activity
             android:name=".ui.other.SectionMainActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar.Bridge" />
         <activity
             android:name=".ui.sections.SectionAActivity"
             android:label="@string/modatitle"

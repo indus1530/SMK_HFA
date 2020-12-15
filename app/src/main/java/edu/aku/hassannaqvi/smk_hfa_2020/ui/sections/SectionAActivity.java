@@ -40,14 +40,14 @@ import static edu.aku.hassannaqvi.smk_hfa_2020.core.MainApp.fc;
 public class SectionAActivity extends AppCompatActivity {
 
     ActivitySectionABinding bi;
-    private List<String> districtNames, tehsilNames, ucNames;
+    public static int countI = 0;
+    private List<String> tehsilNames;
     private List<String> districtCodes, tehsilCodes, ucCodes;
     private List<String> districtTypes;
     private DatabaseHelper db;
-
     private List<String> hfNamesPrv, hfNamesPub;
     private Map<String, String> hfMap;
-    private boolean fcFlag = false;
+    private List<String> ucNames;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -83,10 +83,9 @@ public class SectionAActivity extends AppCompatActivity {
         hfMap = new HashMap<>();
     }
 
-
     public void populateSpinner(final Context context) {
         // Spinner Drop down elements
-        districtNames = new ArrayList<>();
+        List<String> districtNames = new ArrayList<>();
         districtCodes = new ArrayList<>();
         districtTypes = new ArrayList<>();
 
@@ -300,6 +299,8 @@ public class SectionAActivity extends AppCompatActivity {
         if (fc == null) {
             Toast.makeText(this, "Partially filled Facility ", Toast.LENGTH_LONG).show();
             return true;
+        } else {
+            countI = fc.getsI() == null ? 0 : Integer.parseInt(fc.getsI());
         }
         return true;
     }

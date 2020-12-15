@@ -24,7 +24,6 @@ import edu.aku.hassannaqvi.smk_hfa_2020.core.DatabaseHelper;
 import edu.aku.hassannaqvi.smk_hfa_2020.core.MainApp;
 import edu.aku.hassannaqvi.smk_hfa_2020.databinding.ActivitySectionI1Binding;
 import edu.aku.hassannaqvi.smk_hfa_2020.ui.other.EndingActivity;
-import edu.aku.hassannaqvi.smk_hfa_2020.ui.other.SectionMainActivity;
 import edu.aku.hassannaqvi.smk_hfa_2020.utils.EndSectionActivity;
 
 import static edu.aku.hassannaqvi.smk_hfa_2020.CONSTANTS.SECTION_MAIN_CHECK_FOR_END;
@@ -48,16 +47,9 @@ public class SectionI1Activity extends AppCompatActivity implements EndSectionAc
 
 
     private void setupContent() {
-
         psc = new PatientsContract();
-
         bi.hfType.setText(MainApp.fc.getA10().equals("1") ? getString(R.string.hfpublic) : getString(R.string.hfprivate));
-        bi.countI.setText(new StringBuilder("Entries: 0").append(SectionMainActivity.countI));
-
-        /*if (MainApp.fc.getA10().equals("1")) {
-            if (SectionMainActivity.paedsCount == 3) bi.i0108a.setEnabled(false);
-            else if (SectionMainActivity.maternalCount == 3) bi.i0108b.setEnabled(false);
-        }*/
+        bi.countI.setText(new StringBuilder("Entries: 0").append(SectionAActivity.countI));
     }
 
 
@@ -89,52 +81,6 @@ public class SectionI1Activity extends AppCompatActivity implements EndSectionAc
             }
         });
 
-        /*bi.i0108.setOnCheckedChangeListener(((radioGroup, i) -> {
-
-            if (i == bi.i0108a.getId()) {
-                Clear.clearAllFields(bi.fldGrpCVi0105);
-                bi.i0105a.setEnabled(true);
-                Clear.clearAllFields(bi.fldGrpCVi0106);
-                bi.i0106a.setMaxvalue(5);
-                bi.i0106a.setMinvalue(0);
-            } else if (i == bi.i0108b.getId()) {
-                Clear.clearAllFields(bi.fldGrpCVi0105);
-                bi.i0105a.setEnabled(false);
-                bi.i0105b.setChecked(true);
-                Clear.clearAllFields(bi.fldGrpCVi0106);
-                bi.i0106a.setMaxvalue(49);
-                bi.i0106a.setMinvalue(15);
-            }
-
-        }));*/
-
-
-        /*bi.i0106a.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-            }
-
-
-            @Override
-            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                if (TextUtils.isEmpty(bi.i0106a.getText()))
-                    return;
-                if (bi.i0108a.isChecked() && Integer.parseInt(bi.i0106a.getText().toString()) == 5) {
-                    bi.i0106b.setMaxvalue(0);
-                } else if (bi.i0108b.isChecked() && Integer.parseInt(bi.i0106a.getText().toString()) == 49) {
-                    bi.i0106b.setMaxvalue(0);
-                } else {
-                    bi.i0106b.setMaxvalue(11);
-                }
-
-            }
-            @Override
-            public void afterTextChanged(Editable editable) {
-            }
-        });*/
-
-
     }
 
 
@@ -142,23 +88,20 @@ public class SectionI1Activity extends AppCompatActivity implements EndSectionAc
         if (!formValidation()) return;
         try {
             SaveDraft();
+            if (UpdateDB()) {
+                finish();
+                startActivity(new Intent(this, EndingActivity.class).putExtra("complete", true).putExtra(CONSTANTS.SECTION_MAIN_CHECK_FOR_END, true)
+                        .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).setFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
+            } else {
+                Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
+            }
         } catch (JSONException e) {
             e.printStackTrace();
-        }
-        if (UpdateDB()) {
-            finish();
-            SectionMainActivity.countI++;
-            startActivity(new Intent(this, EndingActivity.class).putExtra("complete", true).putExtra(CONSTANTS.SECTION_MAIN_CHECK_FOR_END, true)
-                    .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).setFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
-        } else {
-            Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
         }
     }
 
 
     public void BtnEnd() {
-        /*if (!Validator.emptyCheckingContainer(this, bi.fldGrpEndForm)) return;
-        contextEndActivity(this);*/
         openSectionMainActivityI(this);
     }
 
@@ -191,7 +134,6 @@ public class SectionI1Activity extends AppCompatActivity implements EndSectionAc
         psc.setTehsilCode(MainApp.fc.getTehsilCode());
         psc.setUcCode(MainApp.fc.getUcCode());
         psc.setHfCode(MainApp.fc.getHfCode());
-//        psc.serialno = serial.toString()
 
         JSONObject json = new JSONObject();
 
@@ -321,21 +263,13 @@ public class SectionI1Activity extends AppCompatActivity implements EndSectionAc
 
         psc.setsI1(String.valueOf(json));
 
+        SectionAActivity.countI++;
+
     }
 
 
     private boolean formValidation() {
         return Validator.emptyCheckingContainer(this, bi.GrpName);
-       /* if (!Validator.emptyCheckingContainer(this, bi.GrpName))
-            return false;
-
-        if (bi.i0106a.getText().toString().trim().length() > 0 && bi.i0106b.getText().toString().trim().length() > 0) {
-            if (Integer.parseInt(bi.i0106a.getText().toString().trim()) + Integer.parseInt(bi.i0106a.getText().toString().trim()) == 0) {
-                return ValidatorClass.EmptyCustomeTextBox(this, bi.i0106a, "Both!! Month & Year Can't be Zero!");
-                //return Validator.emptyCheckingContainer(this, bi.i0106a);
-            }
-        }
-        return true;*/
     }
 
 
@@ -343,23 +277,22 @@ public class SectionI1Activity extends AppCompatActivity implements EndSectionAc
     public void endSecActivity(boolean flag) {
         try {
             SaveDraft();
+            if (UpdateDB()) {
+                finish();
+                startActivity(new Intent(this, EndingActivity.class).putExtra(SECTION_MAIN_CHECK_FOR_END, true)
+                        .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).setFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
+            } else {
+                Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
+            }
         } catch (JSONException e) {
             e.printStackTrace();
-        }
-        if (UpdateDB()) {
-            finish();
-            SectionMainActivity.countI++;
-            startActivity(new Intent(this, EndingActivity.class).putExtra(SECTION_MAIN_CHECK_FOR_END, true)
-                    .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).setFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
-        } else {
-            Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
         }
     }
 
 
     @Override
     public void onBackPressed() {
-        if (SectionMainActivity.countI > 0) {
+        if (SectionAActivity.countI > 0) {
             Toast.makeText(getApplicationContext(), "Back Press Not Allowed", Toast.LENGTH_LONG).show();
         } else super.onBackPressed();
     }
