@@ -147,7 +147,7 @@ public class SectionMainActivity extends AppCompatActivity {
                 && !bi.form05.isEnabled()
                 && !bi.form06.isEnabled()
                 && !bi.form07.isEnabled()
-                && !bi.form08.isEnabled()
+                && SectionAActivity.countI > 0
                 && !bi.form09.isEnabled()
                 && !bi.form10.isEnabled()) {
             finish();
